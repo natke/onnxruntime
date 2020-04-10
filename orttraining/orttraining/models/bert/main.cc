@@ -254,12 +254,6 @@ Status ParseArguments(int argc, char* argv[], BertParameters& params, OrtParamet
       return Status(ONNXRUNTIME, INVALID_ARGUMENT, "Incorrect command line for mode: it must be one of [perf|train]");
     }
 
-    int seed = flags["seed"].as<int>();
-    if (seed > 0) {
-      utils::SetStaticRandomSeed(static_cast<uint32_t>(seed));
-      printf("Random seed is set to %d.\n", seed);
-    }
-
     params.use_mixed_precision = flags["use_mixed_precision"].as<bool>();
     params.allreduce_in_fp16 = flags["allreduce_in_fp16"].as<bool>() && params.use_mixed_precision;
     if (params.use_mixed_precision) {
@@ -366,6 +360,15 @@ Status ParseArguments(int argc, char* argv[], BertParameters& params, OrtParamet
     params.horizontal_parallel_size = flags["horizontal_parallel_size"].as<int>();
     ORT_RETURN_IF_NOT(params.data_parallel_size > 0, "data_parallel_size must > 0");
     ORT_RETURN_IF_NOT(params.horizontal_parallel_size > 0, "horizontal_parallel_size must > 0");
+
+    int seed = flags["seed"].as<int>();
+    if (params.horizontal_parallel_size > 1 && seed <= 0) {
+      seed = 8211; // Megatron needs a random seed.
+    }
+    if (seed > 0) {
+      utils::SetStaticRandomSeed(static_cast<uint32_t>(seed));
+      printf("Random seed is set to %d.\n", seed);
+    }
 
     ort_params.log_severity = static_cast<logging::Severity>(flags["ort_log_severity"].as<int>());
     ORT_RETURN_IF_NOT(
