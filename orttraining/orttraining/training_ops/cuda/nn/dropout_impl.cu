@@ -73,7 +73,7 @@ void DropoutKernelImpl(
     const cudaDeviceProp& prop,
     const int64_t N,
     const float ratio,
-    DropoutGenerator& generator,
+    PhiloxGenerator& generator,
     const T* X_data,
     T* Y_data,
     bool* mask_data) {
@@ -100,7 +100,7 @@ void DropoutKernelImpl(
       const cudaDeviceProp& prop,   \
       const int64_t N,              \
       const float ratio,            \
-      DropoutGenerator& generator,  \
+      PhiloxGenerator& generator,   \
       const T* X_data,              \
       T* Y_data,                    \
       bool* mask_data);

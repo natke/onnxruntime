@@ -18,7 +18,7 @@ class Dropout final : public OpKernel {
   Dropout(const OpKernelInfo& info) : OpKernel{info},
                                       random_seed_{info.GetAttrOrDefault<int64_t>(
                                           "seed",
-                                          static_cast<int64_t>(utils::GetStaticRandomSeed()))},
+                                          utils::GetStaticRandomSeed())},
                                       rng_{static_cast<typename decltype(rng_)::result_type>(random_seed_)} {
   }
 
@@ -40,5 +40,6 @@ class DropoutGrad final : public OpKernel {
 
   Status Compute(OpKernelContext* context) const override;
 };
+
 }  // namespace contrib
 }  // namespace onnxruntime

@@ -17,8 +17,14 @@ Status GraphAugmenter::AugmentGraph(Graph& graph, const GraphDefs& graph_element
     }
   }
 
-  // Add new nodes to the graph.
-  for (const auto& node_def : graph_element_defs.NodeDefs()) {
+  // Add new nodes to the graph, sorted by name to get a consistent ordering.
+  std::vector<NodeDef> new_nodes = graph_element_defs.NodeDefs();
+  std::sort(
+      new_nodes.begin(), new_nodes.end(),
+      [](const NodeDef& a, const NodeDef& b) {
+        return a.name < b.name;
+      });
+  for (const auto& node_def : new_nodes) {
     std::vector<NodeArg*> input_args, output_args;
 
     for (const auto& arg : node_def.input_args) {
@@ -50,6 +56,14 @@ Status GraphAugmenter::AugmentGraph(Graph& graph, const GraphDefs& graph_element
       new_output_args.emplace_back(output_arg);
     }
   }
+
+  // Sort outputs by name to get a consistent ordering.
+  std::sort(
+      new_output_args.begin(), new_output_args.end(),
+      [](const NodeArg* a, const NodeArg* b) {
+        return a->Name() < b->Name();
+      });
+
   graph.SetOutputs(new_output_args);  // By setting this, Graph::SetGraphInputsOutputs could infer the output as expected.
 
   graph.SetGraphResolveNeeded();
@@ -75,6 +89,13 @@ Status GraphAugmenter::OverrideGraphOutputs(Graph& graph, const std::vector<std:
     ORT_RETURN_IF(output_arg == nullptr, "Failed to set graph output ", output_name);
     new_output_args.emplace_back(output_arg);
   }
+
+  // Sort outputs by name to get a consistent ordering.
+  std::sort(
+      new_output_args.begin(), new_output_args.end(),
+      [](const NodeArg* a, const NodeArg* b) {
+        return a->Name() < b->Name();
+      });
 
   graph.SetOutputs(new_output_args);  // By setting this, Graph::SetGraphInputsOutputs could infer the output as expected.
   graph.SetGraphResolveNeeded();

@@ -45,7 +45,7 @@ void GenerateRandomDataWithOneHot(
     // TODO: Consider varying mean and variance
     float scale = 5.f;
     float mean = 0.f;
-    const uint32_t seed = utils::GetStaticRandomSeed();
+    const int64_t seed = utils::GetStaticRandomSeed();
 
     std::default_random_engine generator{gsl::narrow_cast<decltype(generator)::result_type>(seed)};
     std::normal_distribution<T> distribution{mean, scale};

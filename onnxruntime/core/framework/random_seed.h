@@ -12,10 +12,9 @@ namespace utils {
  * Gets the static random seed value. All calls to GetStaticRandomSeed()
  * throughout the lifetime of the process will return the same value.
  *
- * @param default_seed If the random seed is not set, return this value instead of random if it's positive.
  * @return The static random seed value.
  */
-uint32_t GetStaticRandomSeed(uint32_t default_seed = 0);
+int64_t GetStaticRandomSeed();
 
 /**
  * Sets the static random seed value.
@@ -25,7 +24,7 @@ uint32_t GetStaticRandomSeed(uint32_t default_seed = 0);
  *
  * @param seed The random seed value to use.
  */
-void SetStaticRandomSeed(uint32_t seed);
+void SetStaticRandomSeed(int64_t seed);
 
 }  // namespace test
 }  // namespace onnxruntime
