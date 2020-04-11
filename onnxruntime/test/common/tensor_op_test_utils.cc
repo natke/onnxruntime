@@ -10,7 +10,7 @@ namespace onnxruntime {
 namespace test {
 
 RandomValueGenerator::RandomValueGenerator()
-    : generator_{static_cast<decltype(generator_)::result_type>(utils::GetStaticRandomSeed())} {
+    : generator_{static_cast<decltype(generator_)::result_type>(utils::GetRandomSeed())} {
 }
 
 }  // namespace test

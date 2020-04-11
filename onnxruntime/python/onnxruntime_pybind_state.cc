@@ -353,7 +353,7 @@ void addGlobalMethods(py::module& m, const Environment& env) {
       "get_device", []() -> std::string { return BACKEND_DEVICE; },
       "Return the device used to compute the prediction (CPU, MKL, ...)");
   m.def(
-      "seed", [](const int64_t seed) { utils::SetStaticRandomSeed(static_cast<uint64_t>(seed)); },
+      "seed", [](const int64_t seed) { utils::SetRandomSeed(static_cast<uint64_t>(seed)); },
       "Sets the seed used for random number generation in Onnxruntime.");
   m.def(
       "set_default_logger_severity", [&env](int severity) {

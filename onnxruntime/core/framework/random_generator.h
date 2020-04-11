@@ -9,21 +9,68 @@
 
 namespace onnxruntime {
 
+/**
+ * Random seed generator used to generate new seeds for random engines
+ * such as std::default_random_engine.  The default (global) generator
+ * will use the seed provided by the user to SetRandomSeed().
+ */
+class RandomGenerator {
+public:
+  explicit RandomGenerator(int64_t seed) : seed_(seed) {}
+
+  /**
+   * Resets the generator seed.
+   */
+  void SetSeed(int64_t seed) {
+    seed_.store(seed);
+  }
+
+  /**
+   * Gets the next seed, optionally incrementing it by the specified count.
+   */
+  int64_t NextSeed(int64_t count = 1) {
+    return seed_.fetch_add(count);
+  }
+
+  /**
+   * Gets the default global random generator.  This generator will use the
+   * seed provided in SetRandomSeed(), and will update if the seed is reset.
+   */
+  static RandomGenerator& Default();
+
+ private:
+  std::atomic<int64_t> seed_;
+};
+
+/**
+ * Philox pseudo-random number generator.  Philox uses a counter-based design.
+ * This generator provides the seed and counter to initialize a Philox random
+ * engine such as the CUDA Philox_4x32_10 generator.
+ */
 class PhiloxGenerator {
 public:
-  PhiloxGenerator() : seed_(0), offset_(0) {}
-  PhiloxGenerator(uint64_t seed) : seed_(seed), offset_(0) {}
+  explicit PhiloxGenerator(uint64_t seed) : seed_(seed), offset_(0) {}
 
+  /**
+   * Resets the seed and offset.
+   */
   void SetSeed(uint64_t seed) {
     seed_ = seed;
     offset_.store(0);
   }
 
-  std::pair<uint64_t, uint64_t> GetPhiloxSeeds(uint64_t count) {
+  /**
+   * Gets the seed and offset pair, incrementing the offset by the specified count.
+   */
+  std::pair<uint64_t, uint64_t> NextPhiloxSeeds(uint64_t count) {
     uint64_t offset = offset_.fetch_add(count);
     return std::pair<uint64_t, uint64_t>(seed_, offset);
   }
 
+  /**
+   * Get the default global random generator.  This generator will use the
+   * seed provided in SetRandomSeed(), and will update if the seed is reset.
+   */
   static PhiloxGenerator& Default();
 
  private:

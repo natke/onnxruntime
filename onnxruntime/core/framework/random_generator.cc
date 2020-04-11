@@ -6,8 +6,13 @@
 
 namespace onnxruntime {
 
+RandomGenerator& RandomGenerator::Default() {
+  static RandomGenerator generator(utils::GetRandomSeed());
+  return generator;
+}
+
 PhiloxGenerator& PhiloxGenerator::Default() {
-  static PhiloxGenerator generator(static_cast<uint64_t>(utils::GetStaticRandomSeed()));
+  static PhiloxGenerator generator(static_cast<uint64_t>(utils::GetRandomSeed()));
   return generator;
 }
 

@@ -226,7 +226,7 @@ Status ParseArguments(int argc, char* argv[], GPT2Parameters& params, OrtParamet
       seed = 8211; // Megatron needs a random seed.
     }
     if (seed > 0) {
-      utils::SetStaticRandomSeed(static_cast<uint32_t>(seed));
+      utils::SetRandomSeed(seed);
       printf("Random seed is set to %d.\n", seed);
     }
 

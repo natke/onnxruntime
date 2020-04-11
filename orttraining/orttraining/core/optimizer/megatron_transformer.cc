@@ -611,7 +611,7 @@ Status MegatronTransformer::TransformDropout(Graph& graph, bool& modified, int g
     // Only need to set the seed if it's a transformed self-attention dropout, or the seed attribute is not set.
     if (self_attention_dropout_nodes.find(&node) != self_attention_dropout_nodes.end() ||
         graph_utils::GetNodeAttribute(node, "seed") == nullptr) {
-      int64_t seed = static_cast<int64_t>(HashName(node.MutableOutputDefs()[0]->Name())) + utils::GetStaticRandomSeed();
+      int64_t seed = static_cast<int64_t>(HashName(node.MutableOutputDefs()[0]->Name())) + utils::GetRandomSeed();
       if (self_attention_dropout_nodes.find(&node) != self_attention_dropout_nodes.end()) {
         seed += horizontal_parallel_rank_;
       }
