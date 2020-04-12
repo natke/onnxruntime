@@ -4,6 +4,7 @@
 #pragma once
 
 #include <atomic>
+#include <mutex>
 #include <stdint.h>
 #include <utility>
 
@@ -15,7 +16,7 @@ namespace onnxruntime {
  * will use the seed provided by the user to SetRandomSeed().
  */
 class RandomGenerator {
-public:
+ public:
   explicit RandomGenerator(int64_t seed) : seed_(seed) {}
 
   /**
@@ -48,23 +49,26 @@ public:
  * engine such as the CUDA Philox_4x32_10 generator.
  */
 class PhiloxGenerator {
-public:
+ public:
   explicit PhiloxGenerator(uint64_t seed) : seed_(seed), offset_(0) {}
 
   /**
    * Resets the seed and offset.
    */
   void SetSeed(uint64_t seed) {
+    std::lock_guard<std::mutex> lock(mutex_);
     seed_ = seed;
-    offset_.store(0);
+    offset_ = 0;
   }
 
   /**
    * Gets the seed and offset pair, incrementing the offset by the specified count.
    */
   std::pair<uint64_t, uint64_t> NextPhiloxSeeds(uint64_t count) {
-    uint64_t offset = offset_.fetch_add(count);
-    return std::pair<uint64_t, uint64_t>(seed_, offset);
+    std::lock_guard<std::mutex> lock(mutex_);
+    auto seeds = std::make_pair(seed_, offset_);
+    offset_ += count;
+    return seeds;
   }
 
   /**
@@ -74,8 +78,9 @@ public:
   static PhiloxGenerator& Default();
 
  private:
+  std::mutex mutex_;
   uint64_t seed_;
-  std::atomic<uint64_t> offset_;
+  uint64_t offset_;
 };
 
 }  // namespace onnxruntime
