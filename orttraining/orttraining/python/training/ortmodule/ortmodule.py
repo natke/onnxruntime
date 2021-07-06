@@ -17,10 +17,10 @@ from typing import Iterator, Optional, Tuple, TypeVar, Set, Callable
 T = TypeVar('T', bound='Module')
 
 class ORTModule(torch.nn.Module):
-    """Extends user's :class:`torch.nn.Module` model to leverage ONNX Runtime super fast training engine.
+    """Extends user's :class:`torch.nn.Module` model to leverage ONNX Runtime training accelerator.
 
-    ORTModule specializes the user's :class:`torch.nn.Module` model, providing :meth:`~torch.nn.Module.forward`,
-    :meth:`~torch.nn.Module.backward` along with all others :class:`torch.nn.Module`'s APIs.
+    ORTModule specializes the user's :class:`torch.nn.Module`, providing :meth:`~torch.nn.Module.forward`,
+    :meth:`~torch.nn.Module.backward` to delegate to the ONNX Runtime backend.
     """
 
     def __init__(self, module):
@@ -62,8 +62,24 @@ class ORTModule(torch.nn.Module):
     # This declaration is for automatic document generation purposes only
     # The actual forward implementation is bound during ORTModule initialization
     def forward(self, *inputs, **kwargs):
-        '''Dummy documentation for forward method'''
-        ...
+        '''Delegate the :meth:`~torch.nn.Module.forward` pass of PyTorch training to
+        ONNX Runtime.
+
+        The first call to forward performs setup and checking steps. During this call,
+        ORTModule determines whether the module can be trained with ONNX Runtime. For
+        this reason, the first forward call execution takes longer than subsequent calls.
+        Execution is interupted if ONNX Runtime cannot process the model for training.
+
+        args:
+            *inputs and **kwargs represent the positional, variable positional, keyword
+            and variable keyword arguments defined in the user's PyTorch module's forward
+            method. Values can be torch tensors and primitive types.
+
+        returns:
+            The output as expected from the forward method defined by the user's
+            PyTorch module. Output values supported include tensors, nested sequences
+            of tensors and nested dictionaries of tensor values.
+        '''
 
     def _apply(self, fn):
         """Override original method to delegate execution to the flattened PyTorch user module"""
@@ -74,7 +90,7 @@ class ORTModule(torch.nn.Module):
         return self
 
     def apply(self: T, fn: Callable[['Module'], None]) -> T:
-        """Override original method to delegate execution to the flattened PyTorch user module"""
+        """Override :meth:`~torch.nn.Module.apply` to delegate execution to ONNX Runtime"""
 
         # Delegation must happen to _flattened_module since methods depend on
         # apply to recursively apply the internal setting changes
@@ -85,7 +101,7 @@ class ORTModule(torch.nn.Module):
         return self.training and torch.is_grad_enabled()
 
     def train(self: T, mode: bool = True) -> T:
-        """Override original method to delegate execution to the flattened PyTorch user module"""
+        """Override :meth:`~torch.nn.Module.train` to delegate execution to ONNX Runtime"""
 
         # Since _modules is empty, the task needs to be delegated to _module.flattened_module.train
         # which will recursively update the original_module
@@ -94,7 +110,7 @@ class ORTModule(torch.nn.Module):
         return self
 
     def state_dict(self, destination=None, prefix='', keep_vars=False):
-        """Override original method to delegate execution to the original PyTorch user module"""
+        """Override :meth:`~torch.nn.Module.state_dict` to delegate execution to ONNX Runtime"""
 
         # Override the state_dict() method so that the state dict key names
         # do not contain the flattened_module._original_module prefix
@@ -103,7 +119,7 @@ class ORTModule(torch.nn.Module):
 
     def load_state_dict(self, state_dict: 'OrderedDict[str, Tensor]',
                         strict: bool = True):
-        """Override original method to delegate execution to the original PyTorch user module"""
+        """Override :meth:`~torch.nn.Module.load_state_dict` to delegate execution to ONNX Runtime"""
 
         # Override the load_state_dict() method so that the loaded state dict
         # key names does not need to contain the _module.flattened_module._original_module prefix
@@ -111,35 +127,35 @@ class ORTModule(torch.nn.Module):
             state_dict, strict=strict)
 
     def register_buffer(self, name: str, tensor: Optional[torch.Tensor], persistent: bool = True) -> None:
-        """Override original method to delegate execution to the original PyTorch user module"""
+        """Override :meth:`~torch.nn.Module.register_buffer`"""
         self._module_metadata.original_module.register_buffer(name, tensor, persistent=persistent)
 
     def register_parameter(self, name: str, param: Optional[torch.nn.Parameter]) -> None:
-        """Override original method to delegate execution to the original PyTorch user module"""
+        """Override :meth:`~torch.nn.Module.register_parameter`"""
         self._module_metadata.original_module.register_parameter(name, param)
 
     def get_parameter(self, target: str) -> torch.nn.Parameter:
-        """Override original method to delegate execution to the original PyTorch user module"""
+        """Override :meth:`~torch.nn.Module.get_parameter`"""
         return self._module_metadata.original_module.get_parameter(target)
 
     def get_buffer(self, target: str) -> torch.Tensor:
-        """Override original method to delegate execution to the original PyTorch user module"""
+        """Override :meth:`~torch.nn.Module.get_buffer`"""
         return self._module_metadata.original_module.get_buffer(target)
 
     def parameters(self, recurse: bool = True) -> Iterator[torch.nn.Parameter]:
-        """Override original method to delegate execution to the original PyTorch user module"""
+        """Override :meth:`~torch.nn.Module.parameters`"""
         yield from self._module_metadata.original_module.parameters(recurse=recurse)
 
     def named_parameters(self, prefix: str = '', recurse: bool = True) -> Iterator[Tuple[str, torch.nn.Parameter]]:
-        """Override original method to delegate execution to the original PyTorch user module"""
+        """Override :meth:`~torch.nn.Module.named_parameters`"""
         yield from self._module_metadata.original_module.named_parameters(prefix=prefix, recurse=recurse)
 
     def buffers(self, recurse: bool = True) -> Iterator[torch.Tensor]:
-        """Override original method to delegate execution to the original PyTorch user module"""
+        """Override :meth:`~torch.nn.Module.buffers`"""
         yield from self._module_metadata.original_module.buffers(recurse=recurse)
 
     def named_buffers(self, prefix: str = '', recurse: bool = True) -> Iterator[Tuple[str, torch.Tensor]]:
-        """Override original method to delegate execution to the original PyTorch user module"""
+        """Override :meth:`~torch.nn.Module.named_buffers`"""
         yield from self._module_metadata.original_module.named_buffers(prefix=prefix, recurse=recurse)
 
     def _replicate_for_data_parallel(self):
@@ -173,17 +189,17 @@ class ORTModule(torch.nn.Module):
                                 missing_keys, unexpected_keys, error_msgs)
 
     def named_children(self) -> Iterator[Tuple[str, 'Module']]:
-        """Override original method to delegate execution to the original PyTorch user module"""
+        """Override :meth:`~torch.nn.Module.named_children`"""
 
         yield from self._module_metadata.original_module.named_children()
 
     def modules(self) -> Iterator['Module']:
-        """Override original method to delegate execution to the original PyTorch user module"""
+        """Override :meth:`~torch.nn.Module.modules`"""
 
         yield from self._module_metadata.original_module.modules()
 
     def named_modules(self, *args, **kwargs):
-        """Override original method to delegate execution to the original PyTorch user module"""
+        """Override :meth:`~torch.nn.Module.named_modules`"""
 
         # PyTorch >1.8.1 has an extra arg remove_duplicate that is not present in 1.8.1
         # To support both, use args and kwargs (since user can call the method with only positional args or kwargs)
@@ -196,7 +212,7 @@ class ORTModule(torch.nn.Module):
 
     @property
     def module(self):
-        """The original `torch.nn.Module` that this module wraps.
+        """The original PyTorch `torch.nn.Module` that this module wraps.
 
         This property provides access to methods and properties on the original module.
         """
