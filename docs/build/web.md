@@ -125,16 +125,16 @@ Q: unittest fails on Debug build with debug info.
 
      2. Copy the following files from build output folder to `<ORT_ROOT>/js/web/dist/` (create the folder if it does not exist)
 
-        * ort-wasm.wasm
-        * ort-wasm-threaded.wasm (build with flag '--enable_wasm_threads')
-        * ort-wasm-simd.wasm (build with flag '--enable_wasm_simd')
-        * ort-wasm-simd-threaded.wasm (build with flags '--enable_wasm_threads --enable_wasm_simd')
+         * ort-wasm.wasm
+         * ort-wasm-threaded.wasm (build with flag '--enable_wasm_threads')
+         * ort-wasm-simd.wasm (build with flag '--enable_wasm_simd')
+         * ort-wasm-simd-threaded.wasm (build with flags '--enable_wasm_threads --enable_wasm_simd')
 
      3. Copy the following files from build output folder to `<ORT_ROOT>/js/web/lib/wasm/binding/`:
 
-        * ort-wasm.js
-        * ort-wasm-threaded.js (build with flag '--enable_wasm_threads')
-        * ort-wasm-threaded.worker.js (build with flag '--enable_wasm_threads')
+         * ort-wasm.js
+         * ort-wasm-threaded.js (build with flag '--enable_wasm_threads')
+         * ort-wasm-threaded.worker.js (build with flag '--enable_wasm_threads')
 
 3. Use the following command in folder `<ORT_ROOT>/js/web` to build:
 
