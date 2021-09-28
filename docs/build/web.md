@@ -119,22 +119,22 @@ Note: `<ORT_ROOT>` refers to the root of the cloned onnxruntime source code repo
 
    2. Download artifacts from pipeline manually.
 
-     You can download prebuilt WebAssembly artifacts from [Windows WebAssembly CI Pipeline](https://dev.azure.com/onnxruntime/onnxruntime/_build?definitionId=161&_a=summary). Select a build, download artifact "Release_wasm" and unzip. See instructions below to put files into destination folders.
+      You can download prebuilt WebAssembly artifacts from [Windows WebAssembly CI Pipeline](https://dev.azure.com/onnxruntime/onnxruntime/_build?definitionId=161&_a=summary). Select a build, download artifact "Release_wasm" and unzip. See instructions below to put files into destination folders.
 
    3. Build WebAssembly artifacts from source
 
-     1. Build ONNX Runtime WebAssembly
+      1. Build ONNX Runtime WebAssembly
 
-        Follow [instructions above](#build-onnx-runtime-for-webassembly) for building ONNX Runtime WebAssembly.
+         Follow [instructions above](#build-onnx-runtime-for-webassembly) for building ONNX Runtime WebAssembly.
 
-     2. Copy the following files from build output folder to `<ORT_ROOT>/js/web/dist/` (create the folder if it does not exist)
+      2. Copy the following files from build output folder to `<ORT_ROOT>/js/web/dist/` (create the folder if it does not exist)
 
          1. ort-wasm.wasm
          2. ort-wasm-threaded.wasm (build with flag '--enable_wasm_threads')
          3. ort-wasm-simd.wasm (build with flag '--enable_wasm_simd')
          4. ort-wasm-simd-threaded.wasm (build with flags '--enable_wasm_threads --enable_wasm_simd')
 
-     3. Copy the following files from build output folder to `<ORT_ROOT>/js/web/lib/wasm/binding/`:
+      3. Copy the following files from build output folder to `<ORT_ROOT>/js/web/lib/wasm/binding/`:
 
          1. ort-wasm.js
          2. ort-wasm-threaded.js (build with flag '--enable_wasm_threads')
