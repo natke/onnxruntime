@@ -115,7 +115,7 @@ Note: `<ORT_ROOT>` refers to the root of the cloned onnxruntime source code repo
 
    1. Use released artifacts
 
-     In `<ORT_ROOT>/js/web/`, run `npm run pull:wasm` to pull WebAssembly artifacts for latest master branch from CI pipeline.
+      In `<ORT_ROOT>/js/web/`, run `npm run pull:wasm` to pull WebAssembly artifacts for latest master branch from CI pipeline.
 
    2. Download artifacts from pipeline manually.
 
@@ -129,16 +129,16 @@ Note: `<ORT_ROOT>` refers to the root of the cloned onnxruntime source code repo
 
       2. Copy the following files from build output folder to `<ORT_ROOT>/js/web/dist/` (create the folder if it does not exist)
 
-         1. ort-wasm.wasm
-         2. ort-wasm-threaded.wasm (build with flag '--enable_wasm_threads')
-         3. ort-wasm-simd.wasm (build with flag '--enable_wasm_simd')
-         4. ort-wasm-simd-threaded.wasm (build with flags '--enable_wasm_threads --enable_wasm_simd')
+         * ort-wasm.wasm
+         * ort-wasm-threaded.wasm (build with flag '--enable_wasm_threads')
+         * ort-wasm-simd.wasm (build with flag '--enable_wasm_simd')
+         * ort-wasm-simd-threaded.wasm (build with flags '--enable_wasm_threads --enable_wasm_simd')
 
       3. Copy the following files from build output folder to `<ORT_ROOT>/js/web/lib/wasm/binding/`:
 
-         1. ort-wasm.js
-         2. ort-wasm-threaded.js (build with flag '--enable_wasm_threads')
-         3. ort-wasm-threaded.worker.js (build with flag '--enable_wasm_threads')
+         * ort-wasm.js
+         * ort-wasm-threaded.js (build with flag '--enable_wasm_threads')
+         * ort-wasm-threaded.worker.js (build with flag '--enable_wasm_threads')
 
 3. Use the following command in folder `<ORT_ROOT>/js/web` to build:
 
