@@ -9,9 +9,9 @@ nav_order: 4
 
 There are 2 steps to build ONNX Runtime Web:
 
-- build ONNX Runtime for WebAssembly
-  - or skip and download a pre-built artifacts
-- build onnxruntime-web (NPM package)
+1. Build (or download published artifacts for) ONNX Runtime for WebAssembly
+
+2. Build onnxruntime-web (NPM package)
 
 ## Contents
 {: .no_toc }
@@ -38,6 +38,8 @@ There are 2 steps to build ONNX Runtime Web:
   - python should be added to the PATH environment variable
 
 ### Build Instructions
+
+Note: `<ORT_ROOT>` refers to the root of the cloned onnxruntime source code repository.
 
 in `<ORT_ROOT>/`, run one of the following commands to build WebAssembly:
 
@@ -99,6 +101,8 @@ Q: unittest fails on Debug build with debug info.
 
 ### Build Instructions
 
+Note: `<ORT_ROOT>` refers to the root of the cloned onnxruntime source code repository.
+
 1. Install NPM packages
 
    1. in `<ORT_ROOT>/js/`, run `npm ci`.
@@ -107,17 +111,17 @@ Q: unittest fails on Debug build with debug info.
 
 2. Prepare ONNX Runtime WebAssembly artifacts.
 
-   You can either use the prebuilt artifacts or build it by yourself.
+   You can either use published artifacts, artifacts built from CI, or build from source.
 
-   * Setup by script.
+   1. Use released artifacts
 
      In `<ORT_ROOT>/js/web/`, run `npm run pull:wasm` to pull WebAssembly artifacts for latest master branch from CI pipeline.
 
-   * Download artifacts from pipeline manually.
+   2. Download artifacts from pipeline manually.
 
      You can download prebuilt WebAssembly artifacts from [Windows WebAssembly CI Pipeline](https://dev.azure.com/onnxruntime/onnxruntime/_build?definitionId=161&_a=summary). Select a build, download artifact "Release_wasm" and unzip. See instructions below to put files into destination folders.
 
-   * Build WebAssembly artifacts.
+   3. Build WebAssembly artifacts from source
 
      1. Build ONNX Runtime WebAssembly
 
@@ -125,16 +129,16 @@ Q: unittest fails on Debug build with debug info.
 
      2. Copy the following files from build output folder to `<ORT_ROOT>/js/web/dist/` (create the folder if it does not exist)
 
-         * ort-wasm.wasm
-         * ort-wasm-threaded.wasm (build with flag '--enable_wasm_threads')
-         * ort-wasm-simd.wasm (build with flag '--enable_wasm_simd')
-         * ort-wasm-simd-threaded.wasm (build with flags '--enable_wasm_threads --enable_wasm_simd')
+         1. ort-wasm.wasm
+         2. ort-wasm-threaded.wasm (build with flag '--enable_wasm_threads')
+         3. ort-wasm-simd.wasm (build with flag '--enable_wasm_simd')
+         4. ort-wasm-simd-threaded.wasm (build with flags '--enable_wasm_threads --enable_wasm_simd')
 
      3. Copy the following files from build output folder to `<ORT_ROOT>/js/web/lib/wasm/binding/`:
 
-         * ort-wasm.js
-         * ort-wasm-threaded.js (build with flag '--enable_wasm_threads')
-         * ort-wasm-threaded.worker.js (build with flag '--enable_wasm_threads')
+         1. ort-wasm.js
+         2. ort-wasm-threaded.js (build with flag '--enable_wasm_threads')
+         3. ort-wasm-threaded.worker.js (build with flag '--enable_wasm_threads')
 
 3. Use the following command in folder `<ORT_ROOT>/js/web` to build:
 
