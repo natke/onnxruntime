@@ -1,9 +1,9 @@
 ---
-title: API Basics
+title: Tutorials to get started 
 parent: Tutorials
 nav_order: 1
 ---
-# ONNX Runtime Inferencing: API Basics
+# ONNX Runtime Inferencing
 {: .no_toc }
 
 These tutorials demonstrate basic inferencing with ONNX Runtime with each language API. More examples can be found on [microsoft/onnxruntime-inference-examples](https://github.com/microsoft/onnxruntime-inference-examples).
