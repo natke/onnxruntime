@@ -1,0 +1,12 @@
+name: Publish C/C++ API Docs
+on:
+  workflow_dispatch
+
+jobs:
+  publish:
+    name: Publish C/C++ API docs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test command
+        run:
+          echo "Hello World"
