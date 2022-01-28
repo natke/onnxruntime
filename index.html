@@ -9,6 +9,7 @@
       gtag('js', new Date());
       gtag('config', 'UA-156955408-1');
     </script>
+	<script src="https://mfpembedcdnmsit.azureedge.net/mfpembedcontmsit/Embed.js" type="text/javascript"></script><link rel="stylesheet" type="text/css" href="https://mfpembedcdnmsit.azureedge.net/mfpembedcontmsit/Embed.css" /><script type = "text/javascript" >function renderSurvey(parentElementId,FirstName, LastName, locale, source){var se = new SurveyEmbed("v4j5cvGGr0GRqy180BHbR5Fx6MImwdxGrRkq0SN6ODhUMENLSzM3Uk1DVEpMMjVGNVpSQVVKTlVONSQlQCN0PWcu","https://customervoice.microsoft.com/","https://mfpembedcdnmsit.azureedge.net/mfpembedcontmsit/","true");var context = {"First Name": FirstName,"Last Name": LastName,"locale": locale,"source": source,};se.renderInline(parentElementId, context);}</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -117,6 +118,8 @@
 	                            </div>
 	                        </div>
 	                    </div>
+
+						<div id="surveyDiv"></div>
 
 						<div class="pt-1 pb-1 pt-md-3 pb-lg-3 px-5 mt-5 mb-0 alert alert-dark alert-dismissible fade show" role="alert">
 							Please help us improve ONNX Runtime by participating in our <a href="https://ncv.microsoft.com/UySXuzobM9">customer survey.</a>
@@ -750,6 +753,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="./js/custom.js?v1.6"></script>
     <script src="./js/script.js?v1.6"></script>
+	<script>
+		window.addEventListener('load', function () {
+			   renderSurvey("surveyDiv", "Bert", "Hair", "bert.hair@contoso.com", "Product Overview");
+		   }, false);
+   </script>
 
 </body>
 
