@@ -107,7 +107,7 @@ configured using the <cite>providers</cite> parameter.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span> <span class="o">=</span> <span class="n">onnxruntime</span><span class="o">.</span><span class="n">InferenceSession</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">providers</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;CUDAExecutionProvider&#39;</span><span class="p">,</span> <span class="s1">&#39;CPUExecutionProvider&#39;</span><span class="p">])</span>
 </pre></div>
 </div>
-<p>The list of available execution providers can be found here: <cite>Execution Providers &lt;https://onnxruntime.ai/docs/execution-providers&gt;_</cite>.</p>
+<p>The list of available execution providers can be found here: <a class="reference external" href="https://onnxruntime.ai/docs/execution-providers">Execution Providers</a>.</p>
 <p>You can supply other session configuration via the <cite>session options</cite> parameter. For example, to enable
 profiling on the session:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">options</span> <span class="o">=</span> <span class="n">onnxruntime</span><span class="o">.</span><span class="n">SessionOptions</span><span class="p">()</span>
@@ -228,7 +228,7 @@ Users can thus consume the <em>ONNX Runtime</em> allocated memory for the output
     <span class="n">Y_shape</span> <span class="o">=</span> <span class="o">...</span> <span class="c1"># You need to specify the output PyTorch tensor shape</span>
 <span class="n">Y_tensor</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">empty</span><span class="p">(</span><span class="n">Y_shape</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">float32</span><span class="p">,</span> <span class="n">device</span><span class="o">=</span><span class="s1">&#39;cuda:0&#39;</span><span class="o">.</span><span class="n">contiguous</span><span class="p">()</span>
 <span class="n">binding</span><span class="o">.</span><span class="n">bind_output</span><span class="p">(</span>
-    <span class="n">name</span><span class="o">=</span><span class="s1">&#39;z&#39;</span><span class="p">,</span>
+    <span class="n">name</span><span class="o">=</span><span class="s1">&#39;Y&#39;</span><span class="p">,</span>
     <span class="n">device_type</span><span class="o">=</span><span class="s1">&#39;cuda&#39;</span><span class="p">,</span>
     <span class="n">device_id</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
     <span class="n">element_type</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">,</span>
