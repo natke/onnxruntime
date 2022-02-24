@@ -122,7 +122,7 @@ before running the predictions.
 
  .. code-block:: none
 
-    onnxruntime_profile__2022-02-16_20-16-28.json
+    onnxruntime_profile__2022-02-24_01-31-44.json
 
 
 
@@ -156,20 +156,20 @@ Let's see what it contains.
 
     [{'args': {},
       'cat': 'Session',
-      'dur': 95,
+      'dur': 56,
       'name': 'model_loading_array',
       'ph': 'X',
-      'pid': 2881,
-      'tid': 2881,
-      'ts': 2},
+      'pid': 2932,
+      'tid': 2932,
+      'ts': 1},
      {'args': {},
       'cat': 'Session',
-      'dur': 275,
+      'dur': 253,
       'name': 'session_initialization',
       'ph': 'X',
-      'pid': 2881,
-      'tid': 2881,
-      'ts': 116}]
+      'pid': 2932,
+      'tid': 2932,
+      'ts': 74}]
 
 
 
