@@ -44,7 +44,7 @@
 <ul class="simple">
 <li><p><a class="reference internal" href="#api-overview" id="id1">API Overview</a></p>
 <ul>
-<li><p><a class="reference internal" href="#inference-session" id="id2">Inference Session</a></p></li>
+<li><p><a class="reference internal" href="#load-and-run-a-model" id="id2">Load and run a model</a></p></li>
 <li><p><a class="reference internal" href="#data-inputs-and-outputs" id="id3">Data inputs and outputs</a></p>
 <ul>
 <li><p><a class="reference internal" href="#data-on-cpu" id="id4">Data on CPU</a></p></li>
@@ -89,19 +89,32 @@
 <h2><a class="toc-backref" href="#id1">API Overview</a><a class="headerlink" href="#api-overview" title="Permalink to this headline">¶</a></h2>
 <p><em>ONNX Runtime</em> loads and runs inference on a model in ONNX graph format, or ORT format (for memory and disk constrained environments).</p>
 <p>The data consumed and produced by the model can be specified and accessed in the way that best matches your scenario.</p>
-<section id="inference-session">
-<h3><a class="toc-backref" href="#id2">Inference Session</a><a class="headerlink" href="#inference-session" title="Permalink to this headline">¶</a></h3>
+<section id="load-and-run-a-model">
+<h3><a class="toc-backref" href="#id2">Load and run a model</a><a class="headerlink" href="#load-and-run-a-model" title="Permalink to this headline">¶</a></h3>
 <p>InferenceSession is the main class of ONNX Runtime. It is used to load and run an ONNX model,
 as well as specify environment and application configuration options.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span> <span class="o">=</span> <span class="n">onnxruntime</span><span class="o">.</span><span class="n">InferenceSession</span><span class="p">(</span><span class="s1">&#39;model.onnx&#39;</span><span class="p">)</span>
+
+<span class="n">outputs</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">run</span><span class="p">([</span><span class="n">output</span> <span class="n">names</span><span class="p">],</span> <span class="n">inputs</span><span class="p">)</span>
+</pre></div>
+</div>
 <p>ONNX and ORT format models consist of a graph of computations, modeled as operators,
 and implemented as optimized operator kernels for different hardware targets.
 ONNX Runtime orchestrates the execution of operator kernels via <cite>execution providers</cite>.
 An execution provider contains the set of kernels for a specific execution target (CPU, GPU, IoT etc).
 Without any configuration, the inference session runs on CPU. Other execution provides are
 configured using the <cite>providers</cite> parameter.</p>
-<p>The list of available execution providers can be found here: <a class="reference external" href="https://onnxruntime.ai/docs/">https://onnxruntime.ai/docs/</a><a href="#id21"><span class="problematic" id="id22">execution-providers_</span></a>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span> <span class="o">=</span> <span class="n">onnxruntime</span><span class="o">.</span><span class="n">InferenceSession</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">providers</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;CUDAExecutionProvider&#39;</span><span class="p">,</span> <span class="s1">&#39;CPUExecutionProvider&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>The list of available execution providers can be found here: <cite>Execution Providers &lt;https://onnxruntime.ai/docs/execution-providers&gt;_</cite>.</p>
 <p>You can supply other session configuration via the <cite>session options</cite> parameter. For example, to enable
 profiling on the session:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">options</span> <span class="o">=</span> <span class="n">onnxruntime</span><span class="o">.</span><span class="n">SessionOptions</span><span class="p">()</span>
+<span class="n">options</span><span class="o">.</span><span class="n">enable_profiling</span><span class="o">=</span><span class="bp">True</span>
+<span class="n">session</span> <span class="o">=</span> <span class="n">onnxruntime</span><span class="o">.</span><span class="n">InferenceSession</span><span class="p">(</span><span class="s1">&#39;model.onnx&#39;</span><span class="p">,</span> <span class="n">sess_options</span><span class="o">=</span><span class="n">options</span><span class="p">)</span>
+</pre></div>
+</div>
 </section>
 <section id="data-inputs-and-outputs">
 <h3><a class="toc-backref" href="#id3">Data inputs and outputs</a><a class="headerlink" href="#data-inputs-and-outputs" title="Permalink to this headline">¶</a></h3>
