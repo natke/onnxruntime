@@ -7,7 +7,7 @@ on:
       # test workflow
       - csharp-docs
 jobs:
-  build:
+  publish:
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v3
@@ -21,7 +21,6 @@ jobs:
       run: dotnet build csharp/ApiDocs/ApiDocs.csproj --no-restore
       # name: Serve
       # run: docfx ".\csharp\ApiDocs\docfx.json" --serve
-  publish:
     - name: Set commit ID
       id: vars
       run: echo "::set-output name=sha_short::$(git rev-parse --short HEAD)"
