@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - master
+      # test workflow
+      - csharp-docs
   workflow_dispatch:
    inputs:
       logLevel:
