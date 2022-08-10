@@ -8,7 +8,7 @@ on:
       - csharp-docs
 jobs:
   publish:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
     - uses: actions/checkout@v3
     - name: Setup .NET
@@ -16,9 +16,9 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Restore dependencies
-      run: dotnet restore csharp/ApiDocs/ApiDocs.csproj
+      run: dotnet restore
     - name: Build
-      run: dotnet build csharp/ApiDocs/ApiDocs.csproj --no-restore
+      run: dotnet build --no-restore
       # name: Serve
       # run: docfx ".\csharp\ApiDocs\docfx.json" --serve
     - name: Set commit ID
@@ -29,9 +29,7 @@ jobs:
         ref: gh-pages
         clean: false
     - name: Move API docs into target area
-      run: |
-        rm -rf docs/api/csharp
-        mv ../csharp/ApiDocs/_site docs/api/csharp
+      run: MOVE csharp/ApiDocs/_site docs/api/csharp
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v3
       with:
