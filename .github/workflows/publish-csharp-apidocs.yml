@@ -7,7 +7,7 @@ on:
       - csharp-docs
 jobs:
   publish:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
     - uses: actions/checkout@v3
     - name: Setup .NET
@@ -29,16 +29,11 @@ jobs:
         clean: false
     - name: Move API docs into target area
       run: |
-        rm -rf docs/api/csharp
         cd docs
         cd api
-        ls
+        mkdir csharp
         cd ../../
-        cd csharp
-        ls
-        cd ApiDocs
-        ls
-        mv csharp/ApiDocs/_site docs/api/csharp
+        MOVE csharp/ApiDocs/_site docs/api/csharp
       #run: MOVE csharp/ApiDocs/_site docs/api/csharp
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v3
