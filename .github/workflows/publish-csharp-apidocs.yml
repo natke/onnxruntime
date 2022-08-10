@@ -16,9 +16,9 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Restore dependencies
-      run: dotnet restore ../csharp/ApiDocs/ApiDocs.csproj
+      run: dotnet restore /csharp/ApiDocs/ApiDocs.csproj
     - name: Build
-      run: dotnet build ../csharp/ApiDocs/ApiDocs.csproj --no-restore
+      run: dotnet build /csharp/ApiDocs/ApiDocs.csproj --no-restore
       # name: Serve
       # run: docfx ".\csharp\ApiDocs\docfx.json" --serve
     - name: Set commit ID
