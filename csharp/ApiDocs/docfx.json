@@ -4,9 +4,9 @@
       "src": [
         {
           "files": [
-            "**/**.csproj"
+            "src/Microsoft.ML.OnnxRuntime/**.csproj"
           ],
-          "src": "C:\\code\\onnxruntime\\csharp\\src\\Microsoft.ML.OnnxRuntime"
+          "src": "../"
         }
       ],
       "dest": "api",
@@ -25,10 +25,11 @@
       {
         "files": [
           //"articles/**.md",
-          //"articles/**/toc.yml",
-          "toc.yml",
-          "*.md"
-        ]
+          //"articles/**/
+            "toc.yml\",",
+            "toc.yml",
+            "*.md"
+          ]
       }
     ],
     "resource": [
