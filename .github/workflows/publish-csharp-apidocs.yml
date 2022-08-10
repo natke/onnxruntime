@@ -43,3 +43,4 @@ jobs:
         title: '[Automated]: Update C# API docs'
         commit-message: 'Update C# API docs to commit ${{ steps.vars.outputs.sha_short }}'
         add-paths: docs/api/csharp
+        run: git add csharp/
