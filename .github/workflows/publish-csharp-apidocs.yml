@@ -50,11 +50,7 @@ jobs:
         add-paths: docs/api/csharp
     - name: Check Path
       run: |
-        ls
-        cd docs
-        ls
-        cd api
-        cd csharp
+        cd docs/api/csharp
         ls
         cd _site
         ls
