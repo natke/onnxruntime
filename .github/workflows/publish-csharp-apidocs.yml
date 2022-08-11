@@ -26,14 +26,12 @@ jobs:
         wget https://github.com/dotnet/docfx/releases/download/v2.59.3/docfx.zip
         unzip docfx.zip
         ls
-        cd ../
-        ls
 
     - name: Build
       run: |
-        .tools/docfx/docfx.exe metadata  csharp/ApiDocs/docfx.json
+        .tools/docfx.exe metadata  csharp/ApiDocs/docfx.json
         dotnet build csharp/ApiDocs/ApiDocs.csproj --no-restore
-        .tools/docfx/docfx.exe build csharp/ApiDocs/docfx.json
+        .tools/docfx.exe build csharp/ApiDocs/docfx.json
 
     - name: Set commit ID
       id: vars
@@ -42,13 +40,6 @@ jobs:
       with:
         ref: gh-pages
         clean: false
-    # - name: Move API docs into target area
-    #   run: |
-    #     cd docs
-    #     cd api
-    #     mkdir csharp
-    #     cd ../../
-    #     MOVE csharp/ApiDocs/_site docs/api/csharp
     - name: Move API docs into target area
       run: |
         rm -rf docs/api/csharp
