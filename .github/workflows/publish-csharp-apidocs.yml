@@ -35,6 +35,7 @@ jobs:
         cd ../../
         MOVE csharp/ApiDocs/_site docs/api/csharp
     - name: Push changes to new branch
+    - uses: actions/checkout@v2
       with:
           branch: gh-pages-pr-csharp-docs
           base: gh-pages
