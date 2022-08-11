@@ -29,9 +29,9 @@ jobs:
 
     - name: Build
       run: |
-        sudo .tools/docfx.exe metadata csharp/ApiDocs/docfx.json
+        sudo .tools/docfx/docfx.exe metadata csharp/ApiDocs/docfx.json
         dotnet build csharp/ApiDocs/ApiDocs.csproj --no-restore
-        sudo .tools/docfx.exe build csharp/ApiDocs/docfx.json
+        sudo .tools/docfx/docfx.exe build csharp/ApiDocs/docfx.json
 
     - name: Set commit ID
       id: vars
