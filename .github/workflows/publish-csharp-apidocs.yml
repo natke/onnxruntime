@@ -23,15 +23,16 @@ jobs:
         cd .tools
         sudo apt update
         sudo apt install unzip
+        sudo apt install wine64 wine32
         wget https://github.com/dotnet/docfx/releases/download/v2.59.3/docfx.zip
         unzip docfx.zip
         cd ../
 
     - name: Build
       run: |
-        sudo sh .tools/docfx/docfx.exe metadata csharp/ApiDocs/docfx.json
+        sudo wine .tools/docfx/docfx.exe metadata csharp/ApiDocs/docfx.json
         dotnet build csharp/ApiDocs/ApiDocs.csproj --no-restore
-        sudo sh .tools/docfx/docfx.exe build csharp/ApiDocs/docfx.json
+        sudo wine .tools/docfx/docfx.exe build csharp/ApiDocs/docfx.json
 
     - name: Set commit ID
       id: vars
