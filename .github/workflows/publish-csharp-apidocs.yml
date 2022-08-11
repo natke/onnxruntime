@@ -52,8 +52,6 @@ jobs:
       run: |
         cd docs/api/csharp
         ls
-        cd _site
-        ls
         cd api
         ls
   # close_pull_request_job:
