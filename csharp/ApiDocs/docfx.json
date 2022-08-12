@@ -9,7 +9,7 @@
           "src": "../"
         }
       ],
-      "dest": "api",
+      "dest": "dest",
       "disableGitFeatures": false,
       "disableDefaultFilter": false
     }
@@ -46,11 +46,11 @@
         ],
         "exclude": [
           "obj/**",
-          "_site/**"
+          "dest/**"
         ]
       }
     ],
-    "dest": "_site",
+    "dest": "dest",
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
     "template": [
