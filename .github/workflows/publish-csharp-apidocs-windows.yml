@@ -40,6 +40,9 @@ jobs:
 
     - name: Build Documentation
       run: |
+        ls
+        cd ../
+        ls
         .tools/docfx/docfx.exe metadata csharp/ApiDocs/docfx.json
         dotnet build csharp/ApiDocs/ApiDocs.csproj --no-restore
         .tools/docfx/docfx.exe build csharp/ApiDocs/docfx.json
