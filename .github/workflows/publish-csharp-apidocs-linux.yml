@@ -1,56 +1,56 @@
-on:
-  push:
-    branches:
-      - main
-      - csharp-docs
-jobs:
-  publish:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v3
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v2
-      with:
-        dotnet-version: 6.0.x
-    - name: Restore dependencies
-      run: dotnet restore csharp/ApiDocs/ApiDocs.csproj
-    - name: Build
-      run: dotnet build csharp/ApiDocs/ApiDocs.csproj --no-restore
-    - name: Set commit ID
-      id: vars
-      run: echo "::set-output name=sha_short::$(git rev-parse --short HEAD)"
-    - uses: actions/checkout@v2
-      with:
-        ref: gh-pages
-        clean: false
-    - name: Move API docs into target area
-      run: |
-        rm -rf docs/api/csharp
-        mv csharp/ApiDocs/dest docs/api/csharp
-    - name: Git Add
-      run: git add .
-    - name: Create Pull Request
-      uses: peter-evans/create-pull-request@v3
-      with:
-        branch: gh-pages-pr-csharp-docs
-        base: gh-pages
-        title: '[Automated]: Update C# API docs'
-        commit-message: 'Update C# API docs to commit ${{ steps.vars.outputs.sha_short }}'
-        add-paths: docs/api/csharp
-    - name: Check Path
-      run: |
-        cd docs/api/csharp
-        ls
-        cd api
-        ls
-  # close_pull_request_job:
-  #   if: github.event_name == 'pull_request' && github.event.action == 'closed'
-  #   runs-on: ubuntu-latest
-  #   name: Close Pull Request Job
-  #   steps:
-  #     - name: Close Pull Request
-  #       id: closepullrequest
-  #       uses: Azure/static-web-apps-deploy@v1
-  #       with:
-  #         azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_BRAVE_TREE_0A912CC1E }}
-  #         action: "close"
+# on:
+#   push:
+#     branches:
+#       - main
+#       - csharp-docs
+# jobs:
+#   publish:
+#     runs-on: ubuntu-latest
+#     steps:
+#     - uses: actions/checkout@v3
+#     - name: Setup .NET
+#       uses: actions/setup-dotnet@v2
+#       with:
+#         dotnet-version: 6.0.x
+#     - name: Restore dependencies
+#       run: dotnet restore csharp/ApiDocs/ApiDocs.csproj
+#     - name: Build
+#       run: dotnet build csharp/ApiDocs/ApiDocs.csproj --no-restore
+#     - name: Set commit ID
+#       id: vars
+#       run: echo "::set-output name=sha_short::$(git rev-parse --short HEAD)"
+#     - uses: actions/checkout@v2
+#       with:
+#         ref: gh-pages
+#         clean: false
+#     - name: Move API docs into target area
+#       run: |
+#         rm -rf docs/api/csharp
+#         mv csharp/ApiDocs/dest docs/api/csharp
+#     - name: Git Add
+#       run: git add .
+#     - name: Create Pull Request
+#       uses: peter-evans/create-pull-request@v3
+#       with:
+#         branch: gh-pages-pr-csharp-docs
+#         base: gh-pages
+#         title: '[Automated]: Update C# API docs'
+#         commit-message: 'Update C# API docs to commit ${{ steps.vars.outputs.sha_short }}'
+#         add-paths: docs/api/csharp
+#     - name: Check Path
+#       run: |
+#         cd docs/api/csharp
+#         ls
+#         cd api
+#         ls
+#   # close_pull_request_job:
+#   #   if: github.event_name == 'pull_request' && github.event.action == 'closed'
+#   #   runs-on: ubuntu-latest
+#   #   name: Close Pull Request Job
+#   #   steps:
+#   #     - name: Close Pull Request
+#   #       id: closepullrequest
+#   #       uses: Azure/static-web-apps-deploy@v1
+#   #       with:
+#   #         azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_BRAVE_TREE_0A912CC1E }}
+#   #         action: "close"
