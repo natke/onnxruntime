@@ -1,4 +1,4 @@
-name: Update C# API Docs
+name: Update C# API Docs Windows
 on:
   push:
     branches:
