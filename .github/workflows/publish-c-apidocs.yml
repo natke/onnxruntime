@@ -3,7 +3,6 @@ on:
   push:
     branches:
       - master
-
 jobs:
   publish:
     name: Generate C/C++ API docs
