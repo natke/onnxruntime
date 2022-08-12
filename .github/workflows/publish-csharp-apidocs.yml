@@ -54,6 +54,14 @@ jobs:
         mkdir csharp
         cd ../../
         MOVE csharp/ApiDocs/dest docs/api/csharp
+          ls
+          cd docs
+          cd api
+          cd csharp
+          cd _site
+          cd api
+          ls
+          cd ../../../../../
     - name: Git Checkin
       run: git add .
     - name: Create Pull Request
@@ -63,12 +71,3 @@ jobs:
         base: gh-pages
         title: '[Automated]: Update C# API docs'
         commit-message: 'Update C# API docs to commit ${{ steps.vars.outputs.sha_short }}'
-        add-paths: docs/api/csharp, doc/api/csharp/dest, docs/api/csharp/dest/api
-    - name: Check Path
-      run: |
-        ls
-        cd docs
-        ls
-        cd api
-        cd csharp
-        ls
