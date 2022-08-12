@@ -26,7 +26,8 @@ jobs:
         sudo apt install unzip
         sudo apt-get install mono-complete
         sudo apt install wine64
-        mono --version
+        sudo apt-get install winetricks
+        winetricks dotnet45
         wget https://github.com/dotnet/docfx/releases/download/v2.59.3/docfx.zip
         unzip docfx.zip
         cd ../
