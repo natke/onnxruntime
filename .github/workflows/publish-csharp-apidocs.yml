@@ -58,7 +58,7 @@ jobs:
           cd docs
           cd api
           cd csharp
-          cd _site
+          cd dest
           cd api
           ls
           cd ../../../../../
