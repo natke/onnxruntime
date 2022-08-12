@@ -59,8 +59,9 @@ jobs:
         cd api
         cd csharp
         cd _site
+        cd api
         ls
-        cd ../../../../
+        cd ../../../../../
     - name: Git Checkin
       run: git add .
     - name: Create Pull Request
