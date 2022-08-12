@@ -40,9 +40,9 @@ jobs:
 
     - name: Build Documentation
       run: |
-        .tools/docfx/docfx.exe metadata docs/docfx.json
+        .tools/docfx/docfx.exe metadata csharp/ApiDocs/docfx.json
         dotnet build csharp/ApiDocs/ApiDocs.csproj --no-restore
-        .tools/docfx/docfx.exe build docs/docfx.json
+        .tools/docfx/docfx.exe build csharp/ApiDocs/docfx.json
       # powershell -ExecutionPolicy ByPass -command "docs\FixApiRefLinks" -Path artifacts\docs_site\api\
 
     - name: Move API docs into target area
