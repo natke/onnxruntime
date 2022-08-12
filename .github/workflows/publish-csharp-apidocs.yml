@@ -25,7 +25,6 @@ jobs:
         sudo apt-get update
         sudo apt install unzip
         sudo apt install wine64
-        sudo apt install wine32
         sudo apt-get install mono-complete
         mono --version
         wget https://github.com/dotnet/docfx/releases/download/v2.59.3/docfx.zip
