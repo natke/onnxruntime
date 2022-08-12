@@ -16,9 +16,9 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore csharp/ApiDocs/ApiDocs.csproj
     - name: Build
-      run: |
-      dotnet build csharp/ApiDocs/ApiDocs.csproj --no-restore
-      powershell -ExecutionPolicy ByPass -command "csharp\ApiDocs\FixDocLinks" -Path docs\api\csharp\dest\api\
+      run: dotnet build csharp/ApiDocs/ApiDocs.csproj --no-restore
+    - name: Fix Links Script
+      run: powershell -ExecutionPolicy ByPass -command "csharp\ApiDocs\FixDocLinks" -Path docs\api\csharp\dest\api\
     - name: Set commit ID
       id: vars
       run: echo "::set-output name=sha_short::$(git rev-parse --short HEAD)"
