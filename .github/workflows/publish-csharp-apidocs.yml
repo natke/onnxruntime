@@ -19,14 +19,6 @@ jobs:
     #   run: dotnet build csharp/ApiDocs/ApiDocs.csproj --no-restore
       # name: Serve
       # run: docfx ".\csharp\ApiDocs\docfx.json" --serve
-    - name: Set commit ID
-      id: vars
-      run: echo "::set-output name=sha_short::$(git rev-parse --short HEAD)"
-    - uses: actions/checkout@v2
-      with:
-        ref: gh-pages
-        clean: false
-
     - name: Download DocFX
       run: |
         mkdir .tools/docfx
@@ -48,7 +40,13 @@ jobs:
         dotnet build csharp/ApiDocs/ApiDocs.csproj --no-restore
         .tools/docfx/docfx.exe build csharp/ApiDocs/docfx.json
       # powershell -ExecutionPolicy ByPass -command "docs\FixApiRefLinks" -Path artifacts\docs_site\api\
-
+    - name: Set commit ID
+      id: vars
+      run: echo "::set-output name=sha_short::$(git rev-parse --short HEAD)"
+    - uses: actions/checkout@v2
+      with:
+        ref: gh-pages
+        clean: false
     - name: Move API docs into target area
       run: |
         cd docs
