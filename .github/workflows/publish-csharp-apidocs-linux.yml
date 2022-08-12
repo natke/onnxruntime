@@ -3,8 +3,8 @@ name: Update C# API Docs
 on:
   push:
     branches:
-      - master
-      - csharp-docs
+      # - main
+      # - csharp-docs
 jobs:
   publish:
     runs-on: ubuntu-latest
