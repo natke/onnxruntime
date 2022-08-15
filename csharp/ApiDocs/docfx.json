@@ -20,17 +20,19 @@
         "files": [
           "api/**.yml",
           "api/**.html",
-          "api/index.md"
+          "api/index.md",
+          "api/**/index.md"
         ] 
       },
       {
         "files": [
           //"articles/**.md",
           //"articles/**/
-            "toc.yml\",",
-            "toc.yml",
-            "*.md"
-          ]
+          "toc.yml\",",
+          "toc.yml",
+          "*.md",
+          "api/toc.yml"
+        ]
       }
     ],
     "resource": [
@@ -43,7 +45,7 @@
     "overwrite": [
       {
         "files": [
-          "apidoc/**.md"
+          "api/**.md"
         ],
         "exclude": [
           "obj/**",
@@ -62,7 +64,7 @@
     "markdownEngineName": "markdig",
     "noLangKeyword": false,
     "keepFileLink": false,
-    "cleanupCacheHistory": true,
+    "cleanupCacheHistory": false,
     "disableGitFeatures": false
   }
 }
