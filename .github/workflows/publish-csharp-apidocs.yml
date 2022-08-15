@@ -30,7 +30,7 @@ jobs:
         cd api
         mkdir csharp
         cd ../../
-        MOVE csharp/ApiDocs/dest/api docs/api/csharp
+        MOVE csharp/ApiDocs/dest docs/api/csharp
     - name: Git Checkin
       run: git add .
     - name: Create Pull Request
