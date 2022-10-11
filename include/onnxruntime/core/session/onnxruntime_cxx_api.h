@@ -1007,8 +1007,8 @@ struct ValueImpl : ConstValueImpl<T> {
   /// <summary>
   ///  Set a single string in a string tensor
   /// </summary>
-  /// <param>s A null terminated UTF-8 encoded string</param>
-  /// <param>index Index of the string in the tensor to set</param>
+  /// <param name="s">A null terminated UTF-8 encoded string</param>
+  /// <param name="index">Index of the string in the tensor to set</param>
   void FillStringTensorElement(const char* s, size_t index);
 
 #if !defined(DISABLE_SPARSE_TENSORS)
