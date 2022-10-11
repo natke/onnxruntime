@@ -2,12 +2,24 @@ name: Update C/C++ API Docs
 on:
   push:
     branches:
-      - master
+      - main
+  workflow_dispatch:
 
 jobs:
   publish:
     name: Generate C/C++ API docs
     runs-on: ubuntu-latest
+
+    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
+    permissions:
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
+
+    # Deploy to the github-pages environment
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
       - uses: actions/checkout@v2
       - name: Install doxygen and dependencies
@@ -33,11 +45,8 @@ jobs:
         run: |
           rm -rf docs/api/c
           mv build/doxygen/html docs/api/c
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v3
-        with:
-          branch: gh-pages-pr
-          base: gh-pages
-          title: '[Automated]: Update C/C++ API docs'
-          commit-message: 'Update C/C++ API docs to commit ${{ steps.vars.outputs.sha_short }}'
-          add-paths: docs/api/c
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1

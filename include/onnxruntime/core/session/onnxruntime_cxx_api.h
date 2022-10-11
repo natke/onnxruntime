@@ -269,7 +269,7 @@ struct Base<const T>;
 
 /// <summary>
 /// Covers unowned pointers owned by either the ORT
-/// or some other instance of CPP wrappers. 
+/// or some other instance of CPP wrappers.
 /// Used for ConstXXX and UnownedXXXX types that are copyable.
 /// Also convenient to wrap raw OrtXX pointers .
 /// </summary>
@@ -328,7 +328,7 @@ using AllocatedStringPtr = std::unique_ptr<char, detail::AllocatedFree>;
  *  constructors to construct an instance of a Status object from exceptions.
  */
 struct Status : detail::Base<OrtStatus> {
-  
+
   explicit Status(std::nullptr_t) {}       ///< Create an empty object, must be assigned a valid one to be used
   explicit Status(OrtStatus* status);      ///< Takes ownership of OrtStatus instance returned from the C API. Must be non-null
   explicit Status(const Exception&);       ///< Creates status instance out of exception
@@ -1000,8 +1000,8 @@ struct ValueImpl : ConstValueImpl<T> {
   /// <summary>
   /// Set all strings at once in a string tensor
   /// </summary>
-  /// <param>[in] s An array of strings. Each string in this array must be null terminated.</param>
-  /// <param>s_len Count of strings in s (Must match the size of \p value's tensor shape)</param>
+  /// <param name='s'>An array of strings. Each string in this array must be null terminated.</param>
+  /// <param name='s_len'>Count of strings in s (Must match the size of \p value's tensor shape)</param>
   void FillStringTensor(const char* const* s, size_t s_len);
 
   /// <summary>
