@@ -10,16 +10,6 @@ jobs:
     name: Generate C/C++ API docs
     runs-on: ubuntu-latest
 
-    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
-    permissions:
-      pages: write      # to deploy to Pages
-      id-token: write   # to verify the deployment originates from an appropriate source
-
-    # Deploy to the github-pages environment
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
     steps:
       - uses: actions/checkout@v2
       - name: Install doxygen and dependencies
@@ -29,26 +19,15 @@ jobs:
           sudo apt-get install libclang-cpp9
           wget https://www.doxygen.nl/files/doxygen-1.9.2.linux.bin.tar.gz
           tar xvzf doxygen-1.9.2.linux.bin.tar.gz
-      - name: Set commit ID
-        id: vars
-        run: echo "::set-output name=sha_short::$(git rev-parse --short HEAD)"
       - name: Run doxygen
         run: |
           mkdir -p build/doxygen
           cd docs/c_cxx
           ../../doxygen-1.9.2/bin/doxygen
-      - uses: actions/checkout@v2
-        with:
-          ref: gh-pages
-          clean: false
-      - name: Move API docs into target area
-        run: |
-          rm -rf docs/api/c
-          mv build/doxygen/html docs/api/c
       - uses: actions/upload-artifact@v3
         with:
           name: c-apidocs
-          path: docs/api/c
+          path: build/doxygen/html
           retention-days: 90
 
   build-and-deploy-website:

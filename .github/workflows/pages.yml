@@ -56,10 +56,6 @@ jobs:
         run: |
           sudo rm -rf _site/docs/api/c
           sudo mv c-apidocs _site/docs/api/c
-      - name: Debug
-        run: |
-          pwd
-          find .
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v1
