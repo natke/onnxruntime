@@ -27,7 +27,6 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  # Build job
   build:
     environment:
       name: github-pages
@@ -48,6 +47,10 @@ jobs:
         uses: actions/configure-pages@v2
       - name: Build site
         uses: actions/jekyll-build-pages@v1
+  download:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
       - name: Download C/C++ API docs
         uses: actions/download-artifact@v1
         with:
@@ -56,11 +59,13 @@ jobs:
         run: |
           sudo rm -rf _site/docs/api/c
           sudo mv c-apidocs _site/docs/api/c
+  upload:
+    runs-on: ubuntu-latest
+    steps:
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v1
 
-  # Deployment job
   deploy:
     environment:
       name: github-pages
