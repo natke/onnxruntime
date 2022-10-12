@@ -49,6 +49,7 @@ jobs:
         with:
           name: c-apidocs
           path: docs/api/c
+          retention-days: 90
 
   build-and-deploy-website:
     needs: "generate"
