@@ -47,6 +47,8 @@ jobs:
         id: pages
         uses: actions/configure-pages@v2
       - name: Build with Jekyll
+        with:
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
         # Outputs to the './_site' directory by default
         run: |
           git remote -v
