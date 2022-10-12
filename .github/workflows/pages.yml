@@ -55,7 +55,7 @@ jobs:
       - name: Move C/C++ API docs into site
         run: |
           sudo rm -rf _site/docs/api/c
-          mv c_apidocs _site/docs/api/c
+          mv c-apidocs _site/docs/api/c
       - name: Debug
         run: |
           pwd
