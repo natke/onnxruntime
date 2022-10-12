@@ -50,6 +50,8 @@ jobs:
         # Outputs to the './_site' directory by default
         run: |
           git remote -v
+          pwd
+          find .
           bundle exec jekyll build
         env:
           JEKYLL_ENV: production
