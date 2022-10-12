@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  publish:
+  generate:
     name: Generate C/C++ API docs
     runs-on: ubuntu-latest
 
@@ -49,4 +49,5 @@ jobs:
           find .
 
   build-and-deploy-website:
+    needs: "generate"
     uses: ./.github/workflows/pages.yml
