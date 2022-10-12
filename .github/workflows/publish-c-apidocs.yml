@@ -48,5 +48,5 @@ jobs:
           pwd
           find .
 
-  call-workflow-2-in-local-repo:
+  build-and-deploy-website:
     uses: ./.github/workflows/pages.yml
