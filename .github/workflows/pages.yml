@@ -54,7 +54,7 @@ jobs:
           name: c-apidocs
       - name: Move C/C++ API docs into site
         run: |
-          rm -rf _site/docs/api/c
+          sudo rm -rf _site/docs/api/c
           mv c_apidocs _site/docs/api/c
       - name: Debug
         run: |
