@@ -47,7 +47,7 @@ jobs:
         id: pages
         uses: actions/configure-pages@v2
       - name: Build site
-        uses: actions/build-jekyll-pages
+        uses: actions/build-jekyll-pages@v1
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v1
