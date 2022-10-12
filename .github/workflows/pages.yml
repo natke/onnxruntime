@@ -48,6 +48,14 @@ jobs:
         uses: actions/configure-pages@v2
       - name: Build site
         uses: actions/jekyll-build-pages@v1
+      - name: Download C API docs
+        uses: actions/download-artifact@v1
+        with:
+          name: c-apidocs
+      - name: Debug
+        run: |
+          pwd
+          find .
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v1
