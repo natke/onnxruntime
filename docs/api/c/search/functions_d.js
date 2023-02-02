@@ -2,7 +2,7 @@ var searchData=
 [
   ['registerallocator_0',['RegisterAllocator',['../struct_ort_api.html#a39b702897cc61157248ffde413b14b9d',1,'OrtApi']]],
   ['registercustomopslibrary_1',['RegisterCustomOpsLibrary',['../struct_ort_api.html#a4dc58d1aa01d67494a3fb4ce00e9a929',1,'OrtApi']]],
-  ['release_2',['release',['../struct_ort_1_1_base.html#a2f4ae170cb8adebc982cb2dea39325c9',1,'Ort::Base']]],
+  ['release_2',['release',['../struct_ort_1_1detail_1_1_base.html#a77e438d539c77870789686c70b031802',1,'Ort::detail::Base']]],
   ['releaseallocator_3',['ReleaseAllocator',['../struct_ort_api.html#a32f86964e43bf64110d3ed9d6db1befc',1,'OrtApi']]],
   ['releasearenacfg_4',['ReleaseArenaCfg',['../struct_ort_api.html#aa4c5523ec4f482dd9b51d401c18f07db',1,'OrtApi']]],
   ['releaseavailableproviders_5',['ReleaseAvailableProviders',['../struct_ort_api.html#ae63f0ce72aace3fa0702b1a9951ca5c4',1,'OrtApi']]],
@@ -25,7 +25,7 @@ var searchData=
   ['releasethreadingoptions_22',['ReleaseThreadingOptions',['../struct_ort_api.html#aa2053c5c5c1c91f1b32c43d8b0e087c6',1,'OrtApi']]],
   ['releasetypeinfo_23',['ReleaseTypeInfo',['../struct_ort_api.html#ac15270345d9e9d8b5829e7db6c24fb6e',1,'OrtApi']]],
   ['releasevalue_24',['ReleaseValue',['../struct_ort_api.html#a426f5df37bf3edfe76f51babd38c351d',1,'OrtApi']]],
-  ['run_25',['Run',['../struct_ort_api.html#ad8b12cad4160d43da92f49191cd91895',1,'OrtApi::Run()'],['../struct_ort_1_1_session.html#ae1149a662d2a2e218e5740672bbf0ebe',1,'Ort::Session::Run(const RunOptions &amp;run_options, const char *const *input_names, const Value *input_values, size_t input_count, const char *const *output_names, size_t output_count)'],['../struct_ort_1_1_session.html#a5e8b224cbe595da841897ac02fd20777',1,'Ort::Session::Run(const RunOptions &amp;run_options, const char *const *input_names, const Value *input_values, size_t input_count, const char *const *output_names, Value *output_values, size_t output_count)'],['../struct_ort_1_1_session.html#ad34947969abc55f205021ac968e783ff',1,'Ort::Session::Run(const RunOptions &amp;run_options, const struct IoBinding &amp;)']]],
+  ['run_25',['Run',['../struct_ort_api.html#ad8b12cad4160d43da92f49191cd91895',1,'OrtApi::Run()'],['../struct_ort_1_1detail_1_1_session_impl.html#af3f7d273f5e468ef21ef0d56d48c32fd',1,'Ort::detail::SessionImpl::Run(const RunOptions &amp;run_options, const char *const *input_names, const Value *input_values, size_t input_count, const char *const *output_names, size_t output_count)'],['../struct_ort_1_1detail_1_1_session_impl.html#af5c930bdd9aadf1c9ed154d59fe63a66',1,'Ort::detail::SessionImpl::Run(const RunOptions &amp;run_options, const char *const *input_names, const Value *input_values, size_t input_count, const char *const *output_names, Value *output_values, size_t output_count)'],['../struct_ort_1_1detail_1_1_session_impl.html#aba18502e41f8dd46038e3de1efa363b5',1,'Ort::detail::SessionImpl::Run(const RunOptions &amp;run_options, const IoBinding &amp;)']]],
   ['runoptions_26',['RunOptions',['../struct_ort_1_1_run_options.html#a89e09783a59b61dfb61bcfa052f7f4bc',1,'Ort::RunOptions::RunOptions(std::nullptr_t)'],['../struct_ort_1_1_run_options.html#aecca727dda56bbefb1d339ed3b714168',1,'Ort::RunOptions::RunOptions()']]],
   ['runoptionsgetrunlogseveritylevel_27',['RunOptionsGetRunLogSeverityLevel',['../struct_ort_api.html#ab7e8ad50de747fc029d4bf1499a719de',1,'OrtApi']]],
   ['runoptionsgetrunlogverbositylevel_28',['RunOptionsGetRunLogVerbosityLevel',['../struct_ort_api.html#a66d9f4d54f36ed90dc39195c34716bd2',1,'OrtApi']]],

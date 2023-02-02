@@ -14,5 +14,6 @@ var searchData=
   ['trt_5fint8_5fuse_5fnative_5fcalibration_5ftable_11',['trt_int8_use_native_calibration_table',['../struct_ort_tensor_r_t_provider_options.html#abd1d8ead04c4035da6af7ba489946d33',1,'OrtTensorRTProviderOptions']]],
   ['trt_5fmax_5fpartition_5fiterations_12',['trt_max_partition_iterations',['../struct_ort_tensor_r_t_provider_options.html#a1c6b1ff29c89571529c2a9df09c2b743',1,'OrtTensorRTProviderOptions']]],
   ['trt_5fmax_5fworkspace_5fsize_13',['trt_max_workspace_size',['../struct_ort_tensor_r_t_provider_options.html#a23a942408cffeb8ef7608a4a2520a994',1,'OrtTensorRTProviderOptions']]],
-  ['trt_5fmin_5fsubgraph_5fsize_14',['trt_min_subgraph_size',['../struct_ort_tensor_r_t_provider_options.html#abf8d3f7f7a623abf16c66e9d4d0914d5',1,'OrtTensorRTProviderOptions']]]
+  ['trt_5fmin_5fsubgraph_5fsize_14',['trt_min_subgraph_size',['../struct_ort_tensor_r_t_provider_options.html#abf8d3f7f7a623abf16c66e9d4d0914d5',1,'OrtTensorRTProviderOptions']]],
+  ['tunable_5fop_5fenabled_15',['tunable_op_enabled',['../struct_ort_c_u_d_a_provider_options.html#a89ece15f07b0f01538b3ea411d52d0e6',1,'OrtCUDAProviderOptions::tunable_op_enabled()'],['../struct_ort_r_o_c_m_provider_options.html#ad57307c2950ffd2db1f4aa97c9c1797f',1,'OrtROCMProviderOptions::tunable_op_enabled()']]]
 ];
