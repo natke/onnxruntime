@@ -3,6 +3,7 @@ var struct_ort_custom_op =
     [ "CreateKernel", "struct_ort_custom_op.html#a82ec6e8d3225b82e7f62fec857f374ba", null ],
     [ "GetExecutionProviderType", "struct_ort_custom_op.html#ab9cb073ec683a08643bac6ca50bbf2e2", null ],
     [ "GetInputCharacteristic", "struct_ort_custom_op.html#a9efee01f336fd579c88d919116e0dff4", null ],
+    [ "GetInputMemoryType", "struct_ort_custom_op.html#a7dcbfde88eefbb30ed0b99f9a74c959a", null ],
     [ "GetInputType", "struct_ort_custom_op.html#a8f5af15c496358ddc8e75a77811f5983", null ],
     [ "GetInputTypeCount", "struct_ort_custom_op.html#a105312afe4270e2a1f15594e50f2b752", null ],
     [ "GetName", "struct_ort_custom_op.html#a2f82bab65faa080fed2dbcdf36d5e96a", null ],

@@ -15,6 +15,7 @@ var group___global =
       [ "do_copy_in_default_stream", "struct_ort_c_u_d_a_provider_options.html#a5186a856edeaf860dc547db309e85f95", null ],
       [ "gpu_mem_limit", "struct_ort_c_u_d_a_provider_options.html#a69e9ef15821960254f52adc33a8d0f92", null ],
       [ "has_user_compute_stream", "struct_ort_c_u_d_a_provider_options.html#a2ca74dbd91996bad4a1c81af705a0ac7", null ],
+      [ "tunable_op_enabled", "struct_ort_c_u_d_a_provider_options.html#a89ece15f07b0f01538b3ea411d52d0e6", null ],
       [ "user_compute_stream", "struct_ort_c_u_d_a_provider_options.html#a610a0511f8795bdd2b137f0138cfc88f", null ]
     ] ],
     [ "OrtROCMProviderOptions", "struct_ort_r_o_c_m_provider_options.html", [
@@ -26,6 +27,7 @@ var group___global =
       [ "gpu_mem_limit", "struct_ort_r_o_c_m_provider_options.html#a7c7c135368a2e0d66f6714b29574ceb3", null ],
       [ "has_user_compute_stream", "struct_ort_r_o_c_m_provider_options.html#ad067f914da5032b44ae4a4806eae778e", null ],
       [ "miopen_conv_exhaustive_search", "struct_ort_r_o_c_m_provider_options.html#afb27ec844e96c69711c8a46461616157", null ],
+      [ "tunable_op_enabled", "struct_ort_r_o_c_m_provider_options.html#ad57307c2950ffd2db1f4aa97c9c1797f", null ],
       [ "user_compute_stream", "struct_ort_r_o_c_m_provider_options.html#ab6a3987beb2e7022069a0f31a14e8471", null ]
     ] ],
     [ "OrtTensorRTProviderOptions", "struct_ort_tensor_r_t_provider_options.html", [
@@ -97,6 +99,7 @@ var group___global =
       [ "CreateAndRegisterAllocator", "struct_ort_api.html#a6a0ca4d136819eafea7d87e7f87a82db", null ],
       [ "CreateArenaCfg", "struct_ort_api.html#a8f434054a695048e551109ad1166b6b3", null ],
       [ "CreateArenaCfgV2", "struct_ort_api.html#a8cb2e18f00a20d076212102177abc00c", null ],
+      [ "CreateCANNProviderOptions", "struct_ort_api.html#a6415d89ebbda1e04484dab10b36c3fdb", null ],
       [ "CreateCpuMemoryInfo", "struct_ort_api.html#a6a64ee931925577fd40f5f3f7472cfed", null ],
       [ "CreateCUDAProviderOptions", "struct_ort_api.html#a0d29cbf555aa806c050748cf8d2dc172", null ],
       [ "CreateCustomOpDomain", "struct_ort_api.html#a8a2137a4d843deb346f9548605c90a61", null ],
@@ -144,6 +147,7 @@ var group___global =
       [ "GetAvailableProviders", "struct_ort_api.html#aaacd4a9540eb5044291addd2ebd9bc5f", null ],
       [ "GetBoundOutputNames", "struct_ort_api.html#aeed5427179ef1438e03520143adc86bc", null ],
       [ "GetBoundOutputValues", "struct_ort_api.html#a2fa82193ec64371a05220e869e137622", null ],
+      [ "GetCANNProviderOptionsAsString", "struct_ort_api.html#a0937f8ab8cb1e4015e3baa5f84df1652", null ],
       [ "GetCUDAProviderOptionsAsString", "struct_ort_api.html#a45e90e99df570db8f2c54b603ddbf1e0", null ],
       [ "GetCurrentGpuDeviceId", "struct_ort_api.html#abadd8e77d294fc7db50b25d8d0de453b", null ],
       [ "GetDenotationFromTypeInfo", "struct_ort_api.html#a5496cb1f6cd12af30b03dbd8b0060dd3", null ],
@@ -248,6 +252,7 @@ var group___global =
       [ "SessionGetOverridableInitializerTypeInfo", "struct_ort_api.html#a010dc15d7a9587d0493c232e9b8ee448", null ],
       [ "SessionGetProfilingStartTimeNs", "struct_ort_api.html#ae08368d7b5e9c107fbfdca81a34d589c", null ],
       [ "SessionOptionsAppendExecutionProvider", "struct_ort_api.html#a5f357353ba83dce8103d0faff837996e", null ],
+      [ "SessionOptionsAppendExecutionProvider_CANN", "struct_ort_api.html#aa5f5f9cd1dccf52b00cf697df5cc51b3", null ],
       [ "SessionOptionsAppendExecutionProvider_CUDA", "struct_ort_api.html#a39509920aff0ea1395e121ec04020c70", null ],
       [ "SessionOptionsAppendExecutionProvider_CUDA_V2", "struct_ort_api.html#afa0cb6701f74f80d1d41e1a98c63ccec", null ],
       [ "SessionOptionsAppendExecutionProvider_MIGraphX", "struct_ort_api.html#a21660e2cfcd3d64d2091335db0d91e89", null ],
@@ -266,6 +271,7 @@ var group___global =
       [ "SetGlobalDenormalAsZero", "struct_ort_api.html#a1b77d09e74d0fccf7f01eade02a20072", null ],
       [ "SetGlobalInterOpNumThreads", "struct_ort_api.html#a55e10966066056e12c2f1cc04686bf3e", null ],
       [ "SetGlobalIntraOpNumThreads", "struct_ort_api.html#ae84f09195c8a454f8f0ce718bc437b15", null ],
+      [ "SetGlobalIntraOpThreadAffinity", "struct_ort_api.html#a00561bd2888cef5de11ba88356a82c0e", null ],
       [ "SetGlobalSpinControl", "struct_ort_api.html#a39d4699e56ac6e887b2f9e69e6e8c946", null ],
       [ "SetInterOpNumThreads", "struct_ort_api.html#a66522b73526d041a545b59eb2b46c851", null ],
       [ "SetIntraOpNumThreads", "struct_ort_api.html#a16f2b2e2a62d80725b3f7a39e9f49c07", null ],
@@ -281,7 +287,9 @@ var group___global =
       [ "SynchronizeBoundOutputs", "struct_ort_api.html#ad40e9592f46363fc1fd64c8fc14ac6a4", null ],
       [ "TensorAt", "struct_ort_api.html#a067cabac8cbc83133431f3f0abbc1c80", null ],
       [ "UnregisterAllocator", "struct_ort_api.html#aafc0689965f283aba9fd21ebbddd09c6", null ],
+      [ "UpdateCANNProviderOptions", "struct_ort_api.html#a1227ae4e9f51c643731fa0f40c8b78db", null ],
       [ "UpdateCUDAProviderOptions", "struct_ort_api.html#a4710fc51f75a4b9a75bde20acbfa0783", null ],
+      [ "UpdateEnvWithCustomLogLevel", "struct_ort_api.html#abef280c1bf4ef5a1627f76d929d56ada", null ],
       [ "UpdateTensorRTProviderOptions", "struct_ort_api.html#ad0499e538e565039b4eb2769fdd3b26f", null ],
       [ "UseBlockSparseIndices", "struct_ort_api.html#ab0c883a1aa3e2356e5a7722fac61343f", null ],
       [ "UseCooIndices", "struct_ort_api.html#a23b84e3c0f95c58a7ce325088ee152d9", null ],
@@ -291,7 +299,9 @@ var group___global =
       [ "CreateStatus", "struct_ort_api.html#ab3f31bf5a89fae003e5f57f27c1503f0", null ],
       [ "GetErrorCode", "struct_ort_api.html#afe84f6149c7dd0774c94b746b8edde36", null ],
       [ "GetErrorMessage", "struct_ort_api.html#a8b5cc409efb4d7014998e169de144b7d", null ],
-      [ "GetTrainingApi", "struct_ort_api.html#aecf909dbe8b0aca1687d77615cc996bd", null ],
+      [ "GetTrainingApi", "struct_ort_api.html#a165a49644eea25878451d429c4f6012f", null ],
+      [ "MemoryInfoGetDeviceType", "struct_ort_api.html#a2ecb00be1a9ce114941ec5975059dbf5", null ],
+      [ "ReleaseCANNProviderOptions", "struct_ort_api.html#a55be68299745699560dfbfd3de72a96c", null ],
       [ "ReleaseCUDAProviderOptions", "struct_ort_api.html#afdeece84d4904571e2f78bd0e098865c", null ],
       [ "ReleaseTensorRTProviderOptions", "struct_ort_api.html#ae17a8857260554d44bb2b27a67e39020", null ]
     ] ],
@@ -299,6 +309,7 @@ var group___global =
       [ "CreateKernel", "struct_ort_custom_op.html#a82ec6e8d3225b82e7f62fec857f374ba", null ],
       [ "GetExecutionProviderType", "struct_ort_custom_op.html#ab9cb073ec683a08643bac6ca50bbf2e2", null ],
       [ "GetInputCharacteristic", "struct_ort_custom_op.html#a9efee01f336fd579c88d919116e0dff4", null ],
+      [ "GetInputMemoryType", "struct_ort_custom_op.html#a7dcbfde88eefbb30ed0b99f9a74c959a", null ],
       [ "GetInputType", "struct_ort_custom_op.html#a8f5af15c496358ddc8e75a77811f5983", null ],
       [ "GetInputTypeCount", "struct_ort_custom_op.html#a105312afe4270e2a1f15594e50f2b752", null ],
       [ "GetName", "struct_ort_custom_op.html#a2f82bab65faa080fed2dbcdf36d5e96a", null ],
@@ -311,6 +322,7 @@ var group___global =
     ] ],
     [ "ORT_API_VERSION", "group___global.html#gac583aeb4640621ceb588f6300537945d", null ],
     [ "OrtArenaCfg", "group___global.html#gacd8d2ea2ab8f4063d8d85dc0edc461e7", null ],
+    [ "OrtCANNProviderOptions", "group___global.html#ga8c583d44d04b39c4328fa754994f7730", null ],
     [ "OrtCUDAProviderOptionsV2", "group___global.html#ga6b319b3ba435fb46c3808d7957c4684f", null ],
     [ "OrtCustomCreateThreadFn", "group___global.html#gae0957b6ccebab677893b6155dcb744e5", null ],
     [ "OrtCustomJoinThreadFn", "group___global.html#ga2d123bc5dd929c1cb520e7b872fbfd0e", null ],
@@ -422,6 +434,11 @@ var group___global =
       [ "ORT_LOGGING_LEVEL_WARNING", "group___global.html#gga1c0fbcf614dbd0e2c272ae1cc04c629cab150db726e3f481f0e67ae654307b1c6", null ],
       [ "ORT_LOGGING_LEVEL_ERROR", "group___global.html#gga1c0fbcf614dbd0e2c272ae1cc04c629ca8f4284fd0fb6f7fc8fbfe96d6b1f89fa", null ],
       [ "ORT_LOGGING_LEVEL_FATAL", "group___global.html#gga1c0fbcf614dbd0e2c272ae1cc04c629cac825a1e986dcf6b5c0e38cbfb91a1da3", null ]
+    ] ],
+    [ "OrtMemoryInfoDeviceType", "group___global.html#ga1e39271d4a47f765694d86e5a7d27565", [
+      [ "OrtMemoryInfoDeviceType_CPU", "group___global.html#gga1e39271d4a47f765694d86e5a7d27565a8f5a9b9878f037cdf5ab71469d2af5c1", null ],
+      [ "OrtMemoryInfoDeviceType_GPU", "group___global.html#gga1e39271d4a47f765694d86e5a7d27565a652906f5a6035ee1afb6d8a1ee299d3a", null ],
+      [ "OrtMemoryInfoDeviceType_FPGA", "group___global.html#gga1e39271d4a47f765694d86e5a7d27565a7af4a596ebed00b39945d72479c50bcb", null ]
     ] ],
     [ "OrtMemType", "group___global.html#gab7805016f4b26871e899a3cf4114ee0d", [
       [ "OrtMemTypeCPUInput", "group___global.html#ggab7805016f4b26871e899a3cf4114ee0da1029fcb3f1ca7a371dbe8baeb0aa8a28", null ],
