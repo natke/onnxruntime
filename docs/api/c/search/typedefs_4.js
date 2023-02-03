@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['shape_0',['Shape',['../struct_ort_1_1_value.html#aa887af73b5a841819423295063c10836',1,'Ort::Value']]]
+  ['registercustomopsfn_0',['RegisterCustomOpsFn',['../group___global.html#ga30cb55835ae20f3a66db3f92c535e9de',1,'onnxruntime_c_api.h']]]
 ];

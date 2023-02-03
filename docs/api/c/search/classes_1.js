@@ -19,8 +19,9 @@ var searchData=
   ['base_3c_20ortsessionoptions_20_3e_16',['Base&lt; OrtSessionOptions &gt;',['../struct_ort_1_1detail_1_1_base.html',1,'Ort::detail']]],
   ['base_3c_20ortstatus_20_3e_17',['Base&lt; OrtStatus &gt;',['../struct_ort_1_1detail_1_1_base.html',1,'Ort::detail']]],
   ['base_3c_20orttensortypeandshapeinfo_20_3e_18',['Base&lt; OrtTensorTypeAndShapeInfo &gt;',['../struct_ort_1_1detail_1_1_base.html',1,'Ort::detail']]],
-  ['base_3c_20orttypeinfo_20_3e_19',['Base&lt; OrtTypeInfo &gt;',['../struct_ort_1_1detail_1_1_base.html',1,'Ort::detail']]],
-  ['base_3c_20ortvalue_20_3e_20',['Base&lt; OrtValue &gt;',['../struct_ort_1_1detail_1_1_base.html',1,'Ort::detail']]],
-  ['base_3c_20unowned_3c_20t_20_3e_20_3e_21',['Base&lt; Unowned&lt; T &gt; &gt;',['../struct_ort_1_1detail_1_1_base_3_01_unowned_3_01_t_01_4_01_4.html',1,'Ort::detail']]],
-  ['bfloat16_5ft_22',['BFloat16_t',['../struct_ort_1_1_b_float16__t.html',1,'Ort']]]
+  ['base_3c_20ortthreadingoptions_20_3e_19',['Base&lt; OrtThreadingOptions &gt;',['../struct_ort_1_1detail_1_1_base.html',1,'Ort::detail']]],
+  ['base_3c_20orttypeinfo_20_3e_20',['Base&lt; OrtTypeInfo &gt;',['../struct_ort_1_1detail_1_1_base.html',1,'Ort::detail']]],
+  ['base_3c_20ortvalue_20_3e_21',['Base&lt; OrtValue &gt;',['../struct_ort_1_1detail_1_1_base.html',1,'Ort::detail']]],
+  ['base_3c_20unowned_3c_20t_20_3e_20_3e_22',['Base&lt; Unowned&lt; T &gt; &gt;',['../struct_ort_1_1detail_1_1_base_3_01_unowned_3_01_t_01_4_01_4.html',1,'Ort::detail']]],
+  ['bfloat16_5ft_23',['BFloat16_t',['../struct_ort_1_1_b_float16__t.html',1,'Ort']]]
 ];

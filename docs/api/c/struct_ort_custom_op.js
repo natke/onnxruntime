@@ -10,6 +10,10 @@ var struct_ort_custom_op =
     [ "GetOutputCharacteristic", "struct_ort_custom_op.html#a0fe03707bc8b2adae0cf3752c0fbec4a", null ],
     [ "GetOutputType", "struct_ort_custom_op.html#ad86baba54616d6398a0ee51831a21ab4", null ],
     [ "GetOutputTypeCount", "struct_ort_custom_op.html#a33fb94532f6eebe323b48cf2a63c2eb4", null ],
+    [ "GetVariadicInputHomogeneity", "struct_ort_custom_op.html#a060f050481efa00baa8b01961373c4fe", null ],
+    [ "GetVariadicInputMinArity", "struct_ort_custom_op.html#ad987a4d026c004910e0823024d6082f4", null ],
+    [ "GetVariadicOutputHomogeneity", "struct_ort_custom_op.html#a6eff44ef3e8e98eeb32a19aaff97913b", null ],
+    [ "GetVariadicOutputMinArity", "struct_ort_custom_op.html#a181daf57e1aebddbb0dd36cd756c5614", null ],
     [ "KernelCompute", "struct_ort_custom_op.html#afc0636bfc00f4db5e1c5eedc27eec9ea", null ],
     [ "KernelDestroy", "struct_ort_custom_op.html#a45eed500cf1413d0949c9ccc26ea47fa", null ],
     [ "version", "struct_ort_custom_op.html#a87aa73158aaaf1290a794c38469872e2", null ]

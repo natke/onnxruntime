@@ -17,6 +17,7 @@ var namespace_ort_1_1detail =
     [ "Base< Unowned< T > >", "struct_ort_1_1detail_1_1_base_3_01_unowned_3_01_t_01_4_01_4.html", "struct_ort_1_1detail_1_1_base_3_01_unowned_3_01_t_01_4_01_4" ],
     [ "ConstIoBindingImpl", "struct_ort_1_1detail_1_1_const_io_binding_impl.html", "struct_ort_1_1detail_1_1_const_io_binding_impl" ],
     [ "ConstSessionImpl", "struct_ort_1_1detail_1_1_const_session_impl.html", "struct_ort_1_1detail_1_1_const_session_impl" ],
+    [ "ConstSessionOptionsImpl", "struct_ort_1_1detail_1_1_const_session_options_impl.html", "struct_ort_1_1detail_1_1_const_session_options_impl" ],
     [ "ConstValueImpl", "struct_ort_1_1detail_1_1_const_value_impl.html", "struct_ort_1_1detail_1_1_const_value_impl" ],
     [ "IoBindingImpl", "struct_ort_1_1detail_1_1_io_binding_impl.html", "struct_ort_1_1detail_1_1_io_binding_impl" ],
     [ "KernelInfoImpl", "struct_ort_1_1detail_1_1_kernel_info_impl.html", "struct_ort_1_1detail_1_1_kernel_info_impl" ],
@@ -28,8 +29,10 @@ var namespace_ort_1_1detail =
     [ "SessionOptionsImpl", "struct_ort_1_1detail_1_1_session_options_impl.html", "struct_ort_1_1detail_1_1_session_options_impl" ],
     [ "Shape", "struct_ort_1_1detail_1_1_shape.html", "struct_ort_1_1detail_1_1_shape" ],
     [ "TensorTypeAndShapeInfoImpl", "struct_ort_1_1detail_1_1_tensor_type_and_shape_info_impl.html", "struct_ort_1_1detail_1_1_tensor_type_and_shape_info_impl" ],
+    [ "TypeInfoImpl", "struct_ort_1_1detail_1_1_type_info_impl.html", "struct_ort_1_1detail_1_1_type_info_impl" ],
     [ "Unowned", "struct_ort_1_1detail_1_1_unowned.html", "struct_ort_1_1detail_1_1_unowned" ],
     [ "ValueImpl", "struct_ort_1_1detail_1_1_value_impl.html", "struct_ort_1_1detail_1_1_value_impl" ],
+    [ "MakeCustomOpConfigEntryKey", "namespace_ort_1_1detail.html#af0cdae3ed8b2232264ce152d01a0adc6", null ],
     [ "OrtRelease", "namespace_ort_1_1detail.html#ae9a30b99be95656943cc324faca4230b", null ],
     [ "OrtRelease", "namespace_ort_1_1detail.html#a1c964b60a75b87b448c96a8f9011e8f6", null ],
     [ "OrtRelease", "namespace_ort_1_1detail.html#ae15bb0afb9b2faff00a0858139a8db99", null ],
@@ -47,6 +50,7 @@ var namespace_ort_1_1detail =
     [ "OrtRelease", "namespace_ort_1_1detail.html#ae9f0cda6dfd27baf09570f4802b95791", null ],
     [ "OrtRelease", "namespace_ort_1_1detail.html#ae81b6f6db68572f66fb855de999a420e", null ],
     [ "OrtRelease", "namespace_ort_1_1detail.html#a1f3ed76933d1c71b7ae7d84998bc0d3d", null ],
+    [ "OrtRelease", "namespace_ort_1_1detail.html#a1c85b62f9f79a44c8afd483eff010628", null ],
     [ "OrtRelease", "namespace_ort_1_1detail.html#ac3ced2e015fc13a3aea9674463409c6d", null ],
     [ "OrtRelease", "namespace_ort_1_1detail.html#a5230162f55ce184e814754be94f34895", null ]
 ];

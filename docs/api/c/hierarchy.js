@@ -10,6 +10,7 @@ var hierarchy =
       ] ],
       [ "Ort::detail::ConstIoBindingImpl< OrtIoBinding >", "struct_ort_1_1detail_1_1_const_io_binding_impl.html", null ],
       [ "Ort::detail::ConstSessionImpl< OrtSession >", "struct_ort_1_1detail_1_1_const_session_impl.html", null ],
+      [ "Ort::detail::ConstSessionOptionsImpl< OrtSessionOptions >", "struct_ort_1_1detail_1_1_const_session_options_impl.html", null ],
       [ "Ort::detail::ConstValueImpl< OrtValue >", "struct_ort_1_1detail_1_1_const_value_impl.html", null ],
       [ "Ort::detail::KernelInfoImpl< OrtKernelInfo >", "struct_ort_1_1detail_1_1_kernel_info_impl.html", [
         [ "Ort::KernelInfo", "struct_ort_1_1_kernel_info.html", null ]
@@ -23,11 +24,11 @@ var hierarchy =
       [ "Ort::detail::SequenceTypeInfoImpl< OrtSequenceTypeInfo >", "struct_ort_1_1detail_1_1_sequence_type_info_impl.html", [
         [ "Ort::SequenceTypeInfo", "struct_ort_1_1_sequence_type_info.html", null ]
       ] ],
-      [ "Ort::detail::SessionOptionsImpl< OrtSessionOptions >", "struct_ort_1_1detail_1_1_session_options_impl.html", [
-        [ "Ort::SessionOptions", "struct_ort_1_1_session_options.html", null ]
-      ] ],
       [ "Ort::detail::TensorTypeAndShapeInfoImpl< OrtTensorTypeAndShapeInfo >", "struct_ort_1_1detail_1_1_tensor_type_and_shape_info_impl.html", [
         [ "Ort::TensorTypeAndShapeInfo", "struct_ort_1_1_tensor_type_and_shape_info.html", null ]
+      ] ],
+      [ "Ort::detail::TypeInfoImpl< OrtTypeInfo >", "struct_ort_1_1detail_1_1_type_info_impl.html", [
+        [ "Ort::TypeInfo", "struct_ort_1_1_type_info.html", null ]
       ] ],
       [ "Ort::detail::AllocatorImpl< T >", "struct_ort_1_1detail_1_1_allocator_impl.html", null ],
       [ "Ort::detail::ConstIoBindingImpl< T >", "struct_ort_1_1detail_1_1_const_io_binding_impl.html", [
@@ -42,6 +43,12 @@ var hierarchy =
         ] ],
         [ "Ort::detail::SessionImpl< T >", "struct_ort_1_1detail_1_1_session_impl.html", null ]
       ] ],
+      [ "Ort::detail::ConstSessionOptionsImpl< T >", "struct_ort_1_1detail_1_1_const_session_options_impl.html", [
+        [ "Ort::detail::SessionOptionsImpl< OrtSessionOptions >", "struct_ort_1_1detail_1_1_session_options_impl.html", [
+          [ "Ort::SessionOptions", "struct_ort_1_1_session_options.html", null ]
+        ] ],
+        [ "Ort::detail::SessionOptionsImpl< T >", "struct_ort_1_1detail_1_1_session_options_impl.html", null ]
+      ] ],
       [ "Ort::detail::ConstValueImpl< T >", "struct_ort_1_1detail_1_1_const_value_impl.html", [
         [ "Ort::detail::ValueImpl< OrtValue >", "struct_ort_1_1detail_1_1_value_impl.html", [
           [ "Ort::Value", "struct_ort_1_1_value.html", null ]
@@ -52,8 +59,8 @@ var hierarchy =
       [ "Ort::detail::MapTypeInfoImpl< T >", "struct_ort_1_1detail_1_1_map_type_info_impl.html", null ],
       [ "Ort::detail::MemoryInfoImpl< T >", "struct_ort_1_1detail_1_1_memory_info_impl.html", null ],
       [ "Ort::detail::SequenceTypeInfoImpl< T >", "struct_ort_1_1detail_1_1_sequence_type_info_impl.html", null ],
-      [ "Ort::detail::SessionOptionsImpl< T >", "struct_ort_1_1detail_1_1_session_options_impl.html", null ],
-      [ "Ort::detail::TensorTypeAndShapeInfoImpl< T >", "struct_ort_1_1detail_1_1_tensor_type_and_shape_info_impl.html", null ]
+      [ "Ort::detail::TensorTypeAndShapeInfoImpl< T >", "struct_ort_1_1detail_1_1_tensor_type_and_shape_info_impl.html", null ],
+      [ "Ort::detail::TypeInfoImpl< T >", "struct_ort_1_1detail_1_1_type_info_impl.html", null ]
     ] ],
     [ "Ort::detail::Base< detail::Unowned< OrtAllocator > >", "struct_ort_1_1detail_1_1_base.html", null ],
     [ "Ort::detail::Base< OrtAllocator >", "struct_ort_1_1detail_1_1_base.html", null ],
@@ -89,13 +96,15 @@ var hierarchy =
       [ "Ort::Status", "struct_ort_1_1_status.html", null ]
     ] ],
     [ "Ort::detail::Base< OrtTensorTypeAndShapeInfo >", "struct_ort_1_1detail_1_1_base.html", null ],
-    [ "Ort::detail::Base< OrtTypeInfo >", "struct_ort_1_1detail_1_1_base.html", [
-      [ "Ort::TypeInfo", "struct_ort_1_1_type_info.html", null ]
+    [ "Ort::detail::Base< OrtThreadingOptions >", "struct_ort_1_1detail_1_1_base.html", [
+      [ "Ort::ThreadingOptions", "struct_ort_1_1_threading_options.html", null ]
     ] ],
+    [ "Ort::detail::Base< OrtTypeInfo >", "struct_ort_1_1detail_1_1_base.html", null ],
     [ "Ort::detail::Base< OrtValue >", "struct_ort_1_1detail_1_1_base.html", null ],
     [ "Ort::detail::Base< Unowned< T > >", "struct_ort_1_1detail_1_1_base_3_01_unowned_3_01_t_01_4_01_4.html", null ],
     [ "Ort::BFloat16_t", "struct_ort_1_1_b_float16__t.html", null ],
     [ "Ort::CustomOpApi", "struct_ort_1_1_custom_op_api.html", null ],
+    [ "Ort::CustomOpConfigs", "struct_ort_1_1_custom_op_configs.html", null ],
     [ "std::exception", null, [
       [ "Ort::Exception", "struct_ort_1_1_exception.html", null ]
     ] ],

@@ -8,6 +8,7 @@ var annotated_dup =
         [ "Base< Unowned< T > >", "struct_ort_1_1detail_1_1_base_3_01_unowned_3_01_t_01_4_01_4.html", "struct_ort_1_1detail_1_1_base_3_01_unowned_3_01_t_01_4_01_4" ],
         [ "ConstIoBindingImpl", "struct_ort_1_1detail_1_1_const_io_binding_impl.html", "struct_ort_1_1detail_1_1_const_io_binding_impl" ],
         [ "ConstSessionImpl", "struct_ort_1_1detail_1_1_const_session_impl.html", "struct_ort_1_1detail_1_1_const_session_impl" ],
+        [ "ConstSessionOptionsImpl", "struct_ort_1_1detail_1_1_const_session_options_impl.html", "struct_ort_1_1detail_1_1_const_session_options_impl" ],
         [ "ConstValueImpl", "struct_ort_1_1detail_1_1_const_value_impl.html", "struct_ort_1_1detail_1_1_const_value_impl" ],
         [ "IoBindingImpl", "struct_ort_1_1detail_1_1_io_binding_impl.html", "struct_ort_1_1detail_1_1_io_binding_impl" ],
         [ "KernelInfoImpl", "struct_ort_1_1detail_1_1_kernel_info_impl.html", "struct_ort_1_1detail_1_1_kernel_info_impl" ],
@@ -19,6 +20,7 @@ var annotated_dup =
         [ "SessionOptionsImpl", "struct_ort_1_1detail_1_1_session_options_impl.html", "struct_ort_1_1detail_1_1_session_options_impl" ],
         [ "Shape", "struct_ort_1_1detail_1_1_shape.html", "struct_ort_1_1detail_1_1_shape" ],
         [ "TensorTypeAndShapeInfoImpl", "struct_ort_1_1detail_1_1_tensor_type_and_shape_info_impl.html", "struct_ort_1_1detail_1_1_tensor_type_and_shape_info_impl" ],
+        [ "TypeInfoImpl", "struct_ort_1_1detail_1_1_type_info_impl.html", "struct_ort_1_1detail_1_1_type_info_impl" ],
         [ "Unowned", "struct_ort_1_1detail_1_1_unowned.html", "struct_ort_1_1detail_1_1_unowned" ],
         [ "ValueImpl", "struct_ort_1_1detail_1_1_value_impl.html", "struct_ort_1_1detail_1_1_value_impl" ]
       ] ],
@@ -28,6 +30,7 @@ var annotated_dup =
       [ "BFloat16_t", "struct_ort_1_1_b_float16__t.html", "struct_ort_1_1_b_float16__t" ],
       [ "CustomOpApi", "struct_ort_1_1_custom_op_api.html", "struct_ort_1_1_custom_op_api" ],
       [ "CustomOpBase", "struct_ort_1_1_custom_op_base.html", "struct_ort_1_1_custom_op_base" ],
+      [ "CustomOpConfigs", "struct_ort_1_1_custom_op_configs.html", "struct_ort_1_1_custom_op_configs" ],
       [ "CustomOpDomain", "struct_ort_1_1_custom_op_domain.html", "struct_ort_1_1_custom_op_domain" ],
       [ "Env", "struct_ort_1_1_env.html", "struct_ort_1_1_env" ],
       [ "Exception", "struct_ort_1_1_exception.html", "struct_ort_1_1_exception" ],
@@ -48,6 +51,7 @@ var annotated_dup =
       [ "SessionOptions", "struct_ort_1_1_session_options.html", "struct_ort_1_1_session_options" ],
       [ "Status", "struct_ort_1_1_status.html", "struct_ort_1_1_status" ],
       [ "TensorTypeAndShapeInfo", "struct_ort_1_1_tensor_type_and_shape_info.html", "struct_ort_1_1_tensor_type_and_shape_info" ],
+      [ "ThreadingOptions", "struct_ort_1_1_threading_options.html", "struct_ort_1_1_threading_options" ],
       [ "TypeInfo", "struct_ort_1_1_type_info.html", "struct_ort_1_1_type_info" ],
       [ "Value", "struct_ort_1_1_value.html", "struct_ort_1_1_value" ]
     ] ],
