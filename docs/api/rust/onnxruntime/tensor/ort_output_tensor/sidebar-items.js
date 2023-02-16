@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"enum":[["OrtOutput","The onnxruntime Run output type."]],"struct":[["OrtOutputTensor","Tensor containing data owned by the ONNX Runtime C library, used to return values from inference."],["WithOutputTensor","An Ouput tensor with the ptr and the item that will copy from the ptr."]]};

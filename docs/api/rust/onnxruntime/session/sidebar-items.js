@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"struct":[["Input","Information about an ONNX’s input as stored in loaded file"],["Output","Information about an ONNX’s output as stored in loaded file"],["Session","Type storing the session information, built from an `Environment`"],["SessionBuilder","Type used to create a session using the builder pattern"]]};

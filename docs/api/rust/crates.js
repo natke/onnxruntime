@@ -1,0 +1,1 @@
+window.ALL_CRATES = ["onnxruntime","onnxruntime_sys"];
