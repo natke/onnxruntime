@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"struct":[["OrtInputTensor","An Input tensor."]]};

@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"trait":[["NdArrayTensor","Trait extending `ndarray::ArrayBase` with useful tensor operations."]]};

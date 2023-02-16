@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"struct":[["EnvBuilder","Struct used to build an environment `Environment`"],["Environment","An `Environment` is the main entry point of the ONNX Runtime."]]};

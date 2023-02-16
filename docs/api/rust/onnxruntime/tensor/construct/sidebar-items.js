@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"trait":[["ConstructTensor","The Input type for Rust onnxruntime Session::run"],["InputTensor","Allows the return value of ConstructTensor::construct to be generic."]]};
