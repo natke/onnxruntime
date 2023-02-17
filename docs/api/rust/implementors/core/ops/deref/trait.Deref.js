@@ -1,0 +1,3 @@
+(function() {var implementors = {
+"onnxruntime":[["impl&lt;'a, T&gt; <a class=\"trait\" href=\"https://doc.rust-lang.org/1.67.1/core/ops/deref/trait.Deref.html\" title=\"trait core::ops::deref::Deref\">Deref</a> for <a class=\"struct\" href=\"onnxruntime/tensor/ort_output_tensor/struct.WithOutputTensor.html\" title=\"struct onnxruntime::tensor::ort_output_tensor::WithOutputTensor\">WithOutputTensor</a>&lt;'a, T&gt;"]]
+};if (window.register_implementors) {window.register_implementors(implementors);} else {window.pending_implementors = implementors;}})()
