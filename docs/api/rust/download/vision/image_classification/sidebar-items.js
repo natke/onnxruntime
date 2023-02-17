@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"enum":[["ImageClassification","Image classification model"],["InceptionVersion","Google’s Inception"],["ResNet","ResNet"],["ResNetV1","ResNet v1"],["ResNetV2","ResNet v2"],["ShuffleNetVersion","Computationally efficient CNN architecture designed specifically for mobile devices with very limited computing power."],["Vgg","ResNet"]]};

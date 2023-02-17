@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"mod":[["construct","convert module has the trait for conversion of Inputs ConstructTensor."],["ndarray_tensor","Module containing a tensor trait extending `ndarray::ArrayBase`"],["ort_input_tensor","Module containing tensor with memory owned by Rust"],["ort_output_tensor","Module containing tensor with memory owned by the ONNX Runtime"]]};

@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"enum":[["GPT2","Large transformer-based language model that given a sequence of words within some text, predicts the next word."],["MachineComprehension","Machine Comprehension"],["RoBERTa","Large transformer-based model that predicts sentiment based on given input text."]]};
