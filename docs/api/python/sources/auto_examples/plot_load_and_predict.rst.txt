@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_auto_examples_plot_load_and_predict.py>`
+        :ref:`Go to the end <sphx_glr_download_auto_examples_plot_load_and_predict.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -149,20 +149,20 @@ Let's compute its outputs (or predictions if it is a machine learned model).
 
  .. code-block:: none
 
-    [array([[[0.7074605 , 0.66807246, 0.5468252 , 0.6794102 , 0.72581375],
-            [0.7061233 , 0.7108102 , 0.7131539 , 0.5087233 , 0.7157812 ],
-            [0.5101798 , 0.6822957 , 0.71132684, 0.63517916, 0.5935693 ],
-            [0.6674769 , 0.71915364, 0.6055379 , 0.6265797 , 0.6334329 ]],
+    [array([[[0.7071178 , 0.6008952 , 0.5376602 , 0.64325035, 0.73049337],
+            [0.52786076, 0.7274034 , 0.5027005 , 0.68586886, 0.65079856],
+            [0.5755894 , 0.51495665, 0.6857468 , 0.659601  , 0.69717026],
+            [0.6801087 , 0.53887224, 0.62318474, 0.553973  , 0.6342555 ]],
 
-           [[0.7060813 , 0.65122193, 0.5852989 , 0.7020965 , 0.5418902 ],
-            [0.70865536, 0.7239054 , 0.53950447, 0.6397851 , 0.61991036],
-            [0.5108298 , 0.70998025, 0.5768114 , 0.70231366, 0.7083629 ],
-            [0.5532729 , 0.6634668 , 0.68702626, 0.53754365, 0.63848865]],
+           [[0.6797523 , 0.6471969 , 0.67092836, 0.63625115, 0.7159317 ],
+            [0.57792366, 0.52406967, 0.6487328 , 0.68947685, 0.72326195],
+            [0.5867688 , 0.68415105, 0.61244243, 0.6627783 , 0.65823907],
+            [0.5005421 , 0.5245513 , 0.59024537, 0.71766424, 0.5848975 ]],
 
-           [[0.5546355 , 0.5326628 , 0.6045945 , 0.72216797, 0.5367474 ],
-            [0.54598904, 0.683926  , 0.7086522 , 0.5805207 , 0.6906233 ],
-            [0.71620524, 0.6052958 , 0.7310034 , 0.6245417 , 0.6648243 ],
-            [0.6229709 , 0.5226055 , 0.67183244, 0.6684347 , 0.57293963]]],
+           [[0.7140401 , 0.6679952 , 0.51535416, 0.72770464, 0.50414515],
+            [0.65347254, 0.603992  , 0.6630348 , 0.6886074 , 0.73028994],
+            [0.6574654 , 0.6856252 , 0.5479708 , 0.69539976, 0.62772626],
+            [0.5784115 , 0.6579977 , 0.5607857 , 0.54736197, 0.68205327]]],
           dtype=float32)]
 
 
@@ -171,7 +171,7 @@ Let's compute its outputs (or predictions if it is a machine learned model).
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.007 seconds)
+   **Total running time of the script:** ( 0 minutes  0.018 seconds)
 
 
 .. _sphx_glr_download_auto_examples_plot_load_and_predict.py:
@@ -179,6 +179,8 @@ Let's compute its outputs (or predictions if it is a machine learned model).
 .. only:: html
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
+
+
 
 
     .. container:: sphx-glr-download sphx-glr-download-python
