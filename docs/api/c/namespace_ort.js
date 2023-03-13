@@ -47,6 +47,7 @@ var namespace_ort =
     [ "UnownedSession", "namespace_ort.html#aa4ef47c5e510bbdc78e6cbc95b9d6319", null ],
     [ "UnownedSessionOptions", "namespace_ort.html#a6b177171c592d5d1e5bb1a43e6c4f1e0", null ],
     [ "UnownedValue", "namespace_ort.html#ae76d2b32827c348b72fbe4091ee40f92", null ],
-    [ "GetApi", "namespace_ort.html#a8930fa08683b5153ee3aa4df63745ce3", null ],
-    [ "GetAvailableProviders", "namespace_ort.html#ac2f785275bced9e6853a2f4ea6b71c04", null ]
+    [ "GetApi", "namespace_ort.html#a296b5958479d9889218b17bdb08c1894", null ],
+    [ "GetAvailableProviders", "namespace_ort.html#ac2f785275bced9e6853a2f4ea6b71c04", null ],
+    [ "GetVersionString", "namespace_ort.html#aab1b2d08af45de1d59ce7d86196cd72d", null ]
 ];

@@ -200,12 +200,13 @@ var NAVTREEINDEX0 =
 "namespace_ort.html#a0f2f11ade8a14f04f4f07b55f15f6139":[3,0,0,38],
 "namespace_ort.html#a1782d0ab53f6d587d8d8fb9bb1f2d3c6":[3,0,0,33],
 "namespace_ort.html#a2514fd7bbc520a8dda8043349bac93ff":[3,0,0,39],
+"namespace_ort.html#a296b5958479d9889218b17bdb08c1894":[3,0,0,47],
 "namespace_ort.html#a3011d9e36da80b801845ac0a66a691ed":[3,0,0,32],
 "namespace_ort.html#a5ad71ff12df224ed66848b0cbac253e2":[3,0,0,42],
 "namespace_ort.html#a5fb8782dedb2ed4baaeec32697c7848f":[3,0,0,40],
 "namespace_ort.html#a6b177171c592d5d1e5bb1a43e6c4f1e0":[3,0,0,45],
-"namespace_ort.html#a8930fa08683b5153ee3aa4df63745ce3":[3,0,0,47],
 "namespace_ort.html#aa4ef47c5e510bbdc78e6cbc95b9d6319":[3,0,0,44],
+"namespace_ort.html#aab1b2d08af45de1d59ce7d86196cd72d":[3,0,0,49],
 "namespace_ort.html#ac2f785275bced9e6853a2f4ea6b71c04":[3,0,0,48],
 "namespace_ort.html#ac63da339e467ad363d1412024c3aed16":[3,0,0,37],
 "namespace_ort.html#ad26af08ba1810863bce56f723709fedf":[3,0,0,43],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "namespacemembers_func.html":[3,1,1],
 "namespacemembers_type.html":[3,1,2],
 "namespaces.html":[3,0],
-"pages.html":[],
-"struct_ort_1_1_allocator.html":[4,0,0,1]
+"pages.html":[]
 };

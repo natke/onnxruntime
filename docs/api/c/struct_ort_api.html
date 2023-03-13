@@ -1770,7 +1770,7 @@ Public Attributes</h2></td></tr>
 
 <p>Create an allocator and register it with the <a class="el" href="group___global.html#gaba9072a64b5081cd4d36cca5ef92bd08">OrtEnv</a>. </p>
 <p>Enables sharing the allocator between multiple sessions that use the same env instance. Lifetime of the created allocator will be valid for the duration of the environment. Returns an error if an allocator with the same <a class="el" href="group___global.html#ga088f45e429651ac29b4a9efb4d88571a">OrtMemoryInfo</a> is already registered.</p>
-<p>See <a href="https://onnxruntime.ai/docs/reference/api/c-api.html">https://onnxruntime.ai/docs/reference/api/c-api.html</a> for details.</p>
+<p>See <a href="https://onnxruntime.ai/docs/get-started/with-c.html">https://onnxruntime.ai/docs/get-started/with-c.html</a> for details.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">env</td><td><a class="el" href="group___global.html#gaba9072a64b5081cd4d36cca5ef92bd08">OrtEnv</a> instance </td></tr>
@@ -1884,7 +1884,7 @@ Public Attributes</h2></td></tr>
 
 <p>Create an <a class="el" href="group___global.html#gacd8d2ea2ab8f4063d8d85dc0edc461e7">OrtArenaCfg</a>. </p>
 <p>Create the configuration of an arena that can eventually be used to define an arena based allocator's behavior.</p>
-<p>Supported keys are (See <a href="https://onnxruntime.ai/docs/reference/api/c-api.html">https://onnxruntime.ai/docs/reference/api/c-api.html</a> for details on what the following parameters mean and how to choose these values.): "max_mem": Maximum memory that can be allocated by the arena based allocator. Use 0 for ORT to pick the best value. Default is 0. "arena_extend_strategy": 0 = kNextPowerOfTwo, 1 = kSameAsRequested. Use -1 to allow ORT to choose the default. "initial_chunk_size_bytes": (Possible) Size of the first allocation in the arena. Only relevant if arena strategy is <code>kNextPowerOfTwo</code>. Use -1 to allow ORT to choose the default. Ultimately, the first allocation size is determined by the allocation memory request. "max_dead_bytes_per_chunk": Threshold of unused memory in an allocated chunk of arena memory after crossing which the current chunk is chunked into 2. "initial_growth_chunk_size_bytes": (Possible) Size of the second allocation in the arena. Only relevant if arena strategy is <code>kNextPowerOfTwo</code>. Use -1 to allow ORT to choose the default. Ultimately, the allocation size is determined by the allocation memory request. Further allocation sizes are governed by the arena extend strategy.</p>
+<p>Supported keys are (See <a href="https://onnxruntime.ai/docs/get-started/with-c.html">https://onnxruntime.ai/docs/get-started/with-c.html</a> for details on what the following parameters mean and how to choose these values.): "max_mem": Maximum memory that can be allocated by the arena based allocator. Use 0 for ORT to pick the best value. Default is 0. "arena_extend_strategy": 0 = kNextPowerOfTwo, 1 = kSameAsRequested. Use -1 to allow ORT to choose the default. "initial_chunk_size_bytes": (Possible) Size of the first allocation in the arena. Only relevant if arena strategy is <code>kNextPowerOfTwo</code>. Use -1 to allow ORT to choose the default. Ultimately, the first allocation size is determined by the allocation memory request. "max_dead_bytes_per_chunk": Threshold of unused memory in an allocated chunk of arena memory after crossing which the current chunk is chunked into 2. "initial_growth_chunk_size_bytes": (Possible) Size of the second allocation in the arena. Only relevant if arena strategy is <code>kNextPowerOfTwo</code>. Use -1 to allow ORT to choose the default. Ultimately, the allocation size is determined by the allocation memory request. Further allocation sizes are governed by the arena extend strategy.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">arena_config_keys</td><td>Keys to configure the arena </td></tr>
@@ -7296,7 +7296,7 @@ Public Attributes</h2></td></tr>
 
 <p>Register a custom allocator. </p>
 <p>Enables sharing between multiple sessions that use the same env instance. Returns an error if an allocator with the same <a class="el" href="group___global.html#ga088f45e429651ac29b4a9efb4d88571a">OrtMemoryInfo</a> is already registered.</p>
-<p>The behavior of this is exactly the same as <a class="el" href="struct_ort_api.html#a6a0ca4d136819eafea7d87e7f87a82db" title="Create an allocator and register it with the OrtEnv.">OrtApi::CreateAndRegisterAllocator</a> except instead of ORT creating an allocator based on provided info, in this case ORT uses the user-provided custom allocator. See <a href="https://onnxruntime.ai/docs/reference/api/c-api.html">https://onnxruntime.ai/docs/reference/api/c-api.html</a> for details.</p>
+<p>The behavior of this is exactly the same as <a class="el" href="struct_ort_api.html#a6a0ca4d136819eafea7d87e7f87a82db" title="Create an allocator and register it with the OrtEnv.">OrtApi::CreateAndRegisterAllocator</a> except instead of ORT creating an allocator based on provided info, in this case ORT uses the user-provided custom allocator. See <a href="https://onnxruntime.ai/docs/get-started/with-c.html">https://onnxruntime.ai/docs/get-started/with-c.html</a> for details.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">env</td><td></td></tr>
@@ -8887,8 +8887,9 @@ Public Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>Currently supported providers: SNPE XNNPACK</p>
+<p>Currently supported providers: QNN SNPE XNNPACK</p>
 <p>Note: If an execution provider has a dedicated SessionOptionsAppendExecutionProvider_&lt;provider name&gt; function that should be used to add it.</p>
+<p>QNN supported keys: "backend_path": file path to QNN backend library. "profiling_level": QNN profiling level, options: "basic", "detailed". "rpc_control_latency": QNN RPC control latency.</p>
 <p>SNPE supported keys: "runtime": SNPE runtime engine, options: "CPU", "CPU_FLOAT32", "GPU", "GPU_FLOAT32_16_HYBRID", "GPU_FLOAT16", "DSP", "DSP_FIXED8_TF", "AIP_FIXED_TF", "AIP_FIXED8_TF". Mapping to SNPE Runtime_t definition: CPU, CPU_FLOAT32 =&gt; zdl::DlSystem::Runtime_t::CPU; GPU, GPU_FLOAT32_16_HYBRID =&gt; zdl::DlSystem::Runtime_t::GPU; GPU_FLOAT16 =&gt; zdl::DlSystem::Runtime_t::GPU_FLOAT16; DSP, DSP_FIXED8_TF =&gt; zdl::DlSystem::Runtime_t::DSP. AIP_FIXED_TF, AIP_FIXED8_TF =&gt; zdl::DlSystem::Runtime_t::AIP_FIXED_TF. "priority": execution priority, options: "low", "normal". "buffer_type": ITensor or user buffers, options: "ITENSOR", user buffer with different types - "TF8", "TF16", "UINT8", "FLOAT". "ITENSOR" &ndash; default, ITensor which is float only. "TF8" &ndash; quantized model required, "FLOAT" &ndash; for both quantized or non-quantized model If SNPE is not available (due to a non Snpe enabled build or its dependencies not being installed), this function will fail.</p>
 <p>XNNPACK supported keys: "intra_op_num_threads": number of thread-pool size to use for XNNPACK execution provider. default value is 0, which means to use the session thread-pool size.</p>
 <dl class="section since"><dt>Since</dt><dd>Version 1.12. </dd></dl>
@@ -9988,7 +9989,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Set the optimization level to apply when loading a graph. </p>
-<p>Please see <a href="https://www.onnxruntime.ai/docs/resources/graph-optimizations.html">https://www.onnxruntime.ai/docs/resources/graph-optimizations.html</a> for an in-depth explanation </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Please see <a href="https://onnxruntime.ai/docs/performance/graph-optimizations.html">https://onnxruntime.ai/docs/performance/graph-optimizations.html</a> for an in-depth explanation </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">options</td><td>The session options object </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">graph_optimization_level</td><td>The optimization level</td></tr>
@@ -10541,7 +10542,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Set options in a TensorRT Execution Provider. </p>
-<p>Please refer to <a href="https://www.onnxruntime.ai/docs/reference/execution-providers/TensorRT-ExecutionProvider.html#c-api-example">https://www.onnxruntime.ai/docs/reference/execution-providers/TensorRT-ExecutionProvider.html#c-api-example</a> to know the available keys and values. Key should be in null terminated string format of the member of <a class="el" href="group___global.html#ga331177427bd78a813d46a78f78f159a2">OrtTensorRTProviderOptionsV2</a> and value should be its related range.</p>
+<p>Please refer to <a href="https://onnxruntime.ai/docs/execution-providers/TensorRT-ExecutionProvider.html#cc">https://onnxruntime.ai/docs/execution-providers/TensorRT-ExecutionProvider.html#cc</a> to know the available keys and values. Key should be in null terminated string format of the member of <a class="el" href="group___global.html#ga331177427bd78a813d46a78f78f159a2">OrtTensorRTProviderOptionsV2</a> and value should be its related range.</p>
 <p>For example, key="trt_max_workspace_size" and value="2147483648"</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
