@@ -1,31 +1,31 @@
 ﻿<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
-  
+
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class NamedOnnxValue
-   </title>
+ </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class NamedOnnxValue
-   ">
-    <meta name="generator" content="docfx 2.59.3.0">
-    
+ ">
+    <meta name="generator" content="docfx ">
+  
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
-    
-    
-    
+  
+  
+  
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
-        
+
         <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
           <div class="container">
             <div class="navbar-header">
@@ -35,7 +35,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              
+
               <a class="navbar-brand" href="../index.html">
                 <img id="logo" class="svg" src="../logo.svg" alt="">
               </a>
@@ -49,7 +49,7 @@
             </div>
           </div>
         </nav>
-        
+
         <div class="subnav navbar navbar-default">
           <div class="container hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
@@ -59,7 +59,7 @@
         </div>
       </header>
       <div role="main" class="container body-content hide-when-search">
-        
+
         <div class="sidenav hide-when-search">
           <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
           <div class="sidetoggle collapse" id="sidetoggle">
@@ -69,10 +69,10 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="Microsoft.ML.OnnxRuntime.NamedOnnxValue">
-  
-  
+
+
   <h1 id="Microsoft_ML_OnnxRuntime_NamedOnnxValue" data-uid="Microsoft.ML.OnnxRuntime.NamedOnnxValue" class="text-break">Class NamedOnnxValue
-  </h1>
+</h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -84,16 +84,10 @@
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-    <div>
       <span class="xref">System.Object.Equals(System.Object)</span>
     </div>
     <div>
       <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
     </div>
     <div>
       <span class="xref">System.Object.GetHashCode()</span>
@@ -104,6 +98,12 @@
     <div>
       <span class="xref">System.Object.MemberwiseClone()</span>
     </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.ML.OnnxRuntime.html">Microsoft.ML.OnnxRuntime</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
@@ -112,11 +112,11 @@
     <pre><code class="lang-csharp hljs">public class NamedOnnxValue</code></pre>
   </div>
   <h3 id="constructors">Constructors
-  </h3>
-  
-  
+</h3>
+
+
   <a id="Microsoft_ML_OnnxRuntime_NamedOnnxValue__ctor_" data-uid="Microsoft.ML.OnnxRuntime.NamedOnnxValue.#ctor*"></a>
-  <h4 id="Microsoft_ML_OnnxRuntime_NamedOnnxValue__ctor_System_String_Object_" data-uid="Microsoft.ML.OnnxRuntime.NamedOnnxValue.#ctor(System.String,Object)">NamedOnnxValue(String, Object)</h4>
+  <h4 id="Microsoft_ML_OnnxRuntime_NamedOnnxValue__ctor_System_String_System_Object_" data-uid="Microsoft.ML.OnnxRuntime.NamedOnnxValue.#ctor(System.String,System.Object)">NamedOnnxValue(String, Object)</h4>
   <div class="markdown level1 summary"><p>Constructs an instance of NamedOnnxValue and represents
 a model input to an inference session. It also represents a modle output
 when serves as a base for DisposablenamedOnnxvalue</p>
@@ -124,7 +124,7 @@ when serves as a base for DisposablenamedOnnxvalue</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected NamedOnnxValue(string name, Object value)</code></pre>
+    <pre><code class="lang-csharp hljs">protected NamedOnnxValue(string name, object value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -143,7 +143,7 @@ when serves as a base for DisposablenamedOnnxvalue</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Object</span></td>
+        <td><span class="xref">System.Object</span></td>
         <td><span class="parametername">value</span></td>
         <td><p>Object that may be a tensor, Dictionary, IList</p>
 </td>
@@ -151,9 +151,9 @@ when serves as a base for DisposablenamedOnnxvalue</p>
     </tbody>
   </table>
   <h3 id="fields">Fields
-  </h3>
-  
-  
+</h3>
+
+
   <h4 id="Microsoft_ML_OnnxRuntime_NamedOnnxValue__name" data-uid="Microsoft.ML.OnnxRuntime.NamedOnnxValue._name">_name</h4>
   <div class="markdown level1 summary"><p>Name of the instance, model input/output</p>
 </div>
@@ -177,15 +177,15 @@ when serves as a base for DisposablenamedOnnxvalue</p>
       </tr>
     </tbody>
   </table>
-  
-  
+
+
   <h4 id="Microsoft_ML_OnnxRuntime_NamedOnnxValue__value" data-uid="Microsoft.ML.OnnxRuntime.NamedOnnxValue._value">_value</h4>
   <div class="markdown level1 summary"><p>Managed Tensor, Dictionary or IList</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected Object _value</code></pre>
+    <pre><code class="lang-csharp hljs">protected object _value</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -197,15 +197,15 @@ when serves as a base for DisposablenamedOnnxvalue</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Object</span></td>
+        <td><span class="xref">System.Object</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h3 id="properties">Properties
-  </h3>
-  
-  
+</h3>
+
+
   <a id="Microsoft_ML_OnnxRuntime_NamedOnnxValue_Name_" data-uid="Microsoft.ML.OnnxRuntime.NamedOnnxValue.Name*"></a>
   <h4 id="Microsoft_ML_OnnxRuntime_NamedOnnxValue_Name" data-uid="Microsoft.ML.OnnxRuntime.NamedOnnxValue.Name">Name</h4>
   <div class="markdown level1 summary"><p>Exposes the name of the of the model input/output</p>
@@ -231,8 +231,8 @@ when serves as a base for DisposablenamedOnnxvalue</p>
       </tr>
     </tbody>
   </table>
-  
-  
+
+
   <a id="Microsoft_ML_OnnxRuntime_NamedOnnxValue_Value_" data-uid="Microsoft.ML.OnnxRuntime.NamedOnnxValue.Value*"></a>
   <h4 id="Microsoft_ML_OnnxRuntime_NamedOnnxValue_Value" data-uid="Microsoft.ML.OnnxRuntime.NamedOnnxValue.Value">Value</h4>
   <div class="markdown level1 summary"><p>Exposes the underlying managed object</p>
@@ -240,7 +240,7 @@ when serves as a base for DisposablenamedOnnxvalue</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Object Value { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public object Value { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -252,16 +252,16 @@ when serves as a base for DisposablenamedOnnxvalue</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Object</span></td>
+        <td><span class="xref">System.Object</span></td>
         <td><p>object</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h3 id="methods">Methods
-  </h3>
-  
-  
+</h3>
+
+
   <a id="Microsoft_ML_OnnxRuntime_NamedOnnxValue_AsDictionary_" data-uid="Microsoft.ML.OnnxRuntime.NamedOnnxValue.AsDictionary*"></a>
   <h4 id="Microsoft_ML_OnnxRuntime_NamedOnnxValue_AsDictionary__2" data-uid="Microsoft.ML.OnnxRuntime.NamedOnnxValue.AsDictionary``2">AsDictionary&lt;K, V&gt;()</h4>
   <div class="markdown level1 summary"><p>Try-get value as an Dictionary&lt;K,V&gt;.</p>
@@ -281,7 +281,7 @@ when serves as a base for DisposablenamedOnnxvalue</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IDictionary</span>&lt;K, V&gt;</td>
+        <td><span class="xref">IDictionary&lt;, &gt;</span>&lt;K, V&gt;</td>
         <td><p>Dictionary object if contained value is a Dictionary. Null otherwise</p>
 </td>
       </tr>
@@ -308,8 +308,8 @@ when serves as a base for DisposablenamedOnnxvalue</p>
       </tr>
     </tbody>
   </table>
-  
-  
+
+
   <a id="Microsoft_ML_OnnxRuntime_NamedOnnxValue_AsEnumerable_" data-uid="Microsoft.ML.OnnxRuntime.NamedOnnxValue.AsEnumerable*"></a>
   <h4 id="Microsoft_ML_OnnxRuntime_NamedOnnxValue_AsEnumerable__1" data-uid="Microsoft.ML.OnnxRuntime.NamedOnnxValue.AsEnumerable``1">AsEnumerable&lt;T&gt;()</h4>
   <div class="markdown level1 summary"><p>Try-get value as an Enumerable&lt;T&gt;.</p>
@@ -329,7 +329,7 @@ when serves as a base for DisposablenamedOnnxvalue</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;T&gt;</td>
+        <td><span class="xref">IEnumerable&lt;&gt;</span>&lt;T&gt;</td>
         <td><p>Enumerable object if contained value is a Enumerable. Null otherwise</p>
 </td>
       </tr>
@@ -351,8 +351,8 @@ when serves as a base for DisposablenamedOnnxvalue</p>
       </tr>
     </tbody>
   </table>
-  
-  
+
+
   <a id="Microsoft_ML_OnnxRuntime_NamedOnnxValue_AsTensor_" data-uid="Microsoft.ML.OnnxRuntime.NamedOnnxValue.AsTensor*"></a>
   <h4 id="Microsoft_ML_OnnxRuntime_NamedOnnxValue_AsTensor__1" data-uid="Microsoft.ML.OnnxRuntime.NamedOnnxValue.AsTensor``1">AsTensor&lt;T&gt;()</h4>
   <div class="markdown level1 summary"><p>Try-get value as a Tensor&lt;T&gt;.</p>
@@ -372,7 +372,7 @@ when serves as a base for DisposablenamedOnnxvalue</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Tensor</span>&lt;T&gt;</td>
+        <td><a class="xref" href="Microsoft.ML.OnnxRuntime.Tensors.Tensor-1.html">Tensor</a>&lt;T&gt;</td>
         <td><p>Tensor object if contained value is a Tensor. Null otherwise</p>
 </td>
       </tr>
@@ -394,10 +394,10 @@ when serves as a base for DisposablenamedOnnxvalue</p>
       </tr>
     </tbody>
   </table>
-  
-  
+
+
   <a id="Microsoft_ML_OnnxRuntime_NamedOnnxValue_CreateFromTensor_" data-uid="Microsoft.ML.OnnxRuntime.NamedOnnxValue.CreateFromTensor*"></a>
-  <h4 id="Microsoft_ML_OnnxRuntime_NamedOnnxValue_CreateFromTensor__1_System_String_Tensor___0__" data-uid="Microsoft.ML.OnnxRuntime.NamedOnnxValue.CreateFromTensor``1(System.String,Tensor{``0})">CreateFromTensor&lt;T&gt;(String, Tensor&lt;T&gt;)</h4>
+  <h4 id="Microsoft_ML_OnnxRuntime_NamedOnnxValue_CreateFromTensor__1_System_String_Microsoft_ML_OnnxRuntime_Tensors_Tensor___0__" data-uid="Microsoft.ML.OnnxRuntime.NamedOnnxValue.CreateFromTensor``1(System.String,Microsoft.ML.OnnxRuntime.Tensors.Tensor{``0})">CreateFromTensor&lt;T&gt;(String, Tensor&lt;T&gt;)</h4>
   <div class="markdown level1 summary"><p>This is a factory method that instantiates NamedOnnxValue
 and associated name with an instance of a Tensor<code data-dev-comment-type="typeparamref" class="typeparamref">T</code></p>
 </div>
@@ -423,7 +423,7 @@ and associated name with an instance of a Tensor<code data-dev-comment-type="typ
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Tensor</span>&lt;T&gt;</td>
+        <td><a class="xref" href="Microsoft.ML.OnnxRuntime.Tensors.Tensor-1.html">Tensor</a>&lt;T&gt;</td>
         <td><span class="parametername">value</span></td>
         <td><p>Tensor<code data-dev-comment-type="typeparamref" class="typeparamref">T</code></p>
 </td>
@@ -462,7 +462,7 @@ and associated name with an instance of a Tensor<code data-dev-comment-type="typ
   </table>
 </article>
           </div>
-          
+
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
               <div class="contribution">
@@ -477,7 +477,7 @@ and associated name with an instance of a Tensor<code data-dev-comment-type="typ
           </div>
         </div>
       </div>
-      
+
       <footer>
         <div class="grad-bottom"></div>
         <div class="footer">
@@ -489,7 +489,7 @@ and associated name with an instance of a Tensor<code data-dev-comment-type="typ
         </div>
       </footer>
     </div>
-    
+
     <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
     <script type="text/javascript" src="../styles/main.js"></script>

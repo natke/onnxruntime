@@ -1,31 +1,31 @@
 ﻿<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
-  
+
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class OrtMemoryInfo
-   </title>
+ </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class OrtMemoryInfo
-   ">
-    <meta name="generator" content="docfx 2.59.3.0">
-    
+ ">
+    <meta name="generator" content="docfx ">
+  
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
-    
-    
-    
+  
+  
+  
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
-        
+
         <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
           <div class="container">
             <div class="navbar-header">
@@ -35,7 +35,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              
+
               <a class="navbar-brand" href="../index.html">
                 <img id="logo" class="svg" src="../logo.svg" alt="">
               </a>
@@ -49,7 +49,7 @@
             </div>
           </div>
         </nav>
-        
+
         <div class="subnav navbar navbar-default">
           <div class="container hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
@@ -59,7 +59,7 @@
         </div>
       </header>
       <div role="main" class="container body-content hide-when-search">
-        
+
         <div class="sidenav hide-when-search">
           <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
           <div class="sidetoggle collapse" id="sidetoggle">
@@ -69,10 +69,10 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="Microsoft.ML.OnnxRuntime.OrtMemoryInfo">
-  
-  
+
+
   <h1 id="Microsoft_ML_OnnxRuntime_OrtMemoryInfo" data-uid="Microsoft.ML.OnnxRuntime.OrtMemoryInfo" class="text-break">Class OrtMemoryInfo
-  </h1>
+</h1>
   <div class="markdown level0 summary"><p>This class encapsulates and most of the time owns the underlying native OrtMemoryInfo instance.
 Instance returned from OrtAllocator will not own OrtMemoryInfo, the class must be disposed
 regardless.</p>
@@ -85,18 +85,72 @@ used to allocate the underlying memory.</p>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">OrtMemoryInfo</span></div>
+    <div class="level1"><span class="xref">System.Runtime.ConstrainedExecution.CriticalFinalizerObject</span></div>
+    <div class="level2"><span class="xref">System.Runtime.InteropServices.SafeHandle</span></div>
+    <div class="level3"><span class="xref">OrtMemoryInfo</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Runtime.InteropServices.SafeHandle.handle</span>
+    </div>
+    <div>
+      <span class="xref">System.Runtime.InteropServices.SafeHandle.SetHandle(System.IntPtr)</span>
+    </div>
+    <div>
+      <span class="xref">System.Runtime.InteropServices.SafeHandle.DangerousGetHandle()</span>
+    </div>
+    <div>
+      <span class="xref">System.Runtime.InteropServices.SafeHandle.Close()</span>
+    </div>
+    <div>
+      <span class="xref">System.Runtime.InteropServices.SafeHandle.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">System.Runtime.InteropServices.SafeHandle.Dispose(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">System.Runtime.InteropServices.SafeHandle.SetHandleAsInvalid()</span>
+    </div>
+    <div>
+      <span class="xref">System.Runtime.InteropServices.SafeHandle.DangerousAddRef(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">System.Runtime.InteropServices.SafeHandle.DangerousRelease()</span>
+    </div>
+    <div>
+      <span class="xref">System.Runtime.InteropServices.SafeHandle.IsClosed</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.ML.OnnxRuntime.html">Microsoft.ML.OnnxRuntime</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
   <h5 id="Microsoft_ML_OnnxRuntime_OrtMemoryInfo_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class OrtMemoryInfo : SafeHandle</code></pre>
+    <pre><code class="lang-csharp hljs">public class OrtMemoryInfo : SafeHandle, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
-  </h3>
-  
-  
+</h3>
+
+
   <a id="Microsoft_ML_OnnxRuntime_OrtMemoryInfo__ctor_" data-uid="Microsoft.ML.OnnxRuntime.OrtMemoryInfo.#ctor*"></a>
   <h4 id="Microsoft_ML_OnnxRuntime_OrtMemoryInfo__ctor_System_Byte___Microsoft_ML_OnnxRuntime_OrtAllocatorType_System_Int32_Microsoft_ML_OnnxRuntime_OrtMemType_" data-uid="Microsoft.ML.OnnxRuntime.OrtMemoryInfo.#ctor(System.Byte[],Microsoft.ML.OnnxRuntime.OrtAllocatorType,System.Int32,Microsoft.ML.OnnxRuntime.OrtMemType)">OrtMemoryInfo(Byte[], OrtAllocatorType, Int32, OrtMemType)</h4>
   <div class="markdown level1 summary"><p>Create an instance of OrtMemoryInfo according to the specification
@@ -121,7 +175,7 @@ registered with Add methods.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="xref">Byte</span>[]</td>
         <td><span class="parametername">utf8AllocatorName</span></td>
         <td><p>Allocator name. Use of the predefined above.</p>
 </td>
@@ -146,8 +200,8 @@ registered with Add methods.</p>
       </tr>
     </tbody>
   </table>
-  
-  
+
+
   <a id="Microsoft_ML_OnnxRuntime_OrtMemoryInfo__ctor_" data-uid="Microsoft.ML.OnnxRuntime.OrtMemoryInfo.#ctor*"></a>
   <h4 id="Microsoft_ML_OnnxRuntime_OrtMemoryInfo__ctor_System_String_Microsoft_ML_OnnxRuntime_OrtAllocatorType_System_Int32_Microsoft_ML_OnnxRuntime_OrtMemType_" data-uid="Microsoft.ML.OnnxRuntime.OrtMemoryInfo.#ctor(System.String,Microsoft.ML.OnnxRuntime.OrtAllocatorType,System.Int32,Microsoft.ML.OnnxRuntime.OrtMemType)">OrtMemoryInfo(String, OrtAllocatorType, Int32, OrtMemType)</h4>
   <div class="markdown level1 summary"><p>Create an instance of OrtMemoryInfo according to the specification.</p>
@@ -194,9 +248,9 @@ registered with Add methods.</p>
     </tbody>
   </table>
   <h3 id="fields">Fields
-  </h3>
-  
-  
+</h3>
+
+
   <h4 id="Microsoft_ML_OnnxRuntime_OrtMemoryInfo_allocatorCPU" data-uid="Microsoft.ML.OnnxRuntime.OrtMemoryInfo.allocatorCPU">allocatorCPU</h4>
   <div class="markdown level1 summary"><p>Predefined utf8 encoded allocator names. Use them to construct an instance of
 OrtMemoryInfo to avoid UTF-16 to UTF-8 conversion costs.</p>
@@ -216,13 +270,13 @@ OrtMemoryInfo to avoid UTF-16 to UTF-8 conversion costs.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="xref">Byte</span>[]</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
+
+
   <h4 id="Microsoft_ML_OnnxRuntime_OrtMemoryInfo_allocatorCUDA" data-uid="Microsoft.ML.OnnxRuntime.OrtMemoryInfo.allocatorCUDA">allocatorCUDA</h4>
   <div class="markdown level1 summary"><p>Predefined utf8 encoded allocator names. Use them to construct an instance of
 OrtMemoryInfo to avoid UTF-16 to UTF-8 conversion costs.</p>
@@ -242,13 +296,13 @@ OrtMemoryInfo to avoid UTF-16 to UTF-8 conversion costs.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="xref">Byte</span>[]</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
+
+
   <h4 id="Microsoft_ML_OnnxRuntime_OrtMemoryInfo_allocatorCUDA_PINNED" data-uid="Microsoft.ML.OnnxRuntime.OrtMemoryInfo.allocatorCUDA_PINNED">allocatorCUDA_PINNED</h4>
   <div class="markdown level1 summary"><p>Predefined utf8 encoded allocator names. Use them to construct an instance of
 OrtMemoryInfo to avoid UTF-16 to UTF-8 conversion costs.</p>
@@ -268,15 +322,15 @@ OrtMemoryInfo to avoid UTF-16 to UTF-8 conversion costs.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="xref">Byte</span>[]</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h3 id="properties">Properties
-  </h3>
-  
-  
+</h3>
+
+
   <a id="Microsoft_ML_OnnxRuntime_OrtMemoryInfo_DefaultInstance_" data-uid="Microsoft.ML.OnnxRuntime.OrtMemoryInfo.DefaultInstance*"></a>
   <h4 id="Microsoft_ML_OnnxRuntime_OrtMemoryInfo_DefaultInstance" data-uid="Microsoft.ML.OnnxRuntime.OrtMemoryInfo.DefaultInstance">DefaultInstance</h4>
   <div class="markdown level1 summary"><p>Default CPU based instance</p>
@@ -302,8 +356,8 @@ OrtMemoryInfo to avoid UTF-16 to UTF-8 conversion costs.</p>
       </tr>
     </tbody>
   </table>
-  
-  
+
+
   <a id="Microsoft_ML_OnnxRuntime_OrtMemoryInfo_Id_" data-uid="Microsoft.ML.OnnxRuntime.OrtMemoryInfo.Id*"></a>
   <h4 id="Microsoft_ML_OnnxRuntime_OrtMemoryInfo_Id" data-uid="Microsoft.ML.OnnxRuntime.OrtMemoryInfo.Id">Id</h4>
   <div class="markdown level1 summary"><p>Returns device ID</p>
@@ -329,8 +383,8 @@ OrtMemoryInfo to avoid UTF-16 to UTF-8 conversion costs.</p>
       </tr>
     </tbody>
   </table>
-  
-  
+
+
   <a id="Microsoft_ML_OnnxRuntime_OrtMemoryInfo_IsInvalid_" data-uid="Microsoft.ML.OnnxRuntime.OrtMemoryInfo.IsInvalid*"></a>
   <h4 id="Microsoft_ML_OnnxRuntime_OrtMemoryInfo_IsInvalid" data-uid="Microsoft.ML.OnnxRuntime.OrtMemoryInfo.IsInvalid">IsInvalid</h4>
   <div class="markdown level1 summary"><p>Overrides SafeHandle.IsInvalid</p>
@@ -356,8 +410,10 @@ OrtMemoryInfo to avoid UTF-16 to UTF-8 conversion costs.</p>
       </tr>
     </tbody>
   </table>
-  
-  
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Runtime.InteropServices.SafeHandle.IsInvalid</span></div>
+
+
   <a id="Microsoft_ML_OnnxRuntime_OrtMemoryInfo_Name_" data-uid="Microsoft.ML.OnnxRuntime.OrtMemoryInfo.Name*"></a>
   <h4 id="Microsoft_ML_OnnxRuntime_OrtMemoryInfo_Name" data-uid="Microsoft.ML.OnnxRuntime.OrtMemoryInfo.Name">Name</h4>
   <div class="markdown level1 summary"><p>Name of the allocator associated with the OrtMemoryInfo instance</p>
@@ -383,9 +439,9 @@ OrtMemoryInfo to avoid UTF-16 to UTF-8 conversion costs.</p>
     </tbody>
   </table>
   <h3 id="methods">Methods
-  </h3>
-  
-  
+</h3>
+
+
   <a id="Microsoft_ML_OnnxRuntime_OrtMemoryInfo_Equals_" data-uid="Microsoft.ML.OnnxRuntime.OrtMemoryInfo.Equals*"></a>
   <h4 id="Microsoft_ML_OnnxRuntime_OrtMemoryInfo_Equals_Microsoft_ML_OnnxRuntime_OrtMemoryInfo_" data-uid="Microsoft.ML.OnnxRuntime.OrtMemoryInfo.Equals(Microsoft.ML.OnnxRuntime.OrtMemoryInfo)">Equals(OrtMemoryInfo)</h4>
   <div class="markdown level1 summary"><p>Compares this instance with another</p>
@@ -429,8 +485,8 @@ OrtMemoryInfo to avoid UTF-16 to UTF-8 conversion costs.</p>
       </tr>
     </tbody>
   </table>
-  
-  
+
+
   <a id="Microsoft_ML_OnnxRuntime_OrtMemoryInfo_Equals_" data-uid="Microsoft.ML.OnnxRuntime.OrtMemoryInfo.Equals*"></a>
   <h4 id="Microsoft_ML_OnnxRuntime_OrtMemoryInfo_Equals_System_Object_" data-uid="Microsoft.ML.OnnxRuntime.OrtMemoryInfo.Equals(System.Object)">Equals(Object)</h4>
   <div class="markdown level1 summary"><p>Overrides System.Object.Equals(object)</p>
@@ -474,8 +530,10 @@ OrtMemoryInfo to avoid UTF-16 to UTF-8 conversion costs.</p>
       </tr>
     </tbody>
   </table>
-  
-  
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.Equals(System.Object)</span></div>
+
+
   <a id="Microsoft_ML_OnnxRuntime_OrtMemoryInfo_GetAllocatorType_" data-uid="Microsoft.ML.OnnxRuntime.OrtMemoryInfo.GetAllocatorType*"></a>
   <h4 id="Microsoft_ML_OnnxRuntime_OrtMemoryInfo_GetAllocatorType" data-uid="Microsoft.ML.OnnxRuntime.OrtMemoryInfo.GetAllocatorType">GetAllocatorType()</h4>
   <div class="markdown level1 summary"><p>Fetches allocator type from the underlying OrtAllocator</p>
@@ -501,8 +559,8 @@ OrtMemoryInfo to avoid UTF-16 to UTF-8 conversion costs.</p>
       </tr>
     </tbody>
   </table>
-  
-  
+
+
   <a id="Microsoft_ML_OnnxRuntime_OrtMemoryInfo_GetHashCode_" data-uid="Microsoft.ML.OnnxRuntime.OrtMemoryInfo.GetHashCode*"></a>
   <h4 id="Microsoft_ML_OnnxRuntime_OrtMemoryInfo_GetHashCode" data-uid="Microsoft.ML.OnnxRuntime.OrtMemoryInfo.GetHashCode">GetHashCode()</h4>
   <div class="markdown level1 summary"><p>Overrides System.Object.GetHashCode()</p>
@@ -528,8 +586,10 @@ OrtMemoryInfo to avoid UTF-16 to UTF-8 conversion costs.</p>
       </tr>
     </tbody>
   </table>
-  
-  
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.GetHashCode()</span></div>
+
+
   <a id="Microsoft_ML_OnnxRuntime_OrtMemoryInfo_GetMemoryType_" data-uid="Microsoft.ML.OnnxRuntime.OrtMemoryInfo.GetMemoryType*"></a>
   <h4 id="Microsoft_ML_OnnxRuntime_OrtMemoryInfo_GetMemoryType" data-uid="Microsoft.ML.OnnxRuntime.OrtMemoryInfo.GetMemoryType">GetMemoryType()</h4>
   <div class="markdown level1 summary"><p>The below 2 are really properties but naming them is a challenge
@@ -557,8 +617,8 @@ calls behind them so exposing them as Get() would be appropriate.</p>
       </tr>
     </tbody>
   </table>
-  
-  
+
+
   <a id="Microsoft_ML_OnnxRuntime_OrtMemoryInfo_ReleaseHandle_" data-uid="Microsoft.ML.OnnxRuntime.OrtMemoryInfo.ReleaseHandle*"></a>
   <h4 id="Microsoft_ML_OnnxRuntime_OrtMemoryInfo_ReleaseHandle" data-uid="Microsoft.ML.OnnxRuntime.OrtMemoryInfo.ReleaseHandle">ReleaseHandle()</h4>
   <div class="markdown level1 summary"><p>Overrides SafeHandle.ReleaseHandle() to properly dispose of
@@ -585,9 +645,15 @@ the native instance of OrtMmeoryInfo</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Runtime.InteropServices.SafeHandle.ReleaseHandle()</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
 </article>
           </div>
-          
+
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
               <div class="contribution">
@@ -602,7 +668,7 @@ the native instance of OrtMmeoryInfo</p>
           </div>
         </div>
       </div>
-      
+
       <footer>
         <div class="grad-bottom"></div>
         <div class="footer">
@@ -614,7 +680,7 @@ the native instance of OrtMmeoryInfo</p>
         </div>
       </footer>
     </div>
-    
+
     <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
     <script type="text/javascript" src="../styles/main.js"></script>

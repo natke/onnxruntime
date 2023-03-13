@@ -125,13 +125,13 @@ references:
   isSpec: "True"
   fullName: Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue.CreateFromMemory
   nameWithType: FixedBufferOnnxValue.CreateFromMemory
-- uid: Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue.CreateFromMemory``1(Microsoft.ML.OnnxRuntime.OrtMemoryInfo,Memory{``0},TensorElementType,System.Int64[],System.Int64)
+- uid: Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue.CreateFromMemory``1(Microsoft.ML.OnnxRuntime.OrtMemoryInfo,System.Memory{``0},Microsoft.ML.OnnxRuntime.Tensors.TensorElementType,System.Int64[],System.Int64)
   name: CreateFromMemory<T>(OrtMemoryInfo, Memory<T>, TensorElementType, Int64[], Int64)
-  href: api/Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue.html#Microsoft_ML_OnnxRuntime_FixedBufferOnnxValue_CreateFromMemory__1_Microsoft_ML_OnnxRuntime_OrtMemoryInfo_Memory___0__TensorElementType_System_Int64___System_Int64_
-  commentId: M:Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue.CreateFromMemory``1(Microsoft.ML.OnnxRuntime.OrtMemoryInfo,Memory{``0},TensorElementType,System.Int64[],System.Int64)
+  href: api/Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue.html#Microsoft_ML_OnnxRuntime_FixedBufferOnnxValue_CreateFromMemory__1_Microsoft_ML_OnnxRuntime_OrtMemoryInfo_System_Memory___0__Microsoft_ML_OnnxRuntime_Tensors_TensorElementType_System_Int64___System_Int64_
+  commentId: M:Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue.CreateFromMemory``1(Microsoft.ML.OnnxRuntime.OrtMemoryInfo,System.Memory{``0},Microsoft.ML.OnnxRuntime.Tensors.TensorElementType,System.Int64[],System.Int64)
   name.vb: CreateFromMemory(Of T)(OrtMemoryInfo, Memory(Of T), TensorElementType, Int64(), Int64)
-  fullName: Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue.CreateFromMemory<T>(Microsoft.ML.OnnxRuntime.OrtMemoryInfo, Memory<T>, TensorElementType, System.Int64[], System.Int64)
-  fullName.vb: Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue.CreateFromMemory(Of T)(Microsoft.ML.OnnxRuntime.OrtMemoryInfo, Memory(Of T), TensorElementType, System.Int64(), System.Int64)
+  fullName: Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue.CreateFromMemory<T>(Microsoft.ML.OnnxRuntime.OrtMemoryInfo, System.Memory<T>, Microsoft.ML.OnnxRuntime.Tensors.TensorElementType, System.Int64[], System.Int64)
+  fullName.vb: Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue.CreateFromMemory(Of T)(Microsoft.ML.OnnxRuntime.OrtMemoryInfo, System.Memory(Of T), Microsoft.ML.OnnxRuntime.Tensors.TensorElementType, System.Int64(), System.Int64)
   nameWithType: FixedBufferOnnxValue.CreateFromMemory<T>(OrtMemoryInfo, Memory<T>, TensorElementType, Int64[], Int64)
   nameWithType.vb: FixedBufferOnnxValue.CreateFromMemory(Of T)(OrtMemoryInfo, Memory(Of T), TensorElementType, Int64(), Int64)
 - uid: Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue.CreateFromTensor*
@@ -141,13 +141,13 @@ references:
   isSpec: "True"
   fullName: Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue.CreateFromTensor
   nameWithType: FixedBufferOnnxValue.CreateFromTensor
-- uid: Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue.CreateFromTensor``1(Tensor{``0})
+- uid: Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue.CreateFromTensor``1(Microsoft.ML.OnnxRuntime.Tensors.Tensor{``0})
   name: CreateFromTensor<T>(Tensor<T>)
-  href: api/Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue.html#Microsoft_ML_OnnxRuntime_FixedBufferOnnxValue_CreateFromTensor__1_Tensor___0__
-  commentId: M:Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue.CreateFromTensor``1(Tensor{``0})
+  href: api/Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue.html#Microsoft_ML_OnnxRuntime_FixedBufferOnnxValue_CreateFromTensor__1_Microsoft_ML_OnnxRuntime_Tensors_Tensor___0__
+  commentId: M:Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue.CreateFromTensor``1(Microsoft.ML.OnnxRuntime.Tensors.Tensor{``0})
   name.vb: CreateFromTensor(Of T)(Tensor(Of T))
-  fullName: Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue.CreateFromTensor<T>(Tensor<T>)
-  fullName.vb: Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue.CreateFromTensor(Of T)(Tensor(Of T))
+  fullName: Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue.CreateFromTensor<T>(Microsoft.ML.OnnxRuntime.Tensors.Tensor<T>)
+  fullName.vb: Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue.CreateFromTensor(Of T)(Microsoft.ML.OnnxRuntime.Tensors.Tensor(Of T))
   nameWithType: FixedBufferOnnxValue.CreateFromTensor<T>(Tensor<T>)
   nameWithType.vb: FixedBufferOnnxValue.CreateFromTensor(Of T)(Tensor(Of T))
 - uid: Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue.Dispose
@@ -214,15 +214,6 @@ references:
   commentId: T:Microsoft.ML.OnnxRuntime.InferenceSession
   fullName: Microsoft.ML.OnnxRuntime.InferenceSession
   nameWithType: InferenceSession
-- uid: Microsoft.ML.OnnxRuntime.InferenceSession.#ctor(System.Byte[])
-  name: InferenceSession(Byte[])
-  href: api/Microsoft.ML.OnnxRuntime.InferenceSession.html#Microsoft_ML_OnnxRuntime_InferenceSession__ctor_System_Byte___
-  commentId: M:Microsoft.ML.OnnxRuntime.InferenceSession.#ctor(System.Byte[])
-  name.vb: InferenceSession(Byte())
-  fullName: Microsoft.ML.OnnxRuntime.InferenceSession.InferenceSession(System.Byte[])
-  fullName.vb: Microsoft.ML.OnnxRuntime.InferenceSession.InferenceSession(System.Byte())
-  nameWithType: InferenceSession.InferenceSession(Byte[])
-  nameWithType.vb: InferenceSession.InferenceSession(Byte())
 - uid: Microsoft.ML.OnnxRuntime.InferenceSession.#ctor(System.Byte[],Microsoft.ML.OnnxRuntime.PrePackedWeightsContainer)
   name: InferenceSession(Byte[], PrePackedWeightsContainer)
   href: api/Microsoft.ML.OnnxRuntime.InferenceSession.html#Microsoft_ML_OnnxRuntime_InferenceSession__ctor_System_Byte___Microsoft_ML_OnnxRuntime_PrePackedWeightsContainer_
@@ -232,15 +223,6 @@ references:
   fullName.vb: Microsoft.ML.OnnxRuntime.InferenceSession.InferenceSession(System.Byte(), Microsoft.ML.OnnxRuntime.PrePackedWeightsContainer)
   nameWithType: InferenceSession.InferenceSession(Byte[], PrePackedWeightsContainer)
   nameWithType.vb: InferenceSession.InferenceSession(Byte(), PrePackedWeightsContainer)
-- uid: Microsoft.ML.OnnxRuntime.InferenceSession.#ctor(System.Byte[],Microsoft.ML.OnnxRuntime.SessionOptions)
-  name: InferenceSession(Byte[], SessionOptions)
-  href: api/Microsoft.ML.OnnxRuntime.InferenceSession.html#Microsoft_ML_OnnxRuntime_InferenceSession__ctor_System_Byte___Microsoft_ML_OnnxRuntime_SessionOptions_
-  commentId: M:Microsoft.ML.OnnxRuntime.InferenceSession.#ctor(System.Byte[],Microsoft.ML.OnnxRuntime.SessionOptions)
-  name.vb: InferenceSession(Byte(), SessionOptions)
-  fullName: Microsoft.ML.OnnxRuntime.InferenceSession.InferenceSession(System.Byte[], Microsoft.ML.OnnxRuntime.SessionOptions)
-  fullName.vb: Microsoft.ML.OnnxRuntime.InferenceSession.InferenceSession(System.Byte(), Microsoft.ML.OnnxRuntime.SessionOptions)
-  nameWithType: InferenceSession.InferenceSession(Byte[], SessionOptions)
-  nameWithType.vb: InferenceSession.InferenceSession(Byte(), SessionOptions)
 - uid: Microsoft.ML.OnnxRuntime.InferenceSession.#ctor(System.Byte[],Microsoft.ML.OnnxRuntime.SessionOptions,Microsoft.ML.OnnxRuntime.PrePackedWeightsContainer)
   name: InferenceSession(Byte[], SessionOptions, PrePackedWeightsContainer)
   href: api/Microsoft.ML.OnnxRuntime.InferenceSession.html#Microsoft_ML_OnnxRuntime_InferenceSession__ctor_System_Byte___Microsoft_ML_OnnxRuntime_SessionOptions_Microsoft_ML_OnnxRuntime_PrePackedWeightsContainer_
@@ -250,30 +232,48 @@ references:
   fullName.vb: Microsoft.ML.OnnxRuntime.InferenceSession.InferenceSession(System.Byte(), Microsoft.ML.OnnxRuntime.SessionOptions, Microsoft.ML.OnnxRuntime.PrePackedWeightsContainer)
   nameWithType: InferenceSession.InferenceSession(Byte[], SessionOptions, PrePackedWeightsContainer)
   nameWithType.vb: InferenceSession.InferenceSession(Byte(), SessionOptions, PrePackedWeightsContainer)
-- uid: Microsoft.ML.OnnxRuntime.InferenceSession.#ctor(System.String)
-  name: InferenceSession(String)
-  href: api/Microsoft.ML.OnnxRuntime.InferenceSession.html#Microsoft_ML_OnnxRuntime_InferenceSession__ctor_System_String_
-  commentId: M:Microsoft.ML.OnnxRuntime.InferenceSession.#ctor(System.String)
-  fullName: Microsoft.ML.OnnxRuntime.InferenceSession.InferenceSession(System.String)
-  nameWithType: InferenceSession.InferenceSession(String)
+- uid: Microsoft.ML.OnnxRuntime.InferenceSession.#ctor(System.Byte[],Microsoft.ML.OnnxRuntime.SessionOptions)
+  name: InferenceSession(Byte[], SessionOptions)
+  href: api/Microsoft.ML.OnnxRuntime.InferenceSession.html#Microsoft_ML_OnnxRuntime_InferenceSession__ctor_System_Byte___Microsoft_ML_OnnxRuntime_SessionOptions_
+  commentId: M:Microsoft.ML.OnnxRuntime.InferenceSession.#ctor(System.Byte[],Microsoft.ML.OnnxRuntime.SessionOptions)
+  name.vb: InferenceSession(Byte(), SessionOptions)
+  fullName: Microsoft.ML.OnnxRuntime.InferenceSession.InferenceSession(System.Byte[], Microsoft.ML.OnnxRuntime.SessionOptions)
+  fullName.vb: Microsoft.ML.OnnxRuntime.InferenceSession.InferenceSession(System.Byte(), Microsoft.ML.OnnxRuntime.SessionOptions)
+  nameWithType: InferenceSession.InferenceSession(Byte[], SessionOptions)
+  nameWithType.vb: InferenceSession.InferenceSession(Byte(), SessionOptions)
+- uid: Microsoft.ML.OnnxRuntime.InferenceSession.#ctor(System.Byte[])
+  name: InferenceSession(Byte[])
+  href: api/Microsoft.ML.OnnxRuntime.InferenceSession.html#Microsoft_ML_OnnxRuntime_InferenceSession__ctor_System_Byte___
+  commentId: M:Microsoft.ML.OnnxRuntime.InferenceSession.#ctor(System.Byte[])
+  name.vb: InferenceSession(Byte())
+  fullName: Microsoft.ML.OnnxRuntime.InferenceSession.InferenceSession(System.Byte[])
+  fullName.vb: Microsoft.ML.OnnxRuntime.InferenceSession.InferenceSession(System.Byte())
+  nameWithType: InferenceSession.InferenceSession(Byte[])
+  nameWithType.vb: InferenceSession.InferenceSession(Byte())
 - uid: Microsoft.ML.OnnxRuntime.InferenceSession.#ctor(System.String,Microsoft.ML.OnnxRuntime.PrePackedWeightsContainer)
   name: InferenceSession(String, PrePackedWeightsContainer)
   href: api/Microsoft.ML.OnnxRuntime.InferenceSession.html#Microsoft_ML_OnnxRuntime_InferenceSession__ctor_System_String_Microsoft_ML_OnnxRuntime_PrePackedWeightsContainer_
   commentId: M:Microsoft.ML.OnnxRuntime.InferenceSession.#ctor(System.String,Microsoft.ML.OnnxRuntime.PrePackedWeightsContainer)
   fullName: Microsoft.ML.OnnxRuntime.InferenceSession.InferenceSession(System.String, Microsoft.ML.OnnxRuntime.PrePackedWeightsContainer)
   nameWithType: InferenceSession.InferenceSession(String, PrePackedWeightsContainer)
-- uid: Microsoft.ML.OnnxRuntime.InferenceSession.#ctor(System.String,Microsoft.ML.OnnxRuntime.SessionOptions)
-  name: InferenceSession(String, SessionOptions)
-  href: api/Microsoft.ML.OnnxRuntime.InferenceSession.html#Microsoft_ML_OnnxRuntime_InferenceSession__ctor_System_String_Microsoft_ML_OnnxRuntime_SessionOptions_
-  commentId: M:Microsoft.ML.OnnxRuntime.InferenceSession.#ctor(System.String,Microsoft.ML.OnnxRuntime.SessionOptions)
-  fullName: Microsoft.ML.OnnxRuntime.InferenceSession.InferenceSession(System.String, Microsoft.ML.OnnxRuntime.SessionOptions)
-  nameWithType: InferenceSession.InferenceSession(String, SessionOptions)
 - uid: Microsoft.ML.OnnxRuntime.InferenceSession.#ctor(System.String,Microsoft.ML.OnnxRuntime.SessionOptions,Microsoft.ML.OnnxRuntime.PrePackedWeightsContainer)
   name: InferenceSession(String, SessionOptions, PrePackedWeightsContainer)
   href: api/Microsoft.ML.OnnxRuntime.InferenceSession.html#Microsoft_ML_OnnxRuntime_InferenceSession__ctor_System_String_Microsoft_ML_OnnxRuntime_SessionOptions_Microsoft_ML_OnnxRuntime_PrePackedWeightsContainer_
   commentId: M:Microsoft.ML.OnnxRuntime.InferenceSession.#ctor(System.String,Microsoft.ML.OnnxRuntime.SessionOptions,Microsoft.ML.OnnxRuntime.PrePackedWeightsContainer)
   fullName: Microsoft.ML.OnnxRuntime.InferenceSession.InferenceSession(System.String, Microsoft.ML.OnnxRuntime.SessionOptions, Microsoft.ML.OnnxRuntime.PrePackedWeightsContainer)
   nameWithType: InferenceSession.InferenceSession(String, SessionOptions, PrePackedWeightsContainer)
+- uid: Microsoft.ML.OnnxRuntime.InferenceSession.#ctor(System.String,Microsoft.ML.OnnxRuntime.SessionOptions)
+  name: InferenceSession(String, SessionOptions)
+  href: api/Microsoft.ML.OnnxRuntime.InferenceSession.html#Microsoft_ML_OnnxRuntime_InferenceSession__ctor_System_String_Microsoft_ML_OnnxRuntime_SessionOptions_
+  commentId: M:Microsoft.ML.OnnxRuntime.InferenceSession.#ctor(System.String,Microsoft.ML.OnnxRuntime.SessionOptions)
+  fullName: Microsoft.ML.OnnxRuntime.InferenceSession.InferenceSession(System.String, Microsoft.ML.OnnxRuntime.SessionOptions)
+  nameWithType: InferenceSession.InferenceSession(String, SessionOptions)
+- uid: Microsoft.ML.OnnxRuntime.InferenceSession.#ctor(System.String)
+  name: InferenceSession(String)
+  href: api/Microsoft.ML.OnnxRuntime.InferenceSession.html#Microsoft_ML_OnnxRuntime_InferenceSession__ctor_System_String_
+  commentId: M:Microsoft.ML.OnnxRuntime.InferenceSession.#ctor(System.String)
+  fullName: Microsoft.ML.OnnxRuntime.InferenceSession.InferenceSession(System.String)
+  nameWithType: InferenceSession.InferenceSession(String)
 - uid: Microsoft.ML.OnnxRuntime.InferenceSession.#ctor*
   name: InferenceSession
   href: api/Microsoft.ML.OnnxRuntime.InferenceSession.html#Microsoft_ML_OnnxRuntime_InferenceSession__ctor_
@@ -404,24 +404,6 @@ references:
   isSpec: "True"
   fullName: Microsoft.ML.OnnxRuntime.InferenceSession.ProfilingStartTimeNs
   nameWithType: InferenceSession.ProfilingStartTimeNs
-- uid: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection{Microsoft.ML.OnnxRuntime.NamedOnnxValue})
-  name: Run(IReadOnlyCollection<NamedOnnxValue>)
-  href: api/Microsoft.ML.OnnxRuntime.InferenceSession.html#Microsoft_ML_OnnxRuntime_InferenceSession_Run_IReadOnlyCollection_Microsoft_ML_OnnxRuntime_NamedOnnxValue__
-  commentId: M:Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection{Microsoft.ML.OnnxRuntime.NamedOnnxValue})
-  name.vb: Run(IReadOnlyCollection(Of NamedOnnxValue))
-  fullName: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection<Microsoft.ML.OnnxRuntime.NamedOnnxValue>)
-  fullName.vb: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection(Of Microsoft.ML.OnnxRuntime.NamedOnnxValue))
-  nameWithType: InferenceSession.Run(IReadOnlyCollection<NamedOnnxValue>)
-  nameWithType.vb: InferenceSession.Run(IReadOnlyCollection(Of NamedOnnxValue))
-- uid: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection{Microsoft.ML.OnnxRuntime.NamedOnnxValue},IReadOnlyCollection{Microsoft.ML.OnnxRuntime.NamedOnnxValue})
-  name: Run(IReadOnlyCollection<NamedOnnxValue>, IReadOnlyCollection<NamedOnnxValue>)
-  href: api/Microsoft.ML.OnnxRuntime.InferenceSession.html#Microsoft_ML_OnnxRuntime_InferenceSession_Run_IReadOnlyCollection_Microsoft_ML_OnnxRuntime_NamedOnnxValue__IReadOnlyCollection_Microsoft_ML_OnnxRuntime_NamedOnnxValue__
-  commentId: M:Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection{Microsoft.ML.OnnxRuntime.NamedOnnxValue},IReadOnlyCollection{Microsoft.ML.OnnxRuntime.NamedOnnxValue})
-  name.vb: Run(IReadOnlyCollection(Of NamedOnnxValue), IReadOnlyCollection(Of NamedOnnxValue))
-  fullName: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection<Microsoft.ML.OnnxRuntime.NamedOnnxValue>, IReadOnlyCollection<Microsoft.ML.OnnxRuntime.NamedOnnxValue>)
-  fullName.vb: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection(Of Microsoft.ML.OnnxRuntime.NamedOnnxValue), IReadOnlyCollection(Of Microsoft.ML.OnnxRuntime.NamedOnnxValue))
-  nameWithType: InferenceSession.Run(IReadOnlyCollection<NamedOnnxValue>, IReadOnlyCollection<NamedOnnxValue>)
-  nameWithType.vb: InferenceSession.Run(IReadOnlyCollection(Of NamedOnnxValue), IReadOnlyCollection(Of NamedOnnxValue))
 - uid: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection{Microsoft.ML.OnnxRuntime.NamedOnnxValue},IReadOnlyCollection{Microsoft.ML.OnnxRuntime.NamedOnnxValue},Microsoft.ML.OnnxRuntime.RunOptions)
   name: Run(IReadOnlyCollection<NamedOnnxValue>, IReadOnlyCollection<NamedOnnxValue>, RunOptions)
   href: api/Microsoft.ML.OnnxRuntime.InferenceSession.html#Microsoft_ML_OnnxRuntime_InferenceSession_Run_IReadOnlyCollection_Microsoft_ML_OnnxRuntime_NamedOnnxValue__IReadOnlyCollection_Microsoft_ML_OnnxRuntime_NamedOnnxValue__Microsoft_ML_OnnxRuntime_RunOptions_
@@ -431,24 +413,15 @@ references:
   fullName.vb: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection(Of Microsoft.ML.OnnxRuntime.NamedOnnxValue), IReadOnlyCollection(Of Microsoft.ML.OnnxRuntime.NamedOnnxValue), Microsoft.ML.OnnxRuntime.RunOptions)
   nameWithType: InferenceSession.Run(IReadOnlyCollection<NamedOnnxValue>, IReadOnlyCollection<NamedOnnxValue>, RunOptions)
   nameWithType.vb: InferenceSession.Run(IReadOnlyCollection(Of NamedOnnxValue), IReadOnlyCollection(Of NamedOnnxValue), RunOptions)
-- uid: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection{Microsoft.ML.OnnxRuntime.NamedOnnxValue},IReadOnlyCollection{System.String})
-  name: Run(IReadOnlyCollection<NamedOnnxValue>, IReadOnlyCollection<String>)
-  href: api/Microsoft.ML.OnnxRuntime.InferenceSession.html#Microsoft_ML_OnnxRuntime_InferenceSession_Run_IReadOnlyCollection_Microsoft_ML_OnnxRuntime_NamedOnnxValue__IReadOnlyCollection_System_String__
-  commentId: M:Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection{Microsoft.ML.OnnxRuntime.NamedOnnxValue},IReadOnlyCollection{System.String})
-  name.vb: Run(IReadOnlyCollection(Of NamedOnnxValue), IReadOnlyCollection(Of String))
-  fullName: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection<Microsoft.ML.OnnxRuntime.NamedOnnxValue>, IReadOnlyCollection<System.String>)
-  fullName.vb: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection(Of Microsoft.ML.OnnxRuntime.NamedOnnxValue), IReadOnlyCollection(Of System.String))
-  nameWithType: InferenceSession.Run(IReadOnlyCollection<NamedOnnxValue>, IReadOnlyCollection<String>)
-  nameWithType.vb: InferenceSession.Run(IReadOnlyCollection(Of NamedOnnxValue), IReadOnlyCollection(Of String))
-- uid: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection{Microsoft.ML.OnnxRuntime.NamedOnnxValue},IReadOnlyCollection{System.String},IReadOnlyCollection{Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue})
-  name: Run(IReadOnlyCollection<NamedOnnxValue>, IReadOnlyCollection<String>, IReadOnlyCollection<FixedBufferOnnxValue>)
-  href: api/Microsoft.ML.OnnxRuntime.InferenceSession.html#Microsoft_ML_OnnxRuntime_InferenceSession_Run_IReadOnlyCollection_Microsoft_ML_OnnxRuntime_NamedOnnxValue__IReadOnlyCollection_System_String__IReadOnlyCollection_Microsoft_ML_OnnxRuntime_FixedBufferOnnxValue__
-  commentId: M:Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection{Microsoft.ML.OnnxRuntime.NamedOnnxValue},IReadOnlyCollection{System.String},IReadOnlyCollection{Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue})
-  name.vb: Run(IReadOnlyCollection(Of NamedOnnxValue), IReadOnlyCollection(Of String), IReadOnlyCollection(Of FixedBufferOnnxValue))
-  fullName: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection<Microsoft.ML.OnnxRuntime.NamedOnnxValue>, IReadOnlyCollection<System.String>, IReadOnlyCollection<Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue>)
-  fullName.vb: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection(Of Microsoft.ML.OnnxRuntime.NamedOnnxValue), IReadOnlyCollection(Of System.String), IReadOnlyCollection(Of Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue))
-  nameWithType: InferenceSession.Run(IReadOnlyCollection<NamedOnnxValue>, IReadOnlyCollection<String>, IReadOnlyCollection<FixedBufferOnnxValue>)
-  nameWithType.vb: InferenceSession.Run(IReadOnlyCollection(Of NamedOnnxValue), IReadOnlyCollection(Of String), IReadOnlyCollection(Of FixedBufferOnnxValue))
+- uid: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection{Microsoft.ML.OnnxRuntime.NamedOnnxValue},IReadOnlyCollection{Microsoft.ML.OnnxRuntime.NamedOnnxValue})
+  name: Run(IReadOnlyCollection<NamedOnnxValue>, IReadOnlyCollection<NamedOnnxValue>)
+  href: api/Microsoft.ML.OnnxRuntime.InferenceSession.html#Microsoft_ML_OnnxRuntime_InferenceSession_Run_IReadOnlyCollection_Microsoft_ML_OnnxRuntime_NamedOnnxValue__IReadOnlyCollection_Microsoft_ML_OnnxRuntime_NamedOnnxValue__
+  commentId: M:Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection{Microsoft.ML.OnnxRuntime.NamedOnnxValue},IReadOnlyCollection{Microsoft.ML.OnnxRuntime.NamedOnnxValue})
+  name.vb: Run(IReadOnlyCollection(Of NamedOnnxValue), IReadOnlyCollection(Of NamedOnnxValue))
+  fullName: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection<Microsoft.ML.OnnxRuntime.NamedOnnxValue>, IReadOnlyCollection<Microsoft.ML.OnnxRuntime.NamedOnnxValue>)
+  fullName.vb: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection(Of Microsoft.ML.OnnxRuntime.NamedOnnxValue), IReadOnlyCollection(Of Microsoft.ML.OnnxRuntime.NamedOnnxValue))
+  nameWithType: InferenceSession.Run(IReadOnlyCollection<NamedOnnxValue>, IReadOnlyCollection<NamedOnnxValue>)
+  nameWithType.vb: InferenceSession.Run(IReadOnlyCollection(Of NamedOnnxValue), IReadOnlyCollection(Of NamedOnnxValue))
 - uid: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection{Microsoft.ML.OnnxRuntime.NamedOnnxValue},IReadOnlyCollection{System.String},IReadOnlyCollection{Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue},Microsoft.ML.OnnxRuntime.RunOptions)
   name: Run(IReadOnlyCollection<NamedOnnxValue>, IReadOnlyCollection<String>, IReadOnlyCollection<FixedBufferOnnxValue>, RunOptions)
   href: api/Microsoft.ML.OnnxRuntime.InferenceSession.html#Microsoft_ML_OnnxRuntime_InferenceSession_Run_IReadOnlyCollection_Microsoft_ML_OnnxRuntime_NamedOnnxValue__IReadOnlyCollection_System_String__IReadOnlyCollection_Microsoft_ML_OnnxRuntime_FixedBufferOnnxValue__Microsoft_ML_OnnxRuntime_RunOptions_
@@ -458,6 +431,15 @@ references:
   fullName.vb: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection(Of Microsoft.ML.OnnxRuntime.NamedOnnxValue), IReadOnlyCollection(Of System.String), IReadOnlyCollection(Of Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue), Microsoft.ML.OnnxRuntime.RunOptions)
   nameWithType: InferenceSession.Run(IReadOnlyCollection<NamedOnnxValue>, IReadOnlyCollection<String>, IReadOnlyCollection<FixedBufferOnnxValue>, RunOptions)
   nameWithType.vb: InferenceSession.Run(IReadOnlyCollection(Of NamedOnnxValue), IReadOnlyCollection(Of String), IReadOnlyCollection(Of FixedBufferOnnxValue), RunOptions)
+- uid: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection{Microsoft.ML.OnnxRuntime.NamedOnnxValue},IReadOnlyCollection{System.String},IReadOnlyCollection{Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue})
+  name: Run(IReadOnlyCollection<NamedOnnxValue>, IReadOnlyCollection<String>, IReadOnlyCollection<FixedBufferOnnxValue>)
+  href: api/Microsoft.ML.OnnxRuntime.InferenceSession.html#Microsoft_ML_OnnxRuntime_InferenceSession_Run_IReadOnlyCollection_Microsoft_ML_OnnxRuntime_NamedOnnxValue__IReadOnlyCollection_System_String__IReadOnlyCollection_Microsoft_ML_OnnxRuntime_FixedBufferOnnxValue__
+  commentId: M:Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection{Microsoft.ML.OnnxRuntime.NamedOnnxValue},IReadOnlyCollection{System.String},IReadOnlyCollection{Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue})
+  name.vb: Run(IReadOnlyCollection(Of NamedOnnxValue), IReadOnlyCollection(Of String), IReadOnlyCollection(Of FixedBufferOnnxValue))
+  fullName: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection<Microsoft.ML.OnnxRuntime.NamedOnnxValue>, IReadOnlyCollection<System.String>, IReadOnlyCollection<Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue>)
+  fullName.vb: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection(Of Microsoft.ML.OnnxRuntime.NamedOnnxValue), IReadOnlyCollection(Of System.String), IReadOnlyCollection(Of Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue))
+  nameWithType: InferenceSession.Run(IReadOnlyCollection<NamedOnnxValue>, IReadOnlyCollection<String>, IReadOnlyCollection<FixedBufferOnnxValue>)
+  nameWithType.vb: InferenceSession.Run(IReadOnlyCollection(Of NamedOnnxValue), IReadOnlyCollection(Of String), IReadOnlyCollection(Of FixedBufferOnnxValue))
 - uid: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection{Microsoft.ML.OnnxRuntime.NamedOnnxValue},IReadOnlyCollection{System.String},Microsoft.ML.OnnxRuntime.RunOptions)
   name: Run(IReadOnlyCollection<NamedOnnxValue>, IReadOnlyCollection<String>, RunOptions)
   href: api/Microsoft.ML.OnnxRuntime.InferenceSession.html#Microsoft_ML_OnnxRuntime_InferenceSession_Run_IReadOnlyCollection_Microsoft_ML_OnnxRuntime_NamedOnnxValue__IReadOnlyCollection_System_String__Microsoft_ML_OnnxRuntime_RunOptions_
@@ -467,24 +449,24 @@ references:
   fullName.vb: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection(Of Microsoft.ML.OnnxRuntime.NamedOnnxValue), IReadOnlyCollection(Of System.String), Microsoft.ML.OnnxRuntime.RunOptions)
   nameWithType: InferenceSession.Run(IReadOnlyCollection<NamedOnnxValue>, IReadOnlyCollection<String>, RunOptions)
   nameWithType.vb: InferenceSession.Run(IReadOnlyCollection(Of NamedOnnxValue), IReadOnlyCollection(Of String), RunOptions)
-- uid: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection{System.String},IReadOnlyCollection{Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue})
-  name: Run(IReadOnlyCollection<String>, IReadOnlyCollection<FixedBufferOnnxValue>)
-  href: api/Microsoft.ML.OnnxRuntime.InferenceSession.html#Microsoft_ML_OnnxRuntime_InferenceSession_Run_IReadOnlyCollection_System_String__IReadOnlyCollection_Microsoft_ML_OnnxRuntime_FixedBufferOnnxValue__
-  commentId: M:Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection{System.String},IReadOnlyCollection{Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue})
-  name.vb: Run(IReadOnlyCollection(Of String), IReadOnlyCollection(Of FixedBufferOnnxValue))
-  fullName: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection<System.String>, IReadOnlyCollection<Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue>)
-  fullName.vb: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection(Of System.String), IReadOnlyCollection(Of Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue))
-  nameWithType: InferenceSession.Run(IReadOnlyCollection<String>, IReadOnlyCollection<FixedBufferOnnxValue>)
-  nameWithType.vb: InferenceSession.Run(IReadOnlyCollection(Of String), IReadOnlyCollection(Of FixedBufferOnnxValue))
-- uid: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection{System.String},IReadOnlyCollection{Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue},IReadOnlyCollection{Microsoft.ML.OnnxRuntime.NamedOnnxValue})
-  name: Run(IReadOnlyCollection<String>, IReadOnlyCollection<FixedBufferOnnxValue>, IReadOnlyCollection<NamedOnnxValue>)
-  href: api/Microsoft.ML.OnnxRuntime.InferenceSession.html#Microsoft_ML_OnnxRuntime_InferenceSession_Run_IReadOnlyCollection_System_String__IReadOnlyCollection_Microsoft_ML_OnnxRuntime_FixedBufferOnnxValue__IReadOnlyCollection_Microsoft_ML_OnnxRuntime_NamedOnnxValue__
-  commentId: M:Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection{System.String},IReadOnlyCollection{Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue},IReadOnlyCollection{Microsoft.ML.OnnxRuntime.NamedOnnxValue})
-  name.vb: Run(IReadOnlyCollection(Of String), IReadOnlyCollection(Of FixedBufferOnnxValue), IReadOnlyCollection(Of NamedOnnxValue))
-  fullName: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection<System.String>, IReadOnlyCollection<Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue>, IReadOnlyCollection<Microsoft.ML.OnnxRuntime.NamedOnnxValue>)
-  fullName.vb: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection(Of System.String), IReadOnlyCollection(Of Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue), IReadOnlyCollection(Of Microsoft.ML.OnnxRuntime.NamedOnnxValue))
-  nameWithType: InferenceSession.Run(IReadOnlyCollection<String>, IReadOnlyCollection<FixedBufferOnnxValue>, IReadOnlyCollection<NamedOnnxValue>)
-  nameWithType.vb: InferenceSession.Run(IReadOnlyCollection(Of String), IReadOnlyCollection(Of FixedBufferOnnxValue), IReadOnlyCollection(Of NamedOnnxValue))
+- uid: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection{Microsoft.ML.OnnxRuntime.NamedOnnxValue},IReadOnlyCollection{System.String})
+  name: Run(IReadOnlyCollection<NamedOnnxValue>, IReadOnlyCollection<String>)
+  href: api/Microsoft.ML.OnnxRuntime.InferenceSession.html#Microsoft_ML_OnnxRuntime_InferenceSession_Run_IReadOnlyCollection_Microsoft_ML_OnnxRuntime_NamedOnnxValue__IReadOnlyCollection_System_String__
+  commentId: M:Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection{Microsoft.ML.OnnxRuntime.NamedOnnxValue},IReadOnlyCollection{System.String})
+  name.vb: Run(IReadOnlyCollection(Of NamedOnnxValue), IReadOnlyCollection(Of String))
+  fullName: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection<Microsoft.ML.OnnxRuntime.NamedOnnxValue>, IReadOnlyCollection<System.String>)
+  fullName.vb: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection(Of Microsoft.ML.OnnxRuntime.NamedOnnxValue), IReadOnlyCollection(Of System.String))
+  nameWithType: InferenceSession.Run(IReadOnlyCollection<NamedOnnxValue>, IReadOnlyCollection<String>)
+  nameWithType.vb: InferenceSession.Run(IReadOnlyCollection(Of NamedOnnxValue), IReadOnlyCollection(Of String))
+- uid: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection{Microsoft.ML.OnnxRuntime.NamedOnnxValue})
+  name: Run(IReadOnlyCollection<NamedOnnxValue>)
+  href: api/Microsoft.ML.OnnxRuntime.InferenceSession.html#Microsoft_ML_OnnxRuntime_InferenceSession_Run_IReadOnlyCollection_Microsoft_ML_OnnxRuntime_NamedOnnxValue__
+  commentId: M:Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection{Microsoft.ML.OnnxRuntime.NamedOnnxValue})
+  name.vb: Run(IReadOnlyCollection(Of NamedOnnxValue))
+  fullName: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection<Microsoft.ML.OnnxRuntime.NamedOnnxValue>)
+  fullName.vb: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection(Of Microsoft.ML.OnnxRuntime.NamedOnnxValue))
+  nameWithType: InferenceSession.Run(IReadOnlyCollection<NamedOnnxValue>)
+  nameWithType.vb: InferenceSession.Run(IReadOnlyCollection(Of NamedOnnxValue))
 - uid: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection{System.String},IReadOnlyCollection{Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue},IReadOnlyCollection{Microsoft.ML.OnnxRuntime.NamedOnnxValue},Microsoft.ML.OnnxRuntime.RunOptions)
   name: Run(IReadOnlyCollection<String>, IReadOnlyCollection<FixedBufferOnnxValue>, IReadOnlyCollection<NamedOnnxValue>, RunOptions)
   href: api/Microsoft.ML.OnnxRuntime.InferenceSession.html#Microsoft_ML_OnnxRuntime_InferenceSession_Run_IReadOnlyCollection_System_String__IReadOnlyCollection_Microsoft_ML_OnnxRuntime_FixedBufferOnnxValue__IReadOnlyCollection_Microsoft_ML_OnnxRuntime_NamedOnnxValue__Microsoft_ML_OnnxRuntime_RunOptions_
@@ -494,24 +476,15 @@ references:
   fullName.vb: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection(Of System.String), IReadOnlyCollection(Of Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue), IReadOnlyCollection(Of Microsoft.ML.OnnxRuntime.NamedOnnxValue), Microsoft.ML.OnnxRuntime.RunOptions)
   nameWithType: InferenceSession.Run(IReadOnlyCollection<String>, IReadOnlyCollection<FixedBufferOnnxValue>, IReadOnlyCollection<NamedOnnxValue>, RunOptions)
   nameWithType.vb: InferenceSession.Run(IReadOnlyCollection(Of String), IReadOnlyCollection(Of FixedBufferOnnxValue), IReadOnlyCollection(Of NamedOnnxValue), RunOptions)
-- uid: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection{System.String},IReadOnlyCollection{Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue},IReadOnlyCollection{System.String})
-  name: Run(IReadOnlyCollection<String>, IReadOnlyCollection<FixedBufferOnnxValue>, IReadOnlyCollection<String>)
-  href: api/Microsoft.ML.OnnxRuntime.InferenceSession.html#Microsoft_ML_OnnxRuntime_InferenceSession_Run_IReadOnlyCollection_System_String__IReadOnlyCollection_Microsoft_ML_OnnxRuntime_FixedBufferOnnxValue__IReadOnlyCollection_System_String__
-  commentId: M:Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection{System.String},IReadOnlyCollection{Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue},IReadOnlyCollection{System.String})
-  name.vb: Run(IReadOnlyCollection(Of String), IReadOnlyCollection(Of FixedBufferOnnxValue), IReadOnlyCollection(Of String))
-  fullName: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection<System.String>, IReadOnlyCollection<Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue>, IReadOnlyCollection<System.String>)
-  fullName.vb: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection(Of System.String), IReadOnlyCollection(Of Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue), IReadOnlyCollection(Of System.String))
-  nameWithType: InferenceSession.Run(IReadOnlyCollection<String>, IReadOnlyCollection<FixedBufferOnnxValue>, IReadOnlyCollection<String>)
-  nameWithType.vb: InferenceSession.Run(IReadOnlyCollection(Of String), IReadOnlyCollection(Of FixedBufferOnnxValue), IReadOnlyCollection(Of String))
-- uid: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection{System.String},IReadOnlyCollection{Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue},IReadOnlyCollection{System.String},IReadOnlyCollection{Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue})
-  name: Run(IReadOnlyCollection<String>, IReadOnlyCollection<FixedBufferOnnxValue>, IReadOnlyCollection<String>, IReadOnlyCollection<FixedBufferOnnxValue>)
-  href: api/Microsoft.ML.OnnxRuntime.InferenceSession.html#Microsoft_ML_OnnxRuntime_InferenceSession_Run_IReadOnlyCollection_System_String__IReadOnlyCollection_Microsoft_ML_OnnxRuntime_FixedBufferOnnxValue__IReadOnlyCollection_System_String__IReadOnlyCollection_Microsoft_ML_OnnxRuntime_FixedBufferOnnxValue__
-  commentId: M:Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection{System.String},IReadOnlyCollection{Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue},IReadOnlyCollection{System.String},IReadOnlyCollection{Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue})
-  name.vb: Run(IReadOnlyCollection(Of String), IReadOnlyCollection(Of FixedBufferOnnxValue), IReadOnlyCollection(Of String), IReadOnlyCollection(Of FixedBufferOnnxValue))
-  fullName: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection<System.String>, IReadOnlyCollection<Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue>, IReadOnlyCollection<System.String>, IReadOnlyCollection<Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue>)
-  fullName.vb: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection(Of System.String), IReadOnlyCollection(Of Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue), IReadOnlyCollection(Of System.String), IReadOnlyCollection(Of Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue))
-  nameWithType: InferenceSession.Run(IReadOnlyCollection<String>, IReadOnlyCollection<FixedBufferOnnxValue>, IReadOnlyCollection<String>, IReadOnlyCollection<FixedBufferOnnxValue>)
-  nameWithType.vb: InferenceSession.Run(IReadOnlyCollection(Of String), IReadOnlyCollection(Of FixedBufferOnnxValue), IReadOnlyCollection(Of String), IReadOnlyCollection(Of FixedBufferOnnxValue))
+- uid: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection{System.String},IReadOnlyCollection{Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue},IReadOnlyCollection{Microsoft.ML.OnnxRuntime.NamedOnnxValue})
+  name: Run(IReadOnlyCollection<String>, IReadOnlyCollection<FixedBufferOnnxValue>, IReadOnlyCollection<NamedOnnxValue>)
+  href: api/Microsoft.ML.OnnxRuntime.InferenceSession.html#Microsoft_ML_OnnxRuntime_InferenceSession_Run_IReadOnlyCollection_System_String__IReadOnlyCollection_Microsoft_ML_OnnxRuntime_FixedBufferOnnxValue__IReadOnlyCollection_Microsoft_ML_OnnxRuntime_NamedOnnxValue__
+  commentId: M:Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection{System.String},IReadOnlyCollection{Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue},IReadOnlyCollection{Microsoft.ML.OnnxRuntime.NamedOnnxValue})
+  name.vb: Run(IReadOnlyCollection(Of String), IReadOnlyCollection(Of FixedBufferOnnxValue), IReadOnlyCollection(Of NamedOnnxValue))
+  fullName: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection<System.String>, IReadOnlyCollection<Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue>, IReadOnlyCollection<Microsoft.ML.OnnxRuntime.NamedOnnxValue>)
+  fullName.vb: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection(Of System.String), IReadOnlyCollection(Of Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue), IReadOnlyCollection(Of Microsoft.ML.OnnxRuntime.NamedOnnxValue))
+  nameWithType: InferenceSession.Run(IReadOnlyCollection<String>, IReadOnlyCollection<FixedBufferOnnxValue>, IReadOnlyCollection<NamedOnnxValue>)
+  nameWithType.vb: InferenceSession.Run(IReadOnlyCollection(Of String), IReadOnlyCollection(Of FixedBufferOnnxValue), IReadOnlyCollection(Of NamedOnnxValue))
 - uid: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection{System.String},IReadOnlyCollection{Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue},IReadOnlyCollection{System.String},IReadOnlyCollection{Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue},Microsoft.ML.OnnxRuntime.RunOptions)
   name: Run(IReadOnlyCollection<String>, IReadOnlyCollection<FixedBufferOnnxValue>, IReadOnlyCollection<String>, IReadOnlyCollection<FixedBufferOnnxValue>, RunOptions)
   href: api/Microsoft.ML.OnnxRuntime.InferenceSession.html#Microsoft_ML_OnnxRuntime_InferenceSession_Run_IReadOnlyCollection_System_String__IReadOnlyCollection_Microsoft_ML_OnnxRuntime_FixedBufferOnnxValue__IReadOnlyCollection_System_String__IReadOnlyCollection_Microsoft_ML_OnnxRuntime_FixedBufferOnnxValue__Microsoft_ML_OnnxRuntime_RunOptions_
@@ -521,6 +494,15 @@ references:
   fullName.vb: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection(Of System.String), IReadOnlyCollection(Of Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue), IReadOnlyCollection(Of System.String), IReadOnlyCollection(Of Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue), Microsoft.ML.OnnxRuntime.RunOptions)
   nameWithType: InferenceSession.Run(IReadOnlyCollection<String>, IReadOnlyCollection<FixedBufferOnnxValue>, IReadOnlyCollection<String>, IReadOnlyCollection<FixedBufferOnnxValue>, RunOptions)
   nameWithType.vb: InferenceSession.Run(IReadOnlyCollection(Of String), IReadOnlyCollection(Of FixedBufferOnnxValue), IReadOnlyCollection(Of String), IReadOnlyCollection(Of FixedBufferOnnxValue), RunOptions)
+- uid: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection{System.String},IReadOnlyCollection{Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue},IReadOnlyCollection{System.String},IReadOnlyCollection{Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue})
+  name: Run(IReadOnlyCollection<String>, IReadOnlyCollection<FixedBufferOnnxValue>, IReadOnlyCollection<String>, IReadOnlyCollection<FixedBufferOnnxValue>)
+  href: api/Microsoft.ML.OnnxRuntime.InferenceSession.html#Microsoft_ML_OnnxRuntime_InferenceSession_Run_IReadOnlyCollection_System_String__IReadOnlyCollection_Microsoft_ML_OnnxRuntime_FixedBufferOnnxValue__IReadOnlyCollection_System_String__IReadOnlyCollection_Microsoft_ML_OnnxRuntime_FixedBufferOnnxValue__
+  commentId: M:Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection{System.String},IReadOnlyCollection{Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue},IReadOnlyCollection{System.String},IReadOnlyCollection{Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue})
+  name.vb: Run(IReadOnlyCollection(Of String), IReadOnlyCollection(Of FixedBufferOnnxValue), IReadOnlyCollection(Of String), IReadOnlyCollection(Of FixedBufferOnnxValue))
+  fullName: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection<System.String>, IReadOnlyCollection<Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue>, IReadOnlyCollection<System.String>, IReadOnlyCollection<Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue>)
+  fullName.vb: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection(Of System.String), IReadOnlyCollection(Of Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue), IReadOnlyCollection(Of System.String), IReadOnlyCollection(Of Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue))
+  nameWithType: InferenceSession.Run(IReadOnlyCollection<String>, IReadOnlyCollection<FixedBufferOnnxValue>, IReadOnlyCollection<String>, IReadOnlyCollection<FixedBufferOnnxValue>)
+  nameWithType.vb: InferenceSession.Run(IReadOnlyCollection(Of String), IReadOnlyCollection(Of FixedBufferOnnxValue), IReadOnlyCollection(Of String), IReadOnlyCollection(Of FixedBufferOnnxValue))
 - uid: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection{System.String},IReadOnlyCollection{Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue},IReadOnlyCollection{System.String},Microsoft.ML.OnnxRuntime.RunOptions)
   name: Run(IReadOnlyCollection<String>, IReadOnlyCollection<FixedBufferOnnxValue>, IReadOnlyCollection<String>, RunOptions)
   href: api/Microsoft.ML.OnnxRuntime.InferenceSession.html#Microsoft_ML_OnnxRuntime_InferenceSession_Run_IReadOnlyCollection_System_String__IReadOnlyCollection_Microsoft_ML_OnnxRuntime_FixedBufferOnnxValue__IReadOnlyCollection_System_String__Microsoft_ML_OnnxRuntime_RunOptions_
@@ -530,6 +512,24 @@ references:
   fullName.vb: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection(Of System.String), IReadOnlyCollection(Of Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue), IReadOnlyCollection(Of System.String), Microsoft.ML.OnnxRuntime.RunOptions)
   nameWithType: InferenceSession.Run(IReadOnlyCollection<String>, IReadOnlyCollection<FixedBufferOnnxValue>, IReadOnlyCollection<String>, RunOptions)
   nameWithType.vb: InferenceSession.Run(IReadOnlyCollection(Of String), IReadOnlyCollection(Of FixedBufferOnnxValue), IReadOnlyCollection(Of String), RunOptions)
+- uid: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection{System.String},IReadOnlyCollection{Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue},IReadOnlyCollection{System.String})
+  name: Run(IReadOnlyCollection<String>, IReadOnlyCollection<FixedBufferOnnxValue>, IReadOnlyCollection<String>)
+  href: api/Microsoft.ML.OnnxRuntime.InferenceSession.html#Microsoft_ML_OnnxRuntime_InferenceSession_Run_IReadOnlyCollection_System_String__IReadOnlyCollection_Microsoft_ML_OnnxRuntime_FixedBufferOnnxValue__IReadOnlyCollection_System_String__
+  commentId: M:Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection{System.String},IReadOnlyCollection{Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue},IReadOnlyCollection{System.String})
+  name.vb: Run(IReadOnlyCollection(Of String), IReadOnlyCollection(Of FixedBufferOnnxValue), IReadOnlyCollection(Of String))
+  fullName: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection<System.String>, IReadOnlyCollection<Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue>, IReadOnlyCollection<System.String>)
+  fullName.vb: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection(Of System.String), IReadOnlyCollection(Of Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue), IReadOnlyCollection(Of System.String))
+  nameWithType: InferenceSession.Run(IReadOnlyCollection<String>, IReadOnlyCollection<FixedBufferOnnxValue>, IReadOnlyCollection<String>)
+  nameWithType.vb: InferenceSession.Run(IReadOnlyCollection(Of String), IReadOnlyCollection(Of FixedBufferOnnxValue), IReadOnlyCollection(Of String))
+- uid: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection{System.String},IReadOnlyCollection{Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue})
+  name: Run(IReadOnlyCollection<String>, IReadOnlyCollection<FixedBufferOnnxValue>)
+  href: api/Microsoft.ML.OnnxRuntime.InferenceSession.html#Microsoft_ML_OnnxRuntime_InferenceSession_Run_IReadOnlyCollection_System_String__IReadOnlyCollection_Microsoft_ML_OnnxRuntime_FixedBufferOnnxValue__
+  commentId: M:Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection{System.String},IReadOnlyCollection{Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue})
+  name.vb: Run(IReadOnlyCollection(Of String), IReadOnlyCollection(Of FixedBufferOnnxValue))
+  fullName: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection<System.String>, IReadOnlyCollection<Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue>)
+  fullName.vb: Microsoft.ML.OnnxRuntime.InferenceSession.Run(IReadOnlyCollection(Of System.String), IReadOnlyCollection(Of Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue))
+  nameWithType: InferenceSession.Run(IReadOnlyCollection<String>, IReadOnlyCollection<FixedBufferOnnxValue>)
+  nameWithType.vb: InferenceSession.Run(IReadOnlyCollection(Of String), IReadOnlyCollection(Of FixedBufferOnnxValue))
 - uid: Microsoft.ML.OnnxRuntime.InferenceSession.Run*
   name: Run
   href: api/Microsoft.ML.OnnxRuntime.InferenceSession.html#Microsoft_ML_OnnxRuntime_InferenceSession_Run_
@@ -705,19 +705,6 @@ references:
   commentId: T:Microsoft.ML.OnnxRuntime.NamedOnnxValue
   fullName: Microsoft.ML.OnnxRuntime.NamedOnnxValue
   nameWithType: NamedOnnxValue
-- uid: Microsoft.ML.OnnxRuntime.NamedOnnxValue.#ctor(System.String,Object)
-  name: NamedOnnxValue(String, Object)
-  href: api/Microsoft.ML.OnnxRuntime.NamedOnnxValue.html#Microsoft_ML_OnnxRuntime_NamedOnnxValue__ctor_System_String_Object_
-  commentId: M:Microsoft.ML.OnnxRuntime.NamedOnnxValue.#ctor(System.String,Object)
-  fullName: Microsoft.ML.OnnxRuntime.NamedOnnxValue.NamedOnnxValue(System.String, Object)
-  nameWithType: NamedOnnxValue.NamedOnnxValue(String, Object)
-- uid: Microsoft.ML.OnnxRuntime.NamedOnnxValue.#ctor*
-  name: NamedOnnxValue
-  href: api/Microsoft.ML.OnnxRuntime.NamedOnnxValue.html#Microsoft_ML_OnnxRuntime_NamedOnnxValue__ctor_
-  commentId: Overload:Microsoft.ML.OnnxRuntime.NamedOnnxValue.#ctor
-  isSpec: "True"
-  fullName: Microsoft.ML.OnnxRuntime.NamedOnnxValue.NamedOnnxValue
-  nameWithType: NamedOnnxValue.NamedOnnxValue
 - uid: Microsoft.ML.OnnxRuntime.NamedOnnxValue._name
   name: _name
   href: api/Microsoft.ML.OnnxRuntime.NamedOnnxValue.html#Microsoft_ML_OnnxRuntime_NamedOnnxValue__name
@@ -730,6 +717,19 @@ references:
   commentId: F:Microsoft.ML.OnnxRuntime.NamedOnnxValue._value
   fullName: Microsoft.ML.OnnxRuntime.NamedOnnxValue._value
   nameWithType: NamedOnnxValue._value
+- uid: Microsoft.ML.OnnxRuntime.NamedOnnxValue.#ctor(System.String,System.Object)
+  name: NamedOnnxValue(String, Object)
+  href: api/Microsoft.ML.OnnxRuntime.NamedOnnxValue.html#Microsoft_ML_OnnxRuntime_NamedOnnxValue__ctor_System_String_System_Object_
+  commentId: M:Microsoft.ML.OnnxRuntime.NamedOnnxValue.#ctor(System.String,System.Object)
+  fullName: Microsoft.ML.OnnxRuntime.NamedOnnxValue.NamedOnnxValue(System.String, System.Object)
+  nameWithType: NamedOnnxValue.NamedOnnxValue(String, Object)
+- uid: Microsoft.ML.OnnxRuntime.NamedOnnxValue.#ctor*
+  name: NamedOnnxValue
+  href: api/Microsoft.ML.OnnxRuntime.NamedOnnxValue.html#Microsoft_ML_OnnxRuntime_NamedOnnxValue__ctor_
+  commentId: Overload:Microsoft.ML.OnnxRuntime.NamedOnnxValue.#ctor
+  isSpec: "True"
+  fullName: Microsoft.ML.OnnxRuntime.NamedOnnxValue.NamedOnnxValue
+  nameWithType: NamedOnnxValue.NamedOnnxValue
 - uid: Microsoft.ML.OnnxRuntime.NamedOnnxValue.AsDictionary*
   name: AsDictionary
   href: api/Microsoft.ML.OnnxRuntime.NamedOnnxValue.html#Microsoft_ML_OnnxRuntime_NamedOnnxValue_AsDictionary_
@@ -785,13 +785,13 @@ references:
   isSpec: "True"
   fullName: Microsoft.ML.OnnxRuntime.NamedOnnxValue.CreateFromTensor
   nameWithType: NamedOnnxValue.CreateFromTensor
-- uid: Microsoft.ML.OnnxRuntime.NamedOnnxValue.CreateFromTensor``1(System.String,Tensor{``0})
+- uid: Microsoft.ML.OnnxRuntime.NamedOnnxValue.CreateFromTensor``1(System.String,Microsoft.ML.OnnxRuntime.Tensors.Tensor{``0})
   name: CreateFromTensor<T>(String, Tensor<T>)
-  href: api/Microsoft.ML.OnnxRuntime.NamedOnnxValue.html#Microsoft_ML_OnnxRuntime_NamedOnnxValue_CreateFromTensor__1_System_String_Tensor___0__
-  commentId: M:Microsoft.ML.OnnxRuntime.NamedOnnxValue.CreateFromTensor``1(System.String,Tensor{``0})
+  href: api/Microsoft.ML.OnnxRuntime.NamedOnnxValue.html#Microsoft_ML_OnnxRuntime_NamedOnnxValue_CreateFromTensor__1_System_String_Microsoft_ML_OnnxRuntime_Tensors_Tensor___0__
+  commentId: M:Microsoft.ML.OnnxRuntime.NamedOnnxValue.CreateFromTensor``1(System.String,Microsoft.ML.OnnxRuntime.Tensors.Tensor{``0})
   name.vb: CreateFromTensor(Of T)(String, Tensor(Of T))
-  fullName: Microsoft.ML.OnnxRuntime.NamedOnnxValue.CreateFromTensor<T>(System.String, Tensor<T>)
-  fullName.vb: Microsoft.ML.OnnxRuntime.NamedOnnxValue.CreateFromTensor(Of T)(System.String, Tensor(Of T))
+  fullName: Microsoft.ML.OnnxRuntime.NamedOnnxValue.CreateFromTensor<T>(System.String, Microsoft.ML.OnnxRuntime.Tensors.Tensor<T>)
+  fullName.vb: Microsoft.ML.OnnxRuntime.NamedOnnxValue.CreateFromTensor(Of T)(System.String, Microsoft.ML.OnnxRuntime.Tensors.Tensor(Of T))
   nameWithType: NamedOnnxValue.CreateFromTensor<T>(String, Tensor<T>)
   nameWithType.vb: NamedOnnxValue.CreateFromTensor(Of T)(String, Tensor(Of T))
 - uid: Microsoft.ML.OnnxRuntime.NamedOnnxValue.Name
@@ -2659,6 +2659,19 @@ references:
   isSpec: "True"
   fullName: Microsoft.ML.OnnxRuntime.OrtEnv.GetAvailableProviders
   nameWithType: OrtEnv.GetAvailableProviders
+- uid: Microsoft.ML.OnnxRuntime.OrtEnv.GetVersionString
+  name: GetVersionString()
+  href: api/Microsoft.ML.OnnxRuntime.OrtEnv.html#Microsoft_ML_OnnxRuntime_OrtEnv_GetVersionString
+  commentId: M:Microsoft.ML.OnnxRuntime.OrtEnv.GetVersionString
+  fullName: Microsoft.ML.OnnxRuntime.OrtEnv.GetVersionString()
+  nameWithType: OrtEnv.GetVersionString()
+- uid: Microsoft.ML.OnnxRuntime.OrtEnv.GetVersionString*
+  name: GetVersionString
+  href: api/Microsoft.ML.OnnxRuntime.OrtEnv.html#Microsoft_ML_OnnxRuntime_OrtEnv_GetVersionString_
+  commentId: Overload:Microsoft.ML.OnnxRuntime.OrtEnv.GetVersionString
+  isSpec: "True"
+  fullName: Microsoft.ML.OnnxRuntime.OrtEnv.GetVersionString
+  nameWithType: OrtEnv.GetVersionString
 - uid: Microsoft.ML.OnnxRuntime.OrtEnv.Instance
   name: Instance()
   href: api/Microsoft.ML.OnnxRuntime.OrtEnv.html#Microsoft_ML_OnnxRuntime_OrtEnv_Instance
@@ -2704,13 +2717,13 @@ references:
   commentId: T:Microsoft.ML.OnnxRuntime.OrtExternalAllocation
   fullName: Microsoft.ML.OnnxRuntime.OrtExternalAllocation
   nameWithType: OrtExternalAllocation
-- uid: Microsoft.ML.OnnxRuntime.OrtExternalAllocation.#ctor(Microsoft.ML.OnnxRuntime.OrtMemoryInfo,System.Int64[],Microsoft.ML.OnnxRuntime.Tensors.TensorElementType,IntPtr,System.Int64)
+- uid: Microsoft.ML.OnnxRuntime.OrtExternalAllocation.#ctor(Microsoft.ML.OnnxRuntime.OrtMemoryInfo,System.Int64[],Microsoft.ML.OnnxRuntime.Tensors.TensorElementType,System.IntPtr,System.Int64)
   name: OrtExternalAllocation(OrtMemoryInfo, Int64[], TensorElementType, IntPtr, Int64)
-  href: api/Microsoft.ML.OnnxRuntime.OrtExternalAllocation.html#Microsoft_ML_OnnxRuntime_OrtExternalAllocation__ctor_Microsoft_ML_OnnxRuntime_OrtMemoryInfo_System_Int64___Microsoft_ML_OnnxRuntime_Tensors_TensorElementType_IntPtr_System_Int64_
-  commentId: M:Microsoft.ML.OnnxRuntime.OrtExternalAllocation.#ctor(Microsoft.ML.OnnxRuntime.OrtMemoryInfo,System.Int64[],Microsoft.ML.OnnxRuntime.Tensors.TensorElementType,IntPtr,System.Int64)
+  href: api/Microsoft.ML.OnnxRuntime.OrtExternalAllocation.html#Microsoft_ML_OnnxRuntime_OrtExternalAllocation__ctor_Microsoft_ML_OnnxRuntime_OrtMemoryInfo_System_Int64___Microsoft_ML_OnnxRuntime_Tensors_TensorElementType_System_IntPtr_System_Int64_
+  commentId: M:Microsoft.ML.OnnxRuntime.OrtExternalAllocation.#ctor(Microsoft.ML.OnnxRuntime.OrtMemoryInfo,System.Int64[],Microsoft.ML.OnnxRuntime.Tensors.TensorElementType,System.IntPtr,System.Int64)
   name.vb: OrtExternalAllocation(OrtMemoryInfo, Int64(), TensorElementType, IntPtr, Int64)
-  fullName: Microsoft.ML.OnnxRuntime.OrtExternalAllocation.OrtExternalAllocation(Microsoft.ML.OnnxRuntime.OrtMemoryInfo, System.Int64[], Microsoft.ML.OnnxRuntime.Tensors.TensorElementType, IntPtr, System.Int64)
-  fullName.vb: Microsoft.ML.OnnxRuntime.OrtExternalAllocation.OrtExternalAllocation(Microsoft.ML.OnnxRuntime.OrtMemoryInfo, System.Int64(), Microsoft.ML.OnnxRuntime.Tensors.TensorElementType, IntPtr, System.Int64)
+  fullName: Microsoft.ML.OnnxRuntime.OrtExternalAllocation.OrtExternalAllocation(Microsoft.ML.OnnxRuntime.OrtMemoryInfo, System.Int64[], Microsoft.ML.OnnxRuntime.Tensors.TensorElementType, System.IntPtr, System.Int64)
+  fullName.vb: Microsoft.ML.OnnxRuntime.OrtExternalAllocation.OrtExternalAllocation(Microsoft.ML.OnnxRuntime.OrtMemoryInfo, System.Int64(), Microsoft.ML.OnnxRuntime.Tensors.TensorElementType, System.IntPtr, System.Int64)
   nameWithType: OrtExternalAllocation.OrtExternalAllocation(OrtMemoryInfo, Int64[], TensorElementType, IntPtr, Int64)
   nameWithType.vb: OrtExternalAllocation.OrtExternalAllocation(OrtMemoryInfo, Int64(), TensorElementType, IntPtr, Int64)
 - uid: Microsoft.ML.OnnxRuntime.OrtExternalAllocation.#ctor*
@@ -3392,13 +3405,13 @@ references:
   commentId: T:Microsoft.ML.OnnxRuntime.OrtValue
   fullName: Microsoft.ML.OnnxRuntime.OrtValue
   nameWithType: OrtValue
-- uid: Microsoft.ML.OnnxRuntime.OrtValue.CreateFromTensorObject(Object,System.Nullable{MemoryHandle}@,TensorElementType@)
+- uid: Microsoft.ML.OnnxRuntime.OrtValue.CreateFromTensorObject(System.Object,System.Nullable{System.Buffers.MemoryHandle}@,Microsoft.ML.OnnxRuntime.Tensors.TensorElementType@)
   name: CreateFromTensorObject(Object, out Nullable<MemoryHandle>, out TensorElementType)
-  href: api/Microsoft.ML.OnnxRuntime.OrtValue.html#Microsoft_ML_OnnxRuntime_OrtValue_CreateFromTensorObject_Object_System_Nullable_MemoryHandle___TensorElementType__
-  commentId: M:Microsoft.ML.OnnxRuntime.OrtValue.CreateFromTensorObject(Object,System.Nullable{MemoryHandle}@,TensorElementType@)
+  href: api/Microsoft.ML.OnnxRuntime.OrtValue.html#Microsoft_ML_OnnxRuntime_OrtValue_CreateFromTensorObject_System_Object_System_Nullable_System_Buffers_MemoryHandle___Microsoft_ML_OnnxRuntime_Tensors_TensorElementType__
+  commentId: M:Microsoft.ML.OnnxRuntime.OrtValue.CreateFromTensorObject(System.Object,System.Nullable{System.Buffers.MemoryHandle}@,Microsoft.ML.OnnxRuntime.Tensors.TensorElementType@)
   name.vb: CreateFromTensorObject(Object, ByRef Nullable(Of MemoryHandle), ByRef TensorElementType)
-  fullName: Microsoft.ML.OnnxRuntime.OrtValue.CreateFromTensorObject(Object, out System.Nullable<MemoryHandle>, out TensorElementType)
-  fullName.vb: Microsoft.ML.OnnxRuntime.OrtValue.CreateFromTensorObject(Object, ByRef System.Nullable(Of MemoryHandle), ByRef TensorElementType)
+  fullName: Microsoft.ML.OnnxRuntime.OrtValue.CreateFromTensorObject(System.Object, out System.Nullable<System.Buffers.MemoryHandle>, out Microsoft.ML.OnnxRuntime.Tensors.TensorElementType)
+  fullName.vb: Microsoft.ML.OnnxRuntime.OrtValue.CreateFromTensorObject(System.Object, ByRef System.Nullable(Of System.Buffers.MemoryHandle), ByRef Microsoft.ML.OnnxRuntime.Tensors.TensorElementType)
   nameWithType: OrtValue.CreateFromTensorObject(Object, out Nullable<MemoryHandle>, out TensorElementType)
   nameWithType.vb: OrtValue.CreateFromTensorObject(Object, ByRef Nullable(Of MemoryHandle), ByRef TensorElementType)
 - uid: Microsoft.ML.OnnxRuntime.OrtValue.CreateFromTensorObject*
@@ -3408,13 +3421,13 @@ references:
   isSpec: "True"
   fullName: Microsoft.ML.OnnxRuntime.OrtValue.CreateFromTensorObject
   nameWithType: OrtValue.CreateFromTensorObject
-- uid: Microsoft.ML.OnnxRuntime.OrtValue.CreateTensorValueWithData(Microsoft.ML.OnnxRuntime.OrtMemoryInfo,TensorElementType,System.Int64[],IntPtr,System.Int64)
+- uid: Microsoft.ML.OnnxRuntime.OrtValue.CreateTensorValueWithData(Microsoft.ML.OnnxRuntime.OrtMemoryInfo,Microsoft.ML.OnnxRuntime.Tensors.TensorElementType,System.Int64[],System.IntPtr,System.Int64)
   name: CreateTensorValueWithData(OrtMemoryInfo, TensorElementType, Int64[], IntPtr, Int64)
-  href: api/Microsoft.ML.OnnxRuntime.OrtValue.html#Microsoft_ML_OnnxRuntime_OrtValue_CreateTensorValueWithData_Microsoft_ML_OnnxRuntime_OrtMemoryInfo_TensorElementType_System_Int64___IntPtr_System_Int64_
-  commentId: M:Microsoft.ML.OnnxRuntime.OrtValue.CreateTensorValueWithData(Microsoft.ML.OnnxRuntime.OrtMemoryInfo,TensorElementType,System.Int64[],IntPtr,System.Int64)
+  href: api/Microsoft.ML.OnnxRuntime.OrtValue.html#Microsoft_ML_OnnxRuntime_OrtValue_CreateTensorValueWithData_Microsoft_ML_OnnxRuntime_OrtMemoryInfo_Microsoft_ML_OnnxRuntime_Tensors_TensorElementType_System_Int64___System_IntPtr_System_Int64_
+  commentId: M:Microsoft.ML.OnnxRuntime.OrtValue.CreateTensorValueWithData(Microsoft.ML.OnnxRuntime.OrtMemoryInfo,Microsoft.ML.OnnxRuntime.Tensors.TensorElementType,System.Int64[],System.IntPtr,System.Int64)
   name.vb: CreateTensorValueWithData(OrtMemoryInfo, TensorElementType, Int64(), IntPtr, Int64)
-  fullName: Microsoft.ML.OnnxRuntime.OrtValue.CreateTensorValueWithData(Microsoft.ML.OnnxRuntime.OrtMemoryInfo, TensorElementType, System.Int64[], IntPtr, System.Int64)
-  fullName.vb: Microsoft.ML.OnnxRuntime.OrtValue.CreateTensorValueWithData(Microsoft.ML.OnnxRuntime.OrtMemoryInfo, TensorElementType, System.Int64(), IntPtr, System.Int64)
+  fullName: Microsoft.ML.OnnxRuntime.OrtValue.CreateTensorValueWithData(Microsoft.ML.OnnxRuntime.OrtMemoryInfo, Microsoft.ML.OnnxRuntime.Tensors.TensorElementType, System.Int64[], System.IntPtr, System.Int64)
+  fullName.vb: Microsoft.ML.OnnxRuntime.OrtValue.CreateTensorValueWithData(Microsoft.ML.OnnxRuntime.OrtMemoryInfo, Microsoft.ML.OnnxRuntime.Tensors.TensorElementType, System.Int64(), System.IntPtr, System.Int64)
   nameWithType: OrtValue.CreateTensorValueWithData(OrtMemoryInfo, TensorElementType, Int64[], IntPtr, Int64)
   nameWithType.vb: OrtValue.CreateTensorValueWithData(OrtMemoryInfo, TensorElementType, Int64(), IntPtr, Int64)
 - uid: Microsoft.ML.OnnxRuntime.OrtValue.CreateTensorValueWithData*
@@ -3698,22 +3711,6 @@ references:
   isSpec: "True"
   fullName: Microsoft.ML.OnnxRuntime.SessionOptions.AddSessionConfigEntry
   nameWithType: SessionOptions.AddSessionConfigEntry
-- uid: Microsoft.ML.OnnxRuntime.SessionOptions.AppendExecutionProvider(System.String,Dictionary{System.String,System.String})
-  name: AppendExecutionProvider(String, Dictionary<String, String>)
-  href: api/Microsoft.ML.OnnxRuntime.SessionOptions.html#Microsoft_ML_OnnxRuntime_SessionOptions_AppendExecutionProvider_System_String_Dictionary_System_String_System_String__
-  commentId: M:Microsoft.ML.OnnxRuntime.SessionOptions.AppendExecutionProvider(System.String,Dictionary{System.String,System.String})
-  name.vb: AppendExecutionProvider(String, Dictionary(Of String, String))
-  fullName: Microsoft.ML.OnnxRuntime.SessionOptions.AppendExecutionProvider(System.String, Dictionary<System.String, System.String>)
-  fullName.vb: Microsoft.ML.OnnxRuntime.SessionOptions.AppendExecutionProvider(System.String, Dictionary(Of System.String, System.String))
-  nameWithType: SessionOptions.AppendExecutionProvider(String, Dictionary<String, String>)
-  nameWithType.vb: SessionOptions.AppendExecutionProvider(String, Dictionary(Of String, String))
-- uid: Microsoft.ML.OnnxRuntime.SessionOptions.AppendExecutionProvider*
-  name: AppendExecutionProvider
-  href: api/Microsoft.ML.OnnxRuntime.SessionOptions.html#Microsoft_ML_OnnxRuntime_SessionOptions_AppendExecutionProvider_
-  commentId: Overload:Microsoft.ML.OnnxRuntime.SessionOptions.AppendExecutionProvider
-  isSpec: "True"
-  fullName: Microsoft.ML.OnnxRuntime.SessionOptions.AppendExecutionProvider
-  nameWithType: SessionOptions.AppendExecutionProvider
 - uid: Microsoft.ML.OnnxRuntime.SessionOptions.AppendExecutionProvider_CoreML(Microsoft.ML.OnnxRuntime.CoreMLFlags)
   name: AppendExecutionProvider_CoreML(CoreMLFlags)
   href: api/Microsoft.ML.OnnxRuntime.SessionOptions.html#Microsoft_ML_OnnxRuntime_SessionOptions_AppendExecutionProvider_CoreML_Microsoft_ML_OnnxRuntime_CoreMLFlags_
@@ -3869,6 +3866,22 @@ references:
   isSpec: "True"
   fullName: Microsoft.ML.OnnxRuntime.SessionOptions.AppendExecutionProvider_Tvm
   nameWithType: SessionOptions.AppendExecutionProvider_Tvm
+- uid: Microsoft.ML.OnnxRuntime.SessionOptions.AppendExecutionProvider(System.String,Dictionary{System.String,System.String})
+  name: AppendExecutionProvider(String, Dictionary<String, String>)
+  href: api/Microsoft.ML.OnnxRuntime.SessionOptions.html#Microsoft_ML_OnnxRuntime_SessionOptions_AppendExecutionProvider_System_String_Dictionary_System_String_System_String__
+  commentId: M:Microsoft.ML.OnnxRuntime.SessionOptions.AppendExecutionProvider(System.String,Dictionary{System.String,System.String})
+  name.vb: AppendExecutionProvider(String, Dictionary(Of String, String))
+  fullName: Microsoft.ML.OnnxRuntime.SessionOptions.AppendExecutionProvider(System.String, Dictionary<System.String, System.String>)
+  fullName.vb: Microsoft.ML.OnnxRuntime.SessionOptions.AppendExecutionProvider(System.String, Dictionary(Of System.String, System.String))
+  nameWithType: SessionOptions.AppendExecutionProvider(String, Dictionary<String, String>)
+  nameWithType.vb: SessionOptions.AppendExecutionProvider(String, Dictionary(Of String, String))
+- uid: Microsoft.ML.OnnxRuntime.SessionOptions.AppendExecutionProvider*
+  name: AppendExecutionProvider
+  href: api/Microsoft.ML.OnnxRuntime.SessionOptions.html#Microsoft_ML_OnnxRuntime_SessionOptions_AppendExecutionProvider_
+  commentId: Overload:Microsoft.ML.OnnxRuntime.SessionOptions.AppendExecutionProvider
+  isSpec: "True"
+  fullName: Microsoft.ML.OnnxRuntime.SessionOptions.AppendExecutionProvider
+  nameWithType: SessionOptions.AppendExecutionProvider
 - uid: Microsoft.ML.OnnxRuntime.SessionOptions.EnableCpuMemArena
   name: EnableCpuMemArena
   href: api/Microsoft.ML.OnnxRuntime.SessionOptions.html#Microsoft_ML_OnnxRuntime_SessionOptions_EnableCpuMemArena
@@ -4063,11 +4076,11 @@ references:
   isSpec: "True"
   fullName: Microsoft.ML.OnnxRuntime.SessionOptions.MakeSessionOptionWithTensorrtProvider
   nameWithType: SessionOptions.MakeSessionOptionWithTensorrtProvider
-- uid: Microsoft.ML.OnnxRuntime.SessionOptions.MakeSessionOptionWithTvmProvider(String)
+- uid: Microsoft.ML.OnnxRuntime.SessionOptions.MakeSessionOptionWithTvmProvider(System.String)
   name: MakeSessionOptionWithTvmProvider(String)
-  href: api/Microsoft.ML.OnnxRuntime.SessionOptions.html#Microsoft_ML_OnnxRuntime_SessionOptions_MakeSessionOptionWithTvmProvider_String_
-  commentId: M:Microsoft.ML.OnnxRuntime.SessionOptions.MakeSessionOptionWithTvmProvider(String)
-  fullName: Microsoft.ML.OnnxRuntime.SessionOptions.MakeSessionOptionWithTvmProvider(String)
+  href: api/Microsoft.ML.OnnxRuntime.SessionOptions.html#Microsoft_ML_OnnxRuntime_SessionOptions_MakeSessionOptionWithTvmProvider_System_String_
+  commentId: M:Microsoft.ML.OnnxRuntime.SessionOptions.MakeSessionOptionWithTvmProvider(System.String)
+  fullName: Microsoft.ML.OnnxRuntime.SessionOptions.MakeSessionOptionWithTvmProvider(System.String)
   nameWithType: SessionOptions.MakeSessionOptionWithTvmProvider(String)
 - uid: Microsoft.ML.OnnxRuntime.SessionOptions.MakeSessionOptionWithTvmProvider*
   name: MakeSessionOptionWithTvmProvider
@@ -4115,13 +4128,13 @@ references:
   isSpec: "True"
   fullName: Microsoft.ML.OnnxRuntime.SessionOptions.RegisterCustomOpLibrary
   nameWithType: SessionOptions.RegisterCustomOpLibrary
-- uid: Microsoft.ML.OnnxRuntime.SessionOptions.RegisterCustomOpLibraryV2(System.String,IntPtr@)
+- uid: Microsoft.ML.OnnxRuntime.SessionOptions.RegisterCustomOpLibraryV2(System.String,System.IntPtr@)
   name: RegisterCustomOpLibraryV2(String, out IntPtr)
-  href: api/Microsoft.ML.OnnxRuntime.SessionOptions.html#Microsoft_ML_OnnxRuntime_SessionOptions_RegisterCustomOpLibraryV2_System_String_IntPtr__
-  commentId: M:Microsoft.ML.OnnxRuntime.SessionOptions.RegisterCustomOpLibraryV2(System.String,IntPtr@)
+  href: api/Microsoft.ML.OnnxRuntime.SessionOptions.html#Microsoft_ML_OnnxRuntime_SessionOptions_RegisterCustomOpLibraryV2_System_String_System_IntPtr__
+  commentId: M:Microsoft.ML.OnnxRuntime.SessionOptions.RegisterCustomOpLibraryV2(System.String,System.IntPtr@)
   name.vb: RegisterCustomOpLibraryV2(String, ByRef IntPtr)
-  fullName: Microsoft.ML.OnnxRuntime.SessionOptions.RegisterCustomOpLibraryV2(System.String, out IntPtr)
-  fullName.vb: Microsoft.ML.OnnxRuntime.SessionOptions.RegisterCustomOpLibraryV2(System.String, ByRef IntPtr)
+  fullName: Microsoft.ML.OnnxRuntime.SessionOptions.RegisterCustomOpLibraryV2(System.String, out System.IntPtr)
+  fullName.vb: Microsoft.ML.OnnxRuntime.SessionOptions.RegisterCustomOpLibraryV2(System.String, ByRef System.IntPtr)
   nameWithType: SessionOptions.RegisterCustomOpLibraryV2(String, out IntPtr)
   nameWithType.vb: SessionOptions.RegisterCustomOpLibraryV2(String, ByRef IntPtr)
 - uid: Microsoft.ML.OnnxRuntime.SessionOptions.RegisterCustomOpLibraryV2*
@@ -4176,22 +4189,22 @@ references:
   isSpec: "True"
   fullName: Microsoft.ML.OnnxRuntime.SessionOptionsContainer.Create
   nameWithType: SessionOptionsContainer.Create
-- uid: Microsoft.ML.OnnxRuntime.SessionOptionsContainer.Register(Action{Microsoft.ML.OnnxRuntime.SessionOptions})
+- uid: Microsoft.ML.OnnxRuntime.SessionOptionsContainer.Register(System.Action{Microsoft.ML.OnnxRuntime.SessionOptions})
   name: Register(Action<SessionOptions>)
-  href: api/Microsoft.ML.OnnxRuntime.SessionOptionsContainer.html#Microsoft_ML_OnnxRuntime_SessionOptionsContainer_Register_Action_Microsoft_ML_OnnxRuntime_SessionOptions__
-  commentId: M:Microsoft.ML.OnnxRuntime.SessionOptionsContainer.Register(Action{Microsoft.ML.OnnxRuntime.SessionOptions})
+  href: api/Microsoft.ML.OnnxRuntime.SessionOptionsContainer.html#Microsoft_ML_OnnxRuntime_SessionOptionsContainer_Register_System_Action_Microsoft_ML_OnnxRuntime_SessionOptions__
+  commentId: M:Microsoft.ML.OnnxRuntime.SessionOptionsContainer.Register(System.Action{Microsoft.ML.OnnxRuntime.SessionOptions})
   name.vb: Register(Action(Of SessionOptions))
-  fullName: Microsoft.ML.OnnxRuntime.SessionOptionsContainer.Register(Action<Microsoft.ML.OnnxRuntime.SessionOptions>)
-  fullName.vb: Microsoft.ML.OnnxRuntime.SessionOptionsContainer.Register(Action(Of Microsoft.ML.OnnxRuntime.SessionOptions))
+  fullName: Microsoft.ML.OnnxRuntime.SessionOptionsContainer.Register(System.Action<Microsoft.ML.OnnxRuntime.SessionOptions>)
+  fullName.vb: Microsoft.ML.OnnxRuntime.SessionOptionsContainer.Register(System.Action(Of Microsoft.ML.OnnxRuntime.SessionOptions))
   nameWithType: SessionOptionsContainer.Register(Action<SessionOptions>)
   nameWithType.vb: SessionOptionsContainer.Register(Action(Of SessionOptions))
-- uid: Microsoft.ML.OnnxRuntime.SessionOptionsContainer.Register(System.String,Action{Microsoft.ML.OnnxRuntime.SessionOptions})
+- uid: Microsoft.ML.OnnxRuntime.SessionOptionsContainer.Register(System.String,System.Action{Microsoft.ML.OnnxRuntime.SessionOptions})
   name: Register(String, Action<SessionOptions>)
-  href: api/Microsoft.ML.OnnxRuntime.SessionOptionsContainer.html#Microsoft_ML_OnnxRuntime_SessionOptionsContainer_Register_System_String_Action_Microsoft_ML_OnnxRuntime_SessionOptions__
-  commentId: M:Microsoft.ML.OnnxRuntime.SessionOptionsContainer.Register(System.String,Action{Microsoft.ML.OnnxRuntime.SessionOptions})
+  href: api/Microsoft.ML.OnnxRuntime.SessionOptionsContainer.html#Microsoft_ML_OnnxRuntime_SessionOptionsContainer_Register_System_String_System_Action_Microsoft_ML_OnnxRuntime_SessionOptions__
+  commentId: M:Microsoft.ML.OnnxRuntime.SessionOptionsContainer.Register(System.String,System.Action{Microsoft.ML.OnnxRuntime.SessionOptions})
   name.vb: Register(String, Action(Of SessionOptions))
-  fullName: Microsoft.ML.OnnxRuntime.SessionOptionsContainer.Register(System.String, Action<Microsoft.ML.OnnxRuntime.SessionOptions>)
-  fullName.vb: Microsoft.ML.OnnxRuntime.SessionOptionsContainer.Register(System.String, Action(Of Microsoft.ML.OnnxRuntime.SessionOptions))
+  fullName: Microsoft.ML.OnnxRuntime.SessionOptionsContainer.Register(System.String, System.Action<Microsoft.ML.OnnxRuntime.SessionOptions>)
+  fullName.vb: Microsoft.ML.OnnxRuntime.SessionOptionsContainer.Register(System.String, System.Action(Of Microsoft.ML.OnnxRuntime.SessionOptions))
   nameWithType: SessionOptionsContainer.Register(String, Action<SessionOptions>)
   nameWithType.vb: SessionOptionsContainer.Register(String, Action(Of SessionOptions))
 - uid: Microsoft.ML.OnnxRuntime.SessionOptionsContainer.Register*
@@ -4269,13 +4282,13 @@ references:
   fullName.vb: Microsoft.ML.OnnxRuntime.Tensors.ArrayTensorExtensions.ToTensor(Of T)(T(,), System.Boolean)
   nameWithType: ArrayTensorExtensions.ToTensor<T>(T[,], Boolean)
   nameWithType.vb: ArrayTensorExtensions.ToTensor(Of T)(T(,), Boolean)
-- uid: Microsoft.ML.OnnxRuntime.Tensors.ArrayTensorExtensions.ToTensor``1(Array,System.Boolean)
+- uid: Microsoft.ML.OnnxRuntime.Tensors.ArrayTensorExtensions.ToTensor``1(System.Array,System.Boolean)
   name: ToTensor<T>(Array, Boolean)
-  href: api/Microsoft.ML.OnnxRuntime.Tensors.ArrayTensorExtensions.html#Microsoft_ML_OnnxRuntime_Tensors_ArrayTensorExtensions_ToTensor__1_Array_System_Boolean_
-  commentId: M:Microsoft.ML.OnnxRuntime.Tensors.ArrayTensorExtensions.ToTensor``1(Array,System.Boolean)
+  href: api/Microsoft.ML.OnnxRuntime.Tensors.ArrayTensorExtensions.html#Microsoft_ML_OnnxRuntime_Tensors_ArrayTensorExtensions_ToTensor__1_System_Array_System_Boolean_
+  commentId: M:Microsoft.ML.OnnxRuntime.Tensors.ArrayTensorExtensions.ToTensor``1(System.Array,System.Boolean)
   name.vb: ToTensor(Of T)(Array, Boolean)
-  fullName: Microsoft.ML.OnnxRuntime.Tensors.ArrayTensorExtensions.ToTensor<T>(Array, System.Boolean)
-  fullName.vb: Microsoft.ML.OnnxRuntime.Tensors.ArrayTensorExtensions.ToTensor(Of T)(Array, System.Boolean)
+  fullName: Microsoft.ML.OnnxRuntime.Tensors.ArrayTensorExtensions.ToTensor<T>(System.Array, System.Boolean)
+  fullName.vb: Microsoft.ML.OnnxRuntime.Tensors.ArrayTensorExtensions.ToTensor(Of T)(System.Array, System.Boolean)
   nameWithType: ArrayTensorExtensions.ToTensor<T>(Array, Boolean)
   nameWithType.vb: ArrayTensorExtensions.ToTensor(Of T)(Array, Boolean)
 - uid: Microsoft.ML.OnnxRuntime.Tensors.BFloat16
@@ -4398,24 +4411,6 @@ references:
   fullName.vb: Microsoft.ML.OnnxRuntime.Tensors.DenseTensor(Of T)
   nameWithType: DenseTensor<T>
   nameWithType.vb: DenseTensor(Of T)
-- uid: Microsoft.ML.OnnxRuntime.Tensors.DenseTensor`1.#ctor(Memory{`0},ReadOnlySpan{System.Int32},System.Boolean)
-  name: DenseTensor(Memory<T>, ReadOnlySpan<Int32>, Boolean)
-  href: api/Microsoft.ML.OnnxRuntime.Tensors.DenseTensor-1.html#Microsoft_ML_OnnxRuntime_Tensors_DenseTensor_1__ctor_Memory__0__ReadOnlySpan_System_Int32__System_Boolean_
-  commentId: M:Microsoft.ML.OnnxRuntime.Tensors.DenseTensor`1.#ctor(Memory{`0},ReadOnlySpan{System.Int32},System.Boolean)
-  name.vb: DenseTensor(Memory(Of T), ReadOnlySpan(Of Int32), Boolean)
-  fullName: Microsoft.ML.OnnxRuntime.Tensors.DenseTensor<T>.DenseTensor(Memory<T>, ReadOnlySpan<System.Int32>, System.Boolean)
-  fullName.vb: Microsoft.ML.OnnxRuntime.Tensors.DenseTensor(Of T).DenseTensor(Memory(Of T), ReadOnlySpan(Of System.Int32), System.Boolean)
-  nameWithType: DenseTensor<T>.DenseTensor(Memory<T>, ReadOnlySpan<Int32>, Boolean)
-  nameWithType.vb: DenseTensor(Of T).DenseTensor(Memory(Of T), ReadOnlySpan(Of Int32), Boolean)
-- uid: Microsoft.ML.OnnxRuntime.Tensors.DenseTensor`1.#ctor(ReadOnlySpan{System.Int32},System.Boolean)
-  name: DenseTensor(ReadOnlySpan<Int32>, Boolean)
-  href: api/Microsoft.ML.OnnxRuntime.Tensors.DenseTensor-1.html#Microsoft_ML_OnnxRuntime_Tensors_DenseTensor_1__ctor_ReadOnlySpan_System_Int32__System_Boolean_
-  commentId: M:Microsoft.ML.OnnxRuntime.Tensors.DenseTensor`1.#ctor(ReadOnlySpan{System.Int32},System.Boolean)
-  name.vb: DenseTensor(ReadOnlySpan(Of Int32), Boolean)
-  fullName: Microsoft.ML.OnnxRuntime.Tensors.DenseTensor<T>.DenseTensor(ReadOnlySpan<System.Int32>, System.Boolean)
-  fullName.vb: Microsoft.ML.OnnxRuntime.Tensors.DenseTensor(Of T).DenseTensor(ReadOnlySpan(Of System.Int32), System.Boolean)
-  nameWithType: DenseTensor<T>.DenseTensor(ReadOnlySpan<Int32>, Boolean)
-  nameWithType.vb: DenseTensor(Of T).DenseTensor(ReadOnlySpan(Of Int32), Boolean)
 - uid: Microsoft.ML.OnnxRuntime.Tensors.DenseTensor`1.#ctor(System.Int32)
   name: DenseTensor(Int32)
   href: api/Microsoft.ML.OnnxRuntime.Tensors.DenseTensor-1.html#Microsoft_ML_OnnxRuntime_Tensors_DenseTensor_1__ctor_System_Int32_
@@ -4424,6 +4419,24 @@ references:
   fullName.vb: Microsoft.ML.OnnxRuntime.Tensors.DenseTensor(Of T).DenseTensor(System.Int32)
   nameWithType: DenseTensor<T>.DenseTensor(Int32)
   nameWithType.vb: DenseTensor(Of T).DenseTensor(Int32)
+- uid: Microsoft.ML.OnnxRuntime.Tensors.DenseTensor`1.#ctor(System.Memory{`0},System.ReadOnlySpan{System.Int32},System.Boolean)
+  name: DenseTensor(Memory<T>, ReadOnlySpan<Int32>, Boolean)
+  href: api/Microsoft.ML.OnnxRuntime.Tensors.DenseTensor-1.html#Microsoft_ML_OnnxRuntime_Tensors_DenseTensor_1__ctor_System_Memory__0__System_ReadOnlySpan_System_Int32__System_Boolean_
+  commentId: M:Microsoft.ML.OnnxRuntime.Tensors.DenseTensor`1.#ctor(System.Memory{`0},System.ReadOnlySpan{System.Int32},System.Boolean)
+  name.vb: DenseTensor(Memory(Of T), ReadOnlySpan(Of Int32), Boolean)
+  fullName: Microsoft.ML.OnnxRuntime.Tensors.DenseTensor<T>.DenseTensor(System.Memory<T>, System.ReadOnlySpan<System.Int32>, System.Boolean)
+  fullName.vb: Microsoft.ML.OnnxRuntime.Tensors.DenseTensor(Of T).DenseTensor(System.Memory(Of T), System.ReadOnlySpan(Of System.Int32), System.Boolean)
+  nameWithType: DenseTensor<T>.DenseTensor(Memory<T>, ReadOnlySpan<Int32>, Boolean)
+  nameWithType.vb: DenseTensor(Of T).DenseTensor(Memory(Of T), ReadOnlySpan(Of Int32), Boolean)
+- uid: Microsoft.ML.OnnxRuntime.Tensors.DenseTensor`1.#ctor(System.ReadOnlySpan{System.Int32},System.Boolean)
+  name: DenseTensor(ReadOnlySpan<Int32>, Boolean)
+  href: api/Microsoft.ML.OnnxRuntime.Tensors.DenseTensor-1.html#Microsoft_ML_OnnxRuntime_Tensors_DenseTensor_1__ctor_System_ReadOnlySpan_System_Int32__System_Boolean_
+  commentId: M:Microsoft.ML.OnnxRuntime.Tensors.DenseTensor`1.#ctor(System.ReadOnlySpan{System.Int32},System.Boolean)
+  name.vb: DenseTensor(ReadOnlySpan(Of Int32), Boolean)
+  fullName: Microsoft.ML.OnnxRuntime.Tensors.DenseTensor<T>.DenseTensor(System.ReadOnlySpan<System.Int32>, System.Boolean)
+  fullName.vb: Microsoft.ML.OnnxRuntime.Tensors.DenseTensor(Of T).DenseTensor(System.ReadOnlySpan(Of System.Int32), System.Boolean)
+  nameWithType: DenseTensor<T>.DenseTensor(ReadOnlySpan<Int32>, Boolean)
+  nameWithType.vb: DenseTensor(Of T).DenseTensor(ReadOnlySpan(Of Int32), Boolean)
 - uid: Microsoft.ML.OnnxRuntime.Tensors.DenseTensor`1.#ctor*
   name: DenseTensor
   href: api/Microsoft.ML.OnnxRuntime.Tensors.DenseTensor-1.html#Microsoft_ML_OnnxRuntime_Tensors_DenseTensor_1__ctor_
@@ -4476,13 +4489,13 @@ references:
   fullName.vb: Microsoft.ML.OnnxRuntime.Tensors.DenseTensor(Of T).CloneEmpty
   nameWithType: DenseTensor<T>.CloneEmpty
   nameWithType.vb: DenseTensor(Of T).CloneEmpty
-- uid: Microsoft.ML.OnnxRuntime.Tensors.DenseTensor`1.CloneEmpty``1(ReadOnlySpan{System.Int32})
+- uid: Microsoft.ML.OnnxRuntime.Tensors.DenseTensor`1.CloneEmpty``1(System.ReadOnlySpan{System.Int32})
   name: CloneEmpty<TResult>(ReadOnlySpan<Int32>)
-  href: api/Microsoft.ML.OnnxRuntime.Tensors.DenseTensor-1.html#Microsoft_ML_OnnxRuntime_Tensors_DenseTensor_1_CloneEmpty__1_ReadOnlySpan_System_Int32__
-  commentId: M:Microsoft.ML.OnnxRuntime.Tensors.DenseTensor`1.CloneEmpty``1(ReadOnlySpan{System.Int32})
+  href: api/Microsoft.ML.OnnxRuntime.Tensors.DenseTensor-1.html#Microsoft_ML_OnnxRuntime_Tensors_DenseTensor_1_CloneEmpty__1_System_ReadOnlySpan_System_Int32__
+  commentId: M:Microsoft.ML.OnnxRuntime.Tensors.DenseTensor`1.CloneEmpty``1(System.ReadOnlySpan{System.Int32})
   name.vb: CloneEmpty(Of TResult)(ReadOnlySpan(Of Int32))
-  fullName: Microsoft.ML.OnnxRuntime.Tensors.DenseTensor<T>.CloneEmpty<TResult>(ReadOnlySpan<System.Int32>)
-  fullName.vb: Microsoft.ML.OnnxRuntime.Tensors.DenseTensor(Of T).CloneEmpty(Of TResult)(ReadOnlySpan(Of System.Int32))
+  fullName: Microsoft.ML.OnnxRuntime.Tensors.DenseTensor<T>.CloneEmpty<TResult>(System.ReadOnlySpan<System.Int32>)
+  fullName.vb: Microsoft.ML.OnnxRuntime.Tensors.DenseTensor(Of T).CloneEmpty(Of TResult)(System.ReadOnlySpan(Of System.Int32))
   nameWithType: DenseTensor<T>.CloneEmpty<TResult>(ReadOnlySpan<Int32>)
   nameWithType.vb: DenseTensor(Of T).CloneEmpty(Of TResult)(ReadOnlySpan(Of Int32))
 - uid: Microsoft.ML.OnnxRuntime.Tensors.DenseTensor`1.CopyTo(`0[],System.Int32)
@@ -4537,13 +4550,13 @@ references:
   fullName.vb: Microsoft.ML.OnnxRuntime.Tensors.DenseTensor(Of T).IndexOf
   nameWithType: DenseTensor<T>.IndexOf
   nameWithType.vb: DenseTensor(Of T).IndexOf
-- uid: Microsoft.ML.OnnxRuntime.Tensors.DenseTensor`1.Reshape(ReadOnlySpan{System.Int32})
+- uid: Microsoft.ML.OnnxRuntime.Tensors.DenseTensor`1.Reshape(System.ReadOnlySpan{System.Int32})
   name: Reshape(ReadOnlySpan<Int32>)
-  href: api/Microsoft.ML.OnnxRuntime.Tensors.DenseTensor-1.html#Microsoft_ML_OnnxRuntime_Tensors_DenseTensor_1_Reshape_ReadOnlySpan_System_Int32__
-  commentId: M:Microsoft.ML.OnnxRuntime.Tensors.DenseTensor`1.Reshape(ReadOnlySpan{System.Int32})
+  href: api/Microsoft.ML.OnnxRuntime.Tensors.DenseTensor-1.html#Microsoft_ML_OnnxRuntime_Tensors_DenseTensor_1_Reshape_System_ReadOnlySpan_System_Int32__
+  commentId: M:Microsoft.ML.OnnxRuntime.Tensors.DenseTensor`1.Reshape(System.ReadOnlySpan{System.Int32})
   name.vb: Reshape(ReadOnlySpan(Of Int32))
-  fullName: Microsoft.ML.OnnxRuntime.Tensors.DenseTensor<T>.Reshape(ReadOnlySpan<System.Int32>)
-  fullName.vb: Microsoft.ML.OnnxRuntime.Tensors.DenseTensor(Of T).Reshape(ReadOnlySpan(Of System.Int32))
+  fullName: Microsoft.ML.OnnxRuntime.Tensors.DenseTensor<T>.Reshape(System.ReadOnlySpan<System.Int32>)
+  fullName.vb: Microsoft.ML.OnnxRuntime.Tensors.DenseTensor(Of T).Reshape(System.ReadOnlySpan(Of System.Int32))
   nameWithType: DenseTensor<T>.Reshape(ReadOnlySpan<Int32>)
   nameWithType.vb: DenseTensor(Of T).Reshape(ReadOnlySpan(Of Int32))
 - uid: Microsoft.ML.OnnxRuntime.Tensors.DenseTensor`1.Reshape*
@@ -4696,15 +4709,6 @@ references:
   isSpec: "True"
   fullName: Microsoft.ML.OnnxRuntime.Tensors.Tensor.CreateFromDiagonal
   nameWithType: Tensor.CreateFromDiagonal
-- uid: Microsoft.ML.OnnxRuntime.Tensors.Tensor.CreateFromDiagonal``1(Microsoft.ML.OnnxRuntime.Tensors.Tensor{``0})
-  name: CreateFromDiagonal<T>(Tensor<T>)
-  href: api/Microsoft.ML.OnnxRuntime.Tensors.Tensor.html#Microsoft_ML_OnnxRuntime_Tensors_Tensor_CreateFromDiagonal__1_Microsoft_ML_OnnxRuntime_Tensors_Tensor___0__
-  commentId: M:Microsoft.ML.OnnxRuntime.Tensors.Tensor.CreateFromDiagonal``1(Microsoft.ML.OnnxRuntime.Tensors.Tensor{``0})
-  name.vb: CreateFromDiagonal(Of T)(Tensor(Of T))
-  fullName: Microsoft.ML.OnnxRuntime.Tensors.Tensor.CreateFromDiagonal<T>(Microsoft.ML.OnnxRuntime.Tensors.Tensor<T>)
-  fullName.vb: Microsoft.ML.OnnxRuntime.Tensors.Tensor.CreateFromDiagonal(Of T)(Microsoft.ML.OnnxRuntime.Tensors.Tensor(Of T))
-  nameWithType: Tensor.CreateFromDiagonal<T>(Tensor<T>)
-  nameWithType.vb: Tensor.CreateFromDiagonal(Of T)(Tensor(Of T))
 - uid: Microsoft.ML.OnnxRuntime.Tensors.Tensor.CreateFromDiagonal``1(Microsoft.ML.OnnxRuntime.Tensors.Tensor{``0},System.Int32)
   name: CreateFromDiagonal<T>(Tensor<T>, Int32)
   href: api/Microsoft.ML.OnnxRuntime.Tensors.Tensor.html#Microsoft_ML_OnnxRuntime_Tensors_Tensor_CreateFromDiagonal__1_Microsoft_ML_OnnxRuntime_Tensors_Tensor___0__System_Int32_
@@ -4714,6 +4718,15 @@ references:
   fullName.vb: Microsoft.ML.OnnxRuntime.Tensors.Tensor.CreateFromDiagonal(Of T)(Microsoft.ML.OnnxRuntime.Tensors.Tensor(Of T), System.Int32)
   nameWithType: Tensor.CreateFromDiagonal<T>(Tensor<T>, Int32)
   nameWithType.vb: Tensor.CreateFromDiagonal(Of T)(Tensor(Of T), Int32)
+- uid: Microsoft.ML.OnnxRuntime.Tensors.Tensor.CreateFromDiagonal``1(Microsoft.ML.OnnxRuntime.Tensors.Tensor{``0})
+  name: CreateFromDiagonal<T>(Tensor<T>)
+  href: api/Microsoft.ML.OnnxRuntime.Tensors.Tensor.html#Microsoft_ML_OnnxRuntime_Tensors_Tensor_CreateFromDiagonal__1_Microsoft_ML_OnnxRuntime_Tensors_Tensor___0__
+  commentId: M:Microsoft.ML.OnnxRuntime.Tensors.Tensor.CreateFromDiagonal``1(Microsoft.ML.OnnxRuntime.Tensors.Tensor{``0})
+  name.vb: CreateFromDiagonal(Of T)(Tensor(Of T))
+  fullName: Microsoft.ML.OnnxRuntime.Tensors.Tensor.CreateFromDiagonal<T>(Microsoft.ML.OnnxRuntime.Tensors.Tensor<T>)
+  fullName.vb: Microsoft.ML.OnnxRuntime.Tensors.Tensor.CreateFromDiagonal(Of T)(Microsoft.ML.OnnxRuntime.Tensors.Tensor(Of T))
+  nameWithType: Tensor.CreateFromDiagonal<T>(Tensor<T>)
+  nameWithType.vb: Tensor.CreateFromDiagonal(Of T)(Tensor(Of T))
 - uid: Microsoft.ML.OnnxRuntime.Tensors.Tensor.CreateIdentity*
   name: CreateIdentity
   href: api/Microsoft.ML.OnnxRuntime.Tensors.Tensor.html#Microsoft_ML_OnnxRuntime_Tensors_Tensor_CreateIdentity_
@@ -4721,24 +4734,6 @@ references:
   isSpec: "True"
   fullName: Microsoft.ML.OnnxRuntime.Tensors.Tensor.CreateIdentity
   nameWithType: Tensor.CreateIdentity
-- uid: Microsoft.ML.OnnxRuntime.Tensors.Tensor.CreateIdentity``1(System.Int32)
-  name: CreateIdentity<T>(Int32)
-  href: api/Microsoft.ML.OnnxRuntime.Tensors.Tensor.html#Microsoft_ML_OnnxRuntime_Tensors_Tensor_CreateIdentity__1_System_Int32_
-  commentId: M:Microsoft.ML.OnnxRuntime.Tensors.Tensor.CreateIdentity``1(System.Int32)
-  name.vb: CreateIdentity(Of T)(Int32)
-  fullName: Microsoft.ML.OnnxRuntime.Tensors.Tensor.CreateIdentity<T>(System.Int32)
-  fullName.vb: Microsoft.ML.OnnxRuntime.Tensors.Tensor.CreateIdentity(Of T)(System.Int32)
-  nameWithType: Tensor.CreateIdentity<T>(Int32)
-  nameWithType.vb: Tensor.CreateIdentity(Of T)(Int32)
-- uid: Microsoft.ML.OnnxRuntime.Tensors.Tensor.CreateIdentity``1(System.Int32,System.Boolean)
-  name: CreateIdentity<T>(Int32, Boolean)
-  href: api/Microsoft.ML.OnnxRuntime.Tensors.Tensor.html#Microsoft_ML_OnnxRuntime_Tensors_Tensor_CreateIdentity__1_System_Int32_System_Boolean_
-  commentId: M:Microsoft.ML.OnnxRuntime.Tensors.Tensor.CreateIdentity``1(System.Int32,System.Boolean)
-  name.vb: CreateIdentity(Of T)(Int32, Boolean)
-  fullName: Microsoft.ML.OnnxRuntime.Tensors.Tensor.CreateIdentity<T>(System.Int32, System.Boolean)
-  fullName.vb: Microsoft.ML.OnnxRuntime.Tensors.Tensor.CreateIdentity(Of T)(System.Int32, System.Boolean)
-  nameWithType: Tensor.CreateIdentity<T>(Int32, Boolean)
-  nameWithType.vb: Tensor.CreateIdentity(Of T)(Int32, Boolean)
 - uid: Microsoft.ML.OnnxRuntime.Tensors.Tensor.CreateIdentity``1(System.Int32,System.Boolean,``0)
   name: CreateIdentity<T>(Int32, Boolean, T)
   href: api/Microsoft.ML.OnnxRuntime.Tensors.Tensor.html#Microsoft_ML_OnnxRuntime_Tensors_Tensor_CreateIdentity__1_System_Int32_System_Boolean___0_
@@ -4748,6 +4743,24 @@ references:
   fullName.vb: Microsoft.ML.OnnxRuntime.Tensors.Tensor.CreateIdentity(Of T)(System.Int32, System.Boolean, T)
   nameWithType: Tensor.CreateIdentity<T>(Int32, Boolean, T)
   nameWithType.vb: Tensor.CreateIdentity(Of T)(Int32, Boolean, T)
+- uid: Microsoft.ML.OnnxRuntime.Tensors.Tensor.CreateIdentity``1(System.Int32,System.Boolean)
+  name: CreateIdentity<T>(Int32, Boolean)
+  href: api/Microsoft.ML.OnnxRuntime.Tensors.Tensor.html#Microsoft_ML_OnnxRuntime_Tensors_Tensor_CreateIdentity__1_System_Int32_System_Boolean_
+  commentId: M:Microsoft.ML.OnnxRuntime.Tensors.Tensor.CreateIdentity``1(System.Int32,System.Boolean)
+  name.vb: CreateIdentity(Of T)(Int32, Boolean)
+  fullName: Microsoft.ML.OnnxRuntime.Tensors.Tensor.CreateIdentity<T>(System.Int32, System.Boolean)
+  fullName.vb: Microsoft.ML.OnnxRuntime.Tensors.Tensor.CreateIdentity(Of T)(System.Int32, System.Boolean)
+  nameWithType: Tensor.CreateIdentity<T>(Int32, Boolean)
+  nameWithType.vb: Tensor.CreateIdentity(Of T)(Int32, Boolean)
+- uid: Microsoft.ML.OnnxRuntime.Tensors.Tensor.CreateIdentity``1(System.Int32)
+  name: CreateIdentity<T>(Int32)
+  href: api/Microsoft.ML.OnnxRuntime.Tensors.Tensor.html#Microsoft_ML_OnnxRuntime_Tensors_Tensor_CreateIdentity__1_System_Int32_
+  commentId: M:Microsoft.ML.OnnxRuntime.Tensors.Tensor.CreateIdentity``1(System.Int32)
+  name.vb: CreateIdentity(Of T)(Int32)
+  fullName: Microsoft.ML.OnnxRuntime.Tensors.Tensor.CreateIdentity<T>(System.Int32)
+  fullName.vb: Microsoft.ML.OnnxRuntime.Tensors.Tensor.CreateIdentity(Of T)(System.Int32)
+  nameWithType: Tensor.CreateIdentity<T>(Int32)
+  nameWithType.vb: Tensor.CreateIdentity(Of T)(Int32)
 - uid: Microsoft.ML.OnnxRuntime.Tensors.Tensor`1
   name: Tensor<T>
   href: api/Microsoft.ML.OnnxRuntime.Tensors.Tensor-1.html
@@ -4757,23 +4770,14 @@ references:
   fullName.vb: Microsoft.ML.OnnxRuntime.Tensors.Tensor(Of T)
   nameWithType: Tensor<T>
   nameWithType.vb: Tensor(Of T)
-- uid: Microsoft.ML.OnnxRuntime.Tensors.Tensor`1.#ctor(Array,System.Boolean)
+- uid: Microsoft.ML.OnnxRuntime.Tensors.Tensor`1.#ctor(System.Array,System.Boolean)
   name: Tensor(Array, Boolean)
-  href: api/Microsoft.ML.OnnxRuntime.Tensors.Tensor-1.html#Microsoft_ML_OnnxRuntime_Tensors_Tensor_1__ctor_Array_System_Boolean_
-  commentId: M:Microsoft.ML.OnnxRuntime.Tensors.Tensor`1.#ctor(Array,System.Boolean)
-  fullName: Microsoft.ML.OnnxRuntime.Tensors.Tensor<T>.Tensor(Array, System.Boolean)
-  fullName.vb: Microsoft.ML.OnnxRuntime.Tensors.Tensor(Of T).Tensor(Array, System.Boolean)
+  href: api/Microsoft.ML.OnnxRuntime.Tensors.Tensor-1.html#Microsoft_ML_OnnxRuntime_Tensors_Tensor_1__ctor_System_Array_System_Boolean_
+  commentId: M:Microsoft.ML.OnnxRuntime.Tensors.Tensor`1.#ctor(System.Array,System.Boolean)
+  fullName: Microsoft.ML.OnnxRuntime.Tensors.Tensor<T>.Tensor(System.Array, System.Boolean)
+  fullName.vb: Microsoft.ML.OnnxRuntime.Tensors.Tensor(Of T).Tensor(System.Array, System.Boolean)
   nameWithType: Tensor<T>.Tensor(Array, Boolean)
   nameWithType.vb: Tensor(Of T).Tensor(Array, Boolean)
-- uid: Microsoft.ML.OnnxRuntime.Tensors.Tensor`1.#ctor(ReadOnlySpan{System.Int32},System.Boolean)
-  name: Tensor(ReadOnlySpan<Int32>, Boolean)
-  href: api/Microsoft.ML.OnnxRuntime.Tensors.Tensor-1.html#Microsoft_ML_OnnxRuntime_Tensors_Tensor_1__ctor_ReadOnlySpan_System_Int32__System_Boolean_
-  commentId: M:Microsoft.ML.OnnxRuntime.Tensors.Tensor`1.#ctor(ReadOnlySpan{System.Int32},System.Boolean)
-  name.vb: Tensor(ReadOnlySpan(Of Int32), Boolean)
-  fullName: Microsoft.ML.OnnxRuntime.Tensors.Tensor<T>.Tensor(ReadOnlySpan<System.Int32>, System.Boolean)
-  fullName.vb: Microsoft.ML.OnnxRuntime.Tensors.Tensor(Of T).Tensor(ReadOnlySpan(Of System.Int32), System.Boolean)
-  nameWithType: Tensor<T>.Tensor(ReadOnlySpan<Int32>, Boolean)
-  nameWithType.vb: Tensor(Of T).Tensor(ReadOnlySpan(Of Int32), Boolean)
 - uid: Microsoft.ML.OnnxRuntime.Tensors.Tensor`1.#ctor(System.Int32)
   name: Tensor(Int32)
   href: api/Microsoft.ML.OnnxRuntime.Tensors.Tensor-1.html#Microsoft_ML_OnnxRuntime_Tensors_Tensor_1__ctor_System_Int32_
@@ -4782,6 +4786,15 @@ references:
   fullName.vb: Microsoft.ML.OnnxRuntime.Tensors.Tensor(Of T).Tensor(System.Int32)
   nameWithType: Tensor<T>.Tensor(Int32)
   nameWithType.vb: Tensor(Of T).Tensor(Int32)
+- uid: Microsoft.ML.OnnxRuntime.Tensors.Tensor`1.#ctor(System.ReadOnlySpan{System.Int32},System.Boolean)
+  name: Tensor(ReadOnlySpan<Int32>, Boolean)
+  href: api/Microsoft.ML.OnnxRuntime.Tensors.Tensor-1.html#Microsoft_ML_OnnxRuntime_Tensors_Tensor_1__ctor_System_ReadOnlySpan_System_Int32__System_Boolean_
+  commentId: M:Microsoft.ML.OnnxRuntime.Tensors.Tensor`1.#ctor(System.ReadOnlySpan{System.Int32},System.Boolean)
+  name.vb: Tensor(ReadOnlySpan(Of Int32), Boolean)
+  fullName: Microsoft.ML.OnnxRuntime.Tensors.Tensor<T>.Tensor(System.ReadOnlySpan<System.Int32>, System.Boolean)
+  fullName.vb: Microsoft.ML.OnnxRuntime.Tensors.Tensor(Of T).Tensor(System.ReadOnlySpan(Of System.Int32), System.Boolean)
+  nameWithType: Tensor<T>.Tensor(ReadOnlySpan<Int32>, Boolean)
+  nameWithType.vb: Tensor(Of T).Tensor(ReadOnlySpan(Of Int32), Boolean)
 - uid: Microsoft.ML.OnnxRuntime.Tensors.Tensor`1.#ctor*
   name: Tensor
   href: api/Microsoft.ML.OnnxRuntime.Tensors.Tensor-1.html#Microsoft_ML_OnnxRuntime_Tensors_Tensor_1__ctor_
@@ -4816,13 +4829,13 @@ references:
   fullName.vb: Microsoft.ML.OnnxRuntime.Tensors.Tensor(Of T).CloneEmpty()
   nameWithType: Tensor<T>.CloneEmpty()
   nameWithType.vb: Tensor(Of T).CloneEmpty()
-- uid: Microsoft.ML.OnnxRuntime.Tensors.Tensor`1.CloneEmpty(ReadOnlySpan{System.Int32})
+- uid: Microsoft.ML.OnnxRuntime.Tensors.Tensor`1.CloneEmpty(System.ReadOnlySpan{System.Int32})
   name: CloneEmpty(ReadOnlySpan<Int32>)
-  href: api/Microsoft.ML.OnnxRuntime.Tensors.Tensor-1.html#Microsoft_ML_OnnxRuntime_Tensors_Tensor_1_CloneEmpty_ReadOnlySpan_System_Int32__
-  commentId: M:Microsoft.ML.OnnxRuntime.Tensors.Tensor`1.CloneEmpty(ReadOnlySpan{System.Int32})
+  href: api/Microsoft.ML.OnnxRuntime.Tensors.Tensor-1.html#Microsoft_ML_OnnxRuntime_Tensors_Tensor_1_CloneEmpty_System_ReadOnlySpan_System_Int32__
+  commentId: M:Microsoft.ML.OnnxRuntime.Tensors.Tensor`1.CloneEmpty(System.ReadOnlySpan{System.Int32})
   name.vb: CloneEmpty(ReadOnlySpan(Of Int32))
-  fullName: Microsoft.ML.OnnxRuntime.Tensors.Tensor<T>.CloneEmpty(ReadOnlySpan<System.Int32>)
-  fullName.vb: Microsoft.ML.OnnxRuntime.Tensors.Tensor(Of T).CloneEmpty(ReadOnlySpan(Of System.Int32))
+  fullName: Microsoft.ML.OnnxRuntime.Tensors.Tensor<T>.CloneEmpty(System.ReadOnlySpan<System.Int32>)
+  fullName.vb: Microsoft.ML.OnnxRuntime.Tensors.Tensor(Of T).CloneEmpty(System.ReadOnlySpan(Of System.Int32))
   nameWithType: Tensor<T>.CloneEmpty(ReadOnlySpan<Int32>)
   nameWithType.vb: Tensor(Of T).CloneEmpty(ReadOnlySpan(Of Int32))
 - uid: Microsoft.ML.OnnxRuntime.Tensors.Tensor`1.CloneEmpty*
@@ -4843,13 +4856,13 @@ references:
   fullName.vb: Microsoft.ML.OnnxRuntime.Tensors.Tensor(Of T).CloneEmpty(Of TResult)()
   nameWithType: Tensor<T>.CloneEmpty<TResult>()
   nameWithType.vb: Tensor(Of T).CloneEmpty(Of TResult)()
-- uid: Microsoft.ML.OnnxRuntime.Tensors.Tensor`1.CloneEmpty``1(ReadOnlySpan{System.Int32})
+- uid: Microsoft.ML.OnnxRuntime.Tensors.Tensor`1.CloneEmpty``1(System.ReadOnlySpan{System.Int32})
   name: CloneEmpty<TResult>(ReadOnlySpan<Int32>)
-  href: api/Microsoft.ML.OnnxRuntime.Tensors.Tensor-1.html#Microsoft_ML_OnnxRuntime_Tensors_Tensor_1_CloneEmpty__1_ReadOnlySpan_System_Int32__
-  commentId: M:Microsoft.ML.OnnxRuntime.Tensors.Tensor`1.CloneEmpty``1(ReadOnlySpan{System.Int32})
+  href: api/Microsoft.ML.OnnxRuntime.Tensors.Tensor-1.html#Microsoft_ML_OnnxRuntime_Tensors_Tensor_1_CloneEmpty__1_System_ReadOnlySpan_System_Int32__
+  commentId: M:Microsoft.ML.OnnxRuntime.Tensors.Tensor`1.CloneEmpty``1(System.ReadOnlySpan{System.Int32})
   name.vb: CloneEmpty(Of TResult)(ReadOnlySpan(Of Int32))
-  fullName: Microsoft.ML.OnnxRuntime.Tensors.Tensor<T>.CloneEmpty<TResult>(ReadOnlySpan<System.Int32>)
-  fullName.vb: Microsoft.ML.OnnxRuntime.Tensors.Tensor(Of T).CloneEmpty(Of TResult)(ReadOnlySpan(Of System.Int32))
+  fullName: Microsoft.ML.OnnxRuntime.Tensors.Tensor<T>.CloneEmpty<TResult>(System.ReadOnlySpan<System.Int32>)
+  fullName.vb: Microsoft.ML.OnnxRuntime.Tensors.Tensor(Of T).CloneEmpty(Of TResult)(System.ReadOnlySpan(Of System.Int32))
   nameWithType: Tensor<T>.CloneEmpty<TResult>(ReadOnlySpan<Int32>)
   nameWithType.vb: Tensor(Of T).CloneEmpty(Of TResult)(ReadOnlySpan(Of Int32))
 - uid: Microsoft.ML.OnnxRuntime.Tensors.Tensor`1.Compare(Microsoft.ML.OnnxRuntime.Tensors.Tensor{`0},Microsoft.ML.OnnxRuntime.Tensors.Tensor{`0})
@@ -5007,14 +5020,6 @@ references:
   fullName.vb: Microsoft.ML.OnnxRuntime.Tensors.Tensor(Of T).GetTriangle()
   nameWithType: Tensor<T>.GetTriangle()
   nameWithType.vb: Tensor(Of T).GetTriangle()
-- uid: Microsoft.ML.OnnxRuntime.Tensors.Tensor`1.GetTriangle(System.Int32)
-  name: GetTriangle(Int32)
-  href: api/Microsoft.ML.OnnxRuntime.Tensors.Tensor-1.html#Microsoft_ML_OnnxRuntime_Tensors_Tensor_1_GetTriangle_System_Int32_
-  commentId: M:Microsoft.ML.OnnxRuntime.Tensors.Tensor`1.GetTriangle(System.Int32)
-  fullName: Microsoft.ML.OnnxRuntime.Tensors.Tensor<T>.GetTriangle(System.Int32)
-  fullName.vb: Microsoft.ML.OnnxRuntime.Tensors.Tensor(Of T).GetTriangle(System.Int32)
-  nameWithType: Tensor<T>.GetTriangle(Int32)
-  nameWithType.vb: Tensor(Of T).GetTriangle(Int32)
 - uid: Microsoft.ML.OnnxRuntime.Tensors.Tensor`1.GetTriangle(System.Int32,System.Boolean)
   name: GetTriangle(Int32, Boolean)
   href: api/Microsoft.ML.OnnxRuntime.Tensors.Tensor-1.html#Microsoft_ML_OnnxRuntime_Tensors_Tensor_1_GetTriangle_System_Int32_System_Boolean_
@@ -5023,6 +5028,14 @@ references:
   fullName.vb: Microsoft.ML.OnnxRuntime.Tensors.Tensor(Of T).GetTriangle(System.Int32, System.Boolean)
   nameWithType: Tensor<T>.GetTriangle(Int32, Boolean)
   nameWithType.vb: Tensor(Of T).GetTriangle(Int32, Boolean)
+- uid: Microsoft.ML.OnnxRuntime.Tensors.Tensor`1.GetTriangle(System.Int32)
+  name: GetTriangle(Int32)
+  href: api/Microsoft.ML.OnnxRuntime.Tensors.Tensor-1.html#Microsoft_ML_OnnxRuntime_Tensors_Tensor_1_GetTriangle_System_Int32_
+  commentId: M:Microsoft.ML.OnnxRuntime.Tensors.Tensor`1.GetTriangle(System.Int32)
+  fullName: Microsoft.ML.OnnxRuntime.Tensors.Tensor<T>.GetTriangle(System.Int32)
+  fullName.vb: Microsoft.ML.OnnxRuntime.Tensors.Tensor(Of T).GetTriangle(System.Int32)
+  nameWithType: Tensor<T>.GetTriangle(Int32)
+  nameWithType.vb: Tensor(Of T).GetTriangle(Int32)
 - uid: Microsoft.ML.OnnxRuntime.Tensors.Tensor`1.GetTriangle*
   name: GetTriangle
   href: api/Microsoft.ML.OnnxRuntime.Tensors.Tensor-1.html#Microsoft_ML_OnnxRuntime_Tensors_Tensor_1_GetTriangle_
@@ -5142,15 +5155,6 @@ references:
   fullName.vb: Microsoft.ML.OnnxRuntime.Tensors.Tensor(Of T).IsReversedStride
   nameWithType: Tensor<T>.IsReversedStride
   nameWithType.vb: Tensor(Of T).IsReversedStride
-- uid: Microsoft.ML.OnnxRuntime.Tensors.Tensor`1.Item(ReadOnlySpan{System.Int32})
-  name: Item[ReadOnlySpan<Int32>]
-  href: api/Microsoft.ML.OnnxRuntime.Tensors.Tensor-1.html#Microsoft_ML_OnnxRuntime_Tensors_Tensor_1_Item_ReadOnlySpan_System_Int32__
-  commentId: P:Microsoft.ML.OnnxRuntime.Tensors.Tensor`1.Item(ReadOnlySpan{System.Int32})
-  name.vb: Item(ReadOnlySpan(Of Int32))
-  fullName: Microsoft.ML.OnnxRuntime.Tensors.Tensor<T>.Item[ReadOnlySpan<System.Int32>]
-  fullName.vb: Microsoft.ML.OnnxRuntime.Tensors.Tensor(Of T).Item(ReadOnlySpan(Of System.Int32))
-  nameWithType: Tensor<T>.Item[ReadOnlySpan<Int32>]
-  nameWithType.vb: Tensor(Of T).Item(ReadOnlySpan(Of Int32))
 - uid: Microsoft.ML.OnnxRuntime.Tensors.Tensor`1.Item(System.Int32[])
   name: Item[Int32[]]
   href: api/Microsoft.ML.OnnxRuntime.Tensors.Tensor-1.html#Microsoft_ML_OnnxRuntime_Tensors_Tensor_1_Item_System_Int32___
@@ -5160,6 +5164,15 @@ references:
   fullName.vb: Microsoft.ML.OnnxRuntime.Tensors.Tensor(Of T).Item(System.Int32())
   nameWithType: Tensor<T>.Item[Int32[]]
   nameWithType.vb: Tensor(Of T).Item(Int32())
+- uid: Microsoft.ML.OnnxRuntime.Tensors.Tensor`1.Item(System.ReadOnlySpan{System.Int32})
+  name: Item[ReadOnlySpan<Int32>]
+  href: api/Microsoft.ML.OnnxRuntime.Tensors.Tensor-1.html#Microsoft_ML_OnnxRuntime_Tensors_Tensor_1_Item_System_ReadOnlySpan_System_Int32__
+  commentId: P:Microsoft.ML.OnnxRuntime.Tensors.Tensor`1.Item(System.ReadOnlySpan{System.Int32})
+  name.vb: Item(ReadOnlySpan(Of Int32))
+  fullName: Microsoft.ML.OnnxRuntime.Tensors.Tensor<T>.Item[System.ReadOnlySpan<System.Int32>]
+  fullName.vb: Microsoft.ML.OnnxRuntime.Tensors.Tensor(Of T).Item(System.ReadOnlySpan(Of System.Int32))
+  nameWithType: Tensor<T>.Item[ReadOnlySpan<Int32>]
+  nameWithType.vb: Tensor(Of T).Item(ReadOnlySpan(Of Int32))
 - uid: Microsoft.ML.OnnxRuntime.Tensors.Tensor`1.Item*
   name: Item
   href: api/Microsoft.ML.OnnxRuntime.Tensors.Tensor-1.html#Microsoft_ML_OnnxRuntime_Tensors_Tensor_1_Item_
@@ -5203,13 +5216,13 @@ references:
   fullName.vb: Microsoft.ML.OnnxRuntime.Tensors.Tensor(Of T).Rank
   nameWithType: Tensor<T>.Rank
   nameWithType.vb: Tensor(Of T).Rank
-- uid: Microsoft.ML.OnnxRuntime.Tensors.Tensor`1.Reshape(ReadOnlySpan{System.Int32})
+- uid: Microsoft.ML.OnnxRuntime.Tensors.Tensor`1.Reshape(System.ReadOnlySpan{System.Int32})
   name: Reshape(ReadOnlySpan<Int32>)
-  href: api/Microsoft.ML.OnnxRuntime.Tensors.Tensor-1.html#Microsoft_ML_OnnxRuntime_Tensors_Tensor_1_Reshape_ReadOnlySpan_System_Int32__
-  commentId: M:Microsoft.ML.OnnxRuntime.Tensors.Tensor`1.Reshape(ReadOnlySpan{System.Int32})
+  href: api/Microsoft.ML.OnnxRuntime.Tensors.Tensor-1.html#Microsoft_ML_OnnxRuntime_Tensors_Tensor_1_Reshape_System_ReadOnlySpan_System_Int32__
+  commentId: M:Microsoft.ML.OnnxRuntime.Tensors.Tensor`1.Reshape(System.ReadOnlySpan{System.Int32})
   name.vb: Reshape(ReadOnlySpan(Of Int32))
-  fullName: Microsoft.ML.OnnxRuntime.Tensors.Tensor<T>.Reshape(ReadOnlySpan<System.Int32>)
-  fullName.vb: Microsoft.ML.OnnxRuntime.Tensors.Tensor(Of T).Reshape(ReadOnlySpan(Of System.Int32))
+  fullName: Microsoft.ML.OnnxRuntime.Tensors.Tensor<T>.Reshape(System.ReadOnlySpan<System.Int32>)
+  fullName.vb: Microsoft.ML.OnnxRuntime.Tensors.Tensor(Of T).Reshape(System.ReadOnlySpan(Of System.Int32))
   nameWithType: Tensor<T>.Reshape(ReadOnlySpan<Int32>)
   nameWithType.vb: Tensor(Of T).Reshape(ReadOnlySpan(Of Int32))
 - uid: Microsoft.ML.OnnxRuntime.Tensors.Tensor`1.Reshape*
@@ -5278,11 +5291,11 @@ references:
   commentId: T:Microsoft.ML.OnnxRuntime.Tensors.TensorBase
   fullName: Microsoft.ML.OnnxRuntime.Tensors.TensorBase
   nameWithType: TensorBase
-- uid: Microsoft.ML.OnnxRuntime.Tensors.TensorBase.#ctor(Type)
+- uid: Microsoft.ML.OnnxRuntime.Tensors.TensorBase.#ctor(System.Type)
   name: TensorBase(Type)
-  href: api/Microsoft.ML.OnnxRuntime.Tensors.TensorBase.html#Microsoft_ML_OnnxRuntime_Tensors_TensorBase__ctor_Type_
-  commentId: M:Microsoft.ML.OnnxRuntime.Tensors.TensorBase.#ctor(Type)
-  fullName: Microsoft.ML.OnnxRuntime.Tensors.TensorBase.TensorBase(Type)
+  href: api/Microsoft.ML.OnnxRuntime.Tensors.TensorBase.html#Microsoft_ML_OnnxRuntime_Tensors_TensorBase__ctor_System_Type_
+  commentId: M:Microsoft.ML.OnnxRuntime.Tensors.TensorBase.#ctor(System.Type)
+  fullName: Microsoft.ML.OnnxRuntime.Tensors.TensorBase.TensorBase(System.Type)
   nameWithType: TensorBase.TensorBase(Type)
 - uid: Microsoft.ML.OnnxRuntime.Tensors.TensorBase.#ctor*
   name: TensorBase
@@ -5310,11 +5323,11 @@ references:
   commentId: M:Microsoft.ML.OnnxRuntime.Tensors.TensorBase.GetTypeInfo
   fullName: Microsoft.ML.OnnxRuntime.Tensors.TensorBase.GetTypeInfo()
   nameWithType: TensorBase.GetTypeInfo()
-- uid: Microsoft.ML.OnnxRuntime.Tensors.TensorBase.GetTypeInfo(Type)
+- uid: Microsoft.ML.OnnxRuntime.Tensors.TensorBase.GetTypeInfo(System.Type)
   name: GetTypeInfo(Type)
-  href: api/Microsoft.ML.OnnxRuntime.Tensors.TensorBase.html#Microsoft_ML_OnnxRuntime_Tensors_TensorBase_GetTypeInfo_Type_
-  commentId: M:Microsoft.ML.OnnxRuntime.Tensors.TensorBase.GetTypeInfo(Type)
-  fullName: Microsoft.ML.OnnxRuntime.Tensors.TensorBase.GetTypeInfo(Type)
+  href: api/Microsoft.ML.OnnxRuntime.Tensors.TensorBase.html#Microsoft_ML_OnnxRuntime_Tensors_TensorBase_GetTypeInfo_System_Type_
+  commentId: M:Microsoft.ML.OnnxRuntime.Tensors.TensorBase.GetTypeInfo(System.Type)
+  fullName: Microsoft.ML.OnnxRuntime.Tensors.TensorBase.GetTypeInfo(System.Type)
   nameWithType: TensorBase.GetTypeInfo(Type)
 - uid: Microsoft.ML.OnnxRuntime.Tensors.TensorBase.GetTypeInfo*
   name: GetTypeInfo
@@ -5437,11 +5450,11 @@ references:
   commentId: T:Microsoft.ML.OnnxRuntime.Tensors.TensorElementTypeInfo
   fullName: Microsoft.ML.OnnxRuntime.Tensors.TensorElementTypeInfo
   nameWithType: TensorElementTypeInfo
-- uid: Microsoft.ML.OnnxRuntime.Tensors.TensorElementTypeInfo.#ctor(Type,System.Int32)
+- uid: Microsoft.ML.OnnxRuntime.Tensors.TensorElementTypeInfo.#ctor(System.Type,System.Int32)
   name: TensorElementTypeInfo(Type, Int32)
-  href: api/Microsoft.ML.OnnxRuntime.Tensors.TensorElementTypeInfo.html#Microsoft_ML_OnnxRuntime_Tensors_TensorElementTypeInfo__ctor_Type_System_Int32_
-  commentId: M:Microsoft.ML.OnnxRuntime.Tensors.TensorElementTypeInfo.#ctor(Type,System.Int32)
-  fullName: Microsoft.ML.OnnxRuntime.Tensors.TensorElementTypeInfo.TensorElementTypeInfo(Type, System.Int32)
+  href: api/Microsoft.ML.OnnxRuntime.Tensors.TensorElementTypeInfo.html#Microsoft_ML_OnnxRuntime_Tensors_TensorElementTypeInfo__ctor_System_Type_System_Int32_
+  commentId: M:Microsoft.ML.OnnxRuntime.Tensors.TensorElementTypeInfo.#ctor(System.Type,System.Int32)
+  fullName: Microsoft.ML.OnnxRuntime.Tensors.TensorElementTypeInfo.TensorElementTypeInfo(System.Type, System.Int32)
   nameWithType: TensorElementTypeInfo.TensorElementTypeInfo(Type, Int32)
 - uid: Microsoft.ML.OnnxRuntime.Tensors.TensorElementTypeInfo.#ctor*
   name: TensorElementTypeInfo

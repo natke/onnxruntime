@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "D:/a/onnxruntime/onnxruntime/csharp/ApiDocs",
+  "source_base_path": "/home/runner/work/onnxruntime/onnxruntime/csharp/ApiDocs",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -9,10 +9,9 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.ML.OnnxRuntime.CoreMLFlags.html",
-          "hash": "VqsJZjEWcy9vGl5HRjHX1OUheJba0vzJBRewPFsH8i4="
+          "hash": "u53jTXfJcoLECCrSotFG5Zza4cCm6VA0EWK5T2AH+gk="
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -21,10 +20,9 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.ML.OnnxRuntime.DisposableNamedOnnxValue.html",
-          "hash": "qQXyI5R9aArs3iElBJMBTBJUirW7G+LI/1itbmvdn6c="
+          "hash": "mJDiT+akZ3SHegWUiaijJ4ChxFB5weC3g0KW24sWlDg="
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -33,10 +31,9 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.ML.OnnxRuntime.ExecutionMode.html",
-          "hash": "FbgT4Q5y3gB5AxykafQ2gW/FWGx3XPisj2dvxWngyXs="
+          "hash": "N/GXrvdypVYdvWsCSkqugQ/kHbObfN80IAuCOv/ZKX4="
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -45,10 +42,9 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.ML.OnnxRuntime.FixedBufferOnnxValue.html",
-          "hash": "tA4PvEA+QAFAHCDwlFeaV0ykxSbklElRK2OVcEMkr1o="
+          "hash": "15uWKQFHlBZVOndXYkU+3WIAO2Yd5sr4PCK7HiCsWNA="
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -57,10 +53,9 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.ML.OnnxRuntime.GraphOptimizationLevel.html",
-          "hash": "766r4d06YuNvx87SaOVBNPdzafUJSnUckB56LTB/GMU="
+          "hash": "KTfYUNGhS3Gwilc/ecBwmLhLn2XuZDfAo9cr9z5SYm4="
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -69,10 +64,9 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.ML.OnnxRuntime.IDisposableReadOnlyCollection-1.html",
-          "hash": "qVitxyUcL+q7uig9+mCKCVa/zlGSjJPnfA21ngZAzh4="
+          "hash": "YdVL3Ch3wsllcbIdKR/OUP5eM+UXLVtKEg3KOd5e0+E="
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -81,10 +75,9 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.ML.OnnxRuntime.InferenceSession.html",
-          "hash": "P0v4DCyz7zvfXaVrFAIIcjCrQJcFTmn/vNJibxP3qDo="
+          "hash": "3x/SaG/vyiuQ1EF6iW06mB1ctIFKB3Abj4ns965v3rU="
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -93,10 +86,9 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.ML.OnnxRuntime.LogLevel.html",
-          "hash": "hwFm9JFWdX3hh1HP4gDM2JFnYIZlRZ+NRjsJ+ZpEgno="
+          "hash": "D9reFo1OnCjie0pq56ilrPwf9rqO3LQ0JbU9w2/6iSM="
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -105,10 +97,9 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.ML.OnnxRuntime.ModelMetadata.html",
-          "hash": "93bPzkeUyHEPPxDXEcAcq6OYndC5lz17PvV0rV4VyX0="
+          "hash": "oKi5B4C3nQoUiOWaHrgNlywo4I6smtZWq5Mi+xutmEE="
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -117,10 +108,9 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.ML.OnnxRuntime.NamedOnnxValue.html",
-          "hash": "PRkMIRSYAcOakr6wrWW1Jja7Du+g2fgRbIMYx5hpM9k="
+          "hash": "0s9y5LUqJwwXyavq+6icxNGDFKo5xfxEi7nZ7S82RXA="
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -129,10 +119,9 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.ML.OnnxRuntime.NnapiFlags.html",
-          "hash": "69bl/crAXK4FbR1XqzwkgbTMwJSlWIGvRVfBTlM78qw="
+          "hash": "fOzBQnhxnLPORgZFbh5dkyo53XBEmpDluB3UEBKO2+w="
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -141,10 +130,9 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.ML.OnnxRuntime.NodeMetadata.html",
-          "hash": "4WcVeI6T4QfaNt60DpIDqjjyngy0r6fJSuNryWTd9rc="
+          "hash": "7Q/gcHJSF5HySQov0HmugeJ1skKUT/kcJc2/p3nCbzI="
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -153,10 +141,9 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.ML.OnnxRuntime.OnnxRuntimeException.html",
-          "hash": "y2dmfP9Mz8f8gu7U8SdcS/HyThR2/88C8sY5qkOIrQ0="
+          "hash": "QxwX9MH2/z7x/3AWs9/lEXgia4AejcLEgF6XmOaAghk="
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -165,10 +152,9 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.ML.OnnxRuntime.OnnxValueType.html",
-          "hash": "spOtWih3B5myeyTpsDHG92L8elrl73L2q3ZGqq4fAY0="
+          "hash": "xH7/qL8rNL7KKKNEURekVniL6iEBAFwpm2mMTJZBnXI="
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -177,10 +163,9 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.ML.OnnxRuntime.OrtAllocator.html",
-          "hash": "RgG17ZLaSa6SD3A7gr9Q3wa+Xifxv+r1kmk+7E4R62I="
+          "hash": "j+UHZ8ShPz+Yu+QSGRdXRG4A5cz7hKsUEyWmDEX+tFA="
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -189,10 +174,9 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.ML.OnnxRuntime.OrtAllocatorType.html",
-          "hash": "wW71ToxIwbioum8YAPFhupywHiSp9P6MxZa8BqKdhak="
+          "hash": "i1s51zBfm31+Chkxaz/V7TPkn+mdA/czLXVqtwvl0kk="
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -201,10 +185,9 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.ML.OnnxRuntime.OrtApi.html",
-          "hash": "kcldkKNm2tP5YLLOId862EIO2K7/UXkzwtud6lemh5g="
+          "hash": "fJhpR3MwW8/yMq+1CsNyKEdoEK7gw6zRKcM/lPfJizY="
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -213,10 +196,9 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.ML.OnnxRuntime.OrtApiBase.html",
-          "hash": "CGKuwYkHEmFSULmN0sVX1CRl0gb05l3BcAov5nZ1VBQ="
+          "hash": "PR+lPanxpn8eKqI4BacRJaYIuN04CXL/8F8a0t3uDrs="
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -225,10 +207,9 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.ML.OnnxRuntime.OrtArenaCfg.html",
-          "hash": "aZp5Otkd5CpMSmazWZQQZNCB4jXpdKwYaK+/lqJk6xg="
+          "hash": "qcEgWG7KF0xuJXlBpEx/yvB5sx1gmNAoCctvvPvXf8Y="
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -237,10 +218,9 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.ML.OnnxRuntime.OrtCUDAProviderOptions.html",
-          "hash": "TVpuU01G97YUgjKRuNHk+PzutcA8EdIpyqKxuaMU5Zk="
+          "hash": "ya9Ebx9gTJWIm2V1SzrOybj+RtFivKtIsKGKxJchZIw="
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -249,10 +229,9 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.ML.OnnxRuntime.OrtEnv.html",
-          "hash": "iS3nVfeBTzG9n4zcHwl3sRPnbjZt2l/lsnAbizwVd1o="
+          "hash": "Gjw7A3CJf+zHrIVSeEnC9yzgAYxO99FN8b9nrnXzbxg="
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -261,10 +240,9 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.ML.OnnxRuntime.OrtExternalAllocation.html",
-          "hash": "/Xtc/02bSPAHiF+s3396TzwlCzggaTl8BVQwHp6zOGY="
+          "hash": "njHF6PxeissdjuIzsH91ygyqitc1A3bgcC8FsjoeHcs="
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -273,10 +251,9 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.ML.OnnxRuntime.OrtIoBinding.html",
-          "hash": "sbRU8pMHBBY7cXFs0mE3MMGhmqxVwAhWTOrJw4KHEvY="
+          "hash": "oR3GwmYSMaSVUEQczYQso05iX9fFWEOQ2gySzN5bOn8="
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -285,10 +262,9 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.ML.OnnxRuntime.OrtLanguageProjection.html",
-          "hash": "dDi5NL8vg102FAwsZHLIXzA8q5uJyT+ddQ8SHbDp6S8="
+          "hash": "jcxMMBR1JmlbPs++K4am/MBAslCNLz2tKRXK7z8UfSA="
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -297,10 +273,9 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.ML.OnnxRuntime.OrtLoggingLevel.html",
-          "hash": "j1wYRdvWayf4H5L1WDLbHy2zwmMP2ABxWkwrzGOvYyY="
+          "hash": "upVfu80bu0SE4cJl+t6b/pYu9LgIYK9/w6NCr5mkpa4="
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -309,10 +284,9 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.ML.OnnxRuntime.OrtMemType.html",
-          "hash": "Wxc72tqvQ6aLwqQiKrUMtlwjTN+qQVYx0pqU2DQRPrI="
+          "hash": "q9AvHliuzpyWsnlMvLtp/TM4NyBeMDvWmhMzCh2TG64="
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -321,10 +295,9 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.ML.OnnxRuntime.OrtMemoryAllocation.html",
-          "hash": "KFmO1HfQ0my2+BAsdWXWPRgp+j/kXPf5obyelpr02aU="
+          "hash": "h/IIiCPvw6EUISnm72n2tZzWA3vn5n4BvcK1OL0URK0="
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -333,10 +306,9 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.ML.OnnxRuntime.OrtMemoryInfo.html",
-          "hash": "+McoAWuXI5Uy+fGAgjiPbbS635aV0fWViR97urocDAA="
+          "hash": "Md7cGXjlqoKWrfMaP9pJXB6m5ThsbYydO5OO80VhOgE="
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -345,10 +317,9 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.ML.OnnxRuntime.OrtTensorRTProviderOptions.html",
-          "hash": "uTSFfoL+Q/kUlw6LcuEOl3No4JfkCw4+eiyfELb4THU="
+          "hash": "07zArLbeJ9bi2PR38NUBHV9oHviiGy15x3FYo2cGwNg="
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -357,10 +328,9 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.ML.OnnxRuntime.OrtValue.html",
-          "hash": "fFt3992hGRIf1BJCMgwQNuT3qvWCqddmdBcRKUY7LI4="
+          "hash": "KHZSukfPA0PtDPcAt20xdJKaIoSNA/lLG/eVWcREk0c="
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -369,10 +339,9 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.ML.OnnxRuntime.PrePackedWeightsContainer.html",
-          "hash": "llh+ug+qMFJ4wwZq9QzriBHmAGtRd6bpTc/9F7VXT0I="
+          "hash": "hCy5Hy8iahZZYM1AcVmLHqMMPYmTzQqHI6XYGU/LIc4="
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -381,10 +350,9 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.ML.OnnxRuntime.ProviderOptionsValueHelper.html",
-          "hash": "LDL+79msnXiIKbF/z+NBhdrDYaqbzt5rhNW+cEn9xNY="
+          "hash": "dPQMDb8mje6XlQ2SUM1D6xLbihdNYemHmxEVqtdVrzI="
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -393,10 +361,9 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.ML.OnnxRuntime.RunOptions.html",
-          "hash": "rI8D4rpRajKcZdm9ShDdZuT8YaeHglU3N4iRTSzYW9c="
+          "hash": "cO3LDjQJUSM+YnbZZ4bbh3wF2oYiAy4rPdZRIM60h10="
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -405,10 +372,9 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.ML.OnnxRuntime.SessionOptions.html",
-          "hash": "8OAPzYOSpAUgnb8+xvi9mE741cw5BHomfioRQcCzKG0="
+          "hash": "8EKX2KMd92cMsv0M2qyaVCCoYgOvfTRIGZ+LC0rfBFQ="
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -417,10 +383,9 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.ML.OnnxRuntime.SessionOptionsContainer.html",
-          "hash": "gt9pNl8/YKtqeuwuXA973uAE81A4uB3xFguEv9ayiWY="
+          "hash": "hJm3cR8/UJhqFkNajVOjK3Grbv5T8DKclDCtH8jYlBw="
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -429,10 +394,9 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.ML.OnnxRuntime.Tensors.ArrayTensorExtensions.html",
-          "hash": "fvk/Ux2i9fW8a456B+qJZnzfH9ZzAQi4DQ8OXXRnFkM="
+          "hash": "//lShSf06g4Fp/DPxQeWPIeavvPl+3RdK1U00p9EiAk="
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -441,10 +405,9 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.ML.OnnxRuntime.Tensors.BFloat16.html",
-          "hash": "7JCqmD/mBbLqacf1xUC71GcAd/StVoUaGKmPlu6H9tI="
+          "hash": "XBJiFYFy3Zf/ktnxADbxSIMQskNGbhmhLkxU6Z7KeiE="
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -453,10 +416,9 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.ML.OnnxRuntime.Tensors.DenseTensor-1.html",
-          "hash": "KY98zCuxWuePNcrjhHU/5Y/kcpO9sZH3oUxkMtExT7A="
+          "hash": "+k9nNZ0tXT/iNlX7IueQwxiyZH5IjI6EuzywHRuZWCw="
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -465,10 +427,9 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.ML.OnnxRuntime.Tensors.Float16.html",
-          "hash": "hhgXbfnpkvEYs6PRiT5GgQFENTmp2aD4+H3PGS7Nlj8="
+          "hash": "d+QuiCz1ZwlRKb7Z7csnQE73N/0WB90ElLZ0QRLAOLQ="
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -477,10 +438,9 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.ML.OnnxRuntime.Tensors.Tensor-1.html",
-          "hash": "p7CRW5hw8OPb/uDHg5pUuNpTAN99s+58LWeQ/PbWu4g="
+          "hash": "T2BL6F7GkswbMuYLpjT9DBVQS9ujDXOGg1M7W6/UsDI="
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -489,10 +449,9 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.ML.OnnxRuntime.Tensors.Tensor.html",
-          "hash": "rZw0bTLa/eQJJ2rGw9cATywLHXrCcYSHIJ3WIr7bKI0="
+          "hash": "9vpXuvF5wp59VM2I0rqDKV3Va1OptcHFdQIFiACIJI8="
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -501,10 +460,9 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.ML.OnnxRuntime.Tensors.TensorBase.html",
-          "hash": "QxQGjfzH+izxVx3ZNrZOa+Qmd3/sXyxR1uqO9HcDUYo="
+          "hash": "luEDz2nhgyjv4Q0hTdIWvZArp5llKanniVwL5Za0GI8="
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -513,10 +471,9 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.ML.OnnxRuntime.Tensors.TensorElementType.html",
-          "hash": "rBGgHGPNuXtPNcNmnYWS4Riz2zckHFaDXG0K++kbWAc="
+          "hash": "DhSa6bivrtLOem7SEsT9z3PdTIVno1HE68OhtEodEqM="
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -525,10 +482,9 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.ML.OnnxRuntime.Tensors.TensorElementTypeInfo.html",
-          "hash": "GY8/fcWKmJxk3SBAk/+0gs0wj2grHJg+0MGl9lfWyoc="
+          "hash": "0o27ay0EnnKy6vyt2Zzvji0ZSh1TYS6sFmu4OTY17j8="
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -537,10 +493,9 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.ML.OnnxRuntime.Tensors.TensorTypeInfo.html",
-          "hash": "I5joPDYSeCC33kx2b5tUinpXBd2y/yVNoicmFGnIM2U="
+          "hash": "IYvUdKeQ4novehWl4PQdnETN1fA62zemhmrJw9hLs4I="
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -549,10 +504,9 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.ML.OnnxRuntime.Tensors.html",
-          "hash": "47A2uw0du4LcFbEJzdcEDSeq3mUj7nrhLTmHEwM0Tlo="
+          "hash": "3ok4kwGRFfbS2oryU7o92ULZsbk+nPtlU2rhYf12BEE="
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -561,10 +515,9 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.ML.OnnxRuntime.html",
-          "hash": "tI3yVHfUX4r6AMiVLyXozouqJ4oFAjvf3LaP8S7e7XA="
+          "hash": "imYahn/bFl/yVAoeLbXBRXG+0t6XdJnzuA9wH59/tNc="
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -576,10 +529,9 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "gLBc9YMVpBp2V2tjf2lZFAkQ0LXgmfkL9J9GsO4w1RU="
+          "hash": "8o7PWxVLn32vd3oXQfSPF/cSxoQsw4oymYfUsqQ317U="
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -588,10 +540,9 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "aBxI7YgpyFu6Ni0AjAwEF/8wF6CIEFYf6eElSh/qYEk="
+          "hash": "EI9awCXVXRLCasOTWRv0BuGNWO9IpLSle6WhSsxvgLQ="
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -600,10 +551,9 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "n2RUbBdh2z/fuQOR07HuJsKC4FzLJGdgVZmAits2sTg="
+          "hash": "UgrFpeBQZ+rWsYN3u1JJpGx/2BuHttlDzS90iu/Z5kc="
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -612,52 +562,10 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "aJvWnHzT2GlMpB4Zo7RZ905IWvFTkD5rhKVpEb5xMO4="
+          "hash": "rfp7jxSsL/ji1uc8PWmki/dZzayEIcV10crS0JnCGMI="
         }
       },
-      "is_incremental": false,
       "version": ""
-    }
-  ],
-  "incremental_info": [
-    {
-      "status": {
-        "can_incremental": true,
-        "incrementalPhase": "build",
-        "total_file_count": 0,
-        "skipped_file_count": 0
-      },
-      "processors": {
-        "ConceptualDocumentProcessor": {
-          "can_incremental": true,
-          "incrementalPhase": "build",
-          "total_file_count": 2,
-          "skipped_file_count": 2
-        },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
-          "incrementalPhase": "build",
-          "total_file_count": 48,
-          "skipped_file_count": 48
-        },
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build",
-          "total_file_count": 0,
-          "skipped_file_count": 0
-        }
-      }
-    },
-    {
-      "status": {
-        "can_incremental": true,
-        "details": "Can support incremental post processing.",
-        "incrementalPhase": "postProcessing",
-        "total_file_count": 0,
-        "skipped_file_count": 0
-      },
-      "processors": {}
     }
   ],
   "version_info": {},
