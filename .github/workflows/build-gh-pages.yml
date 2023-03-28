@@ -1,3 +1,5 @@
+name: Build site
+
 on:
   # Called from website publish and PR checks
   workflow_call:
