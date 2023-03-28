@@ -3,7 +3,7 @@ name: Publish site
 
 on:
   # Runs on pushes targeting the branch where the website sources live
-  push:
+  pull_request:
     branches: ["gh-pages"]
 
   # Allows you to run this workflow manually from the Actions tab
@@ -22,31 +22,6 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # Build the site and check site links
   call-workflow-build:
     uses: .github/workflows/build-gh-pages.yml@main
     secrets: inherit
-
-  # Download the results from the build and upload them to be deployed
-  upload:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/download-artifact@v3
-        with:
-          name: onnxruntime-content
-
-      - uses: actions/upload-pages-artifact@v1
-        with:
-          retention-days: 21
-
-  # Deployment job
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v1
