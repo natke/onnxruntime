@@ -22,5 +22,5 @@ concurrency:
 
 jobs:
   call-workflow-build:
-    uses: ./.github/workflows/build-gh-pages.yml@main
+    uses: ./.github/workflows/build-gh-pages.yml
     secrets: inherit

@@ -24,7 +24,7 @@ concurrency:
 jobs:
   # Build the site and check site links
   call-workflow-build:
-    uses: ./.github/workflows/build-gh-pages.yml@main
+    uses: ./.github/workflows/build-gh-pages.yml
     secrets: inherit
 
   # Download the results from the build and upload them to be deployed
