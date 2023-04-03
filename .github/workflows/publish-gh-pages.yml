@@ -72,6 +72,14 @@ jobs:
           branch: main
           path: apidocs
 
+      - name: Download Rust apidocs artifact
+        uses: dawidd6/action-download-artifact@v2
+        with:
+          name: onnxruntime-rust-apidocs
+          workflow: publish-rust-apidocs.yml
+          branch: main
+          path: apidocs
+
       - name: Move apidocs folder into place
         run: |
           sudo rm -rf _site/docs/api/c
@@ -82,6 +90,8 @@ jobs:
           sudo mv apidocs/docs/api/java _site/docs/api
           sudo rm -rf _site/docs/api/python
           sudo mv apidocs/docs/api/python _site/docs/api
+          sudo rm -rf _site/docs/api/rust
+          sudo mv apidocs/docs/api/rust _site/docs/api
 
       - name: Upload site
         uses: actions/upload-pages-artifact@v1
