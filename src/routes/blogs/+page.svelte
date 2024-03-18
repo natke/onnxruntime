@@ -9,7 +9,10 @@
 	import HFImage from '../../images/blogs/hugging-face-blog-img.png';
 	import LlamaImage from '../../images/blogs/accelerating-llama-2/Figure1-LLaMA-2-7B-E2E-Throughput.png';
 	import SDXLTurboImage from '../../images/blogs/sdxl_blog_thumbnail.png';
+	import Phi2Image from '../../routes/blogs/accelerating-phi-2/Phi2_Int4_TokenGenerationTP.png';
 	import { createEventDispatcher } from 'svelte';
+	import ORT117Thumbnail from '../../images/blogs/ort-1-17-thumbnail.png';
+	import WebGPUImage from '../../images/blogs/webgpu_blog_thumbnail.jpg';
 	import WebTrainingImage from '../../images/blogs/webtraining_blog_thumbnail.png';
 	onMount(() => {
 		anime({
@@ -39,6 +42,35 @@
 	}
 	let featuredblog = [
 		{
+			title: 'ONNX Runtime Web unleashes generative AI in the browser using WebGPU',
+			date: 'February 29th, 2024',
+			blurb:
+				'We are thrilled to announce the official launch of ONNX Runtime Web featuring WebGPU, which is now available in the ONNX Runtime 1.17 release.',
+			link: 'https://cloudblogs.microsoft.com/opensource/2024/02/29/onnx-runtime-web-unleashes-generative-ai-in-the-browser-using-webgpu/',
+			image: WebGPUImage,
+			imgalt: 'Comparison of ONNX Runtime Web with WebGPU EP on GPU vs. WASM EP on CPU for segment anything example'
+		},
+		{
+			title: 'ONNX Runtime 1.17: CUDA 12 support, Phi-2 optimizations, WebGPU, and more!',
+			date: 'February 28th, 2024',
+			blurb:
+				'From Phi-2 model optimizations to CUDA 12 support, read this post to learn more about some of the exciting new functionality introduced in the ONNX Runtime 1.17 release.',
+			link: 'blogs/ort-1-17-release',
+			image: ORT117Thumbnail,
+			imgalt: 'ONNX Runtime 1.17 release logo'
+		},
+		{
+			title: 'Accelerating Phi-2, CodeLlama, Gemma and other Gen AI models with ONNX Runtime',
+			date: 'February 26th, 2024',
+			blurb:
+				'Improvements with ONNX Runtime for inferencing popular Gen AI models.',
+			link: 'blogs/accelerating-phi-2',
+			image: Phi2Image,
+			imgalt: 'Phi2 float16 token generation throughput comparison'
+		}
+	];
+	let blogs = [
+		{
 			title: 'On-Device Training: Training a model in browser',
 			date: 'February 6th, 2024',
 			blurb:
@@ -63,9 +95,7 @@
 			link: 'blogs/accelerating-llama-2',
 			image: LlamaImage,
 			imgalt: 'LLaMA-2 e2e throughput'
-		}
-	];
-	let blogs = [
+		},
 		{
 			title: 'Run PyTorch models on the edge',
 			date: 'October 12th, 2023',
@@ -272,6 +302,13 @@
 		}
 	];
 	let blogsCommunity = [
+		{
+			title: 'Efficient image generation with Stable Diffusion models and ONNX Runtime using AMD GPUs',
+			date: 'February 23, 2024',
+			link: 'https://rocm.blogs.amd.com/artificial-intelligence/stable-diffusion-onnx-runtime/README.html',
+			blurb:
+				'Use pre-trained Stable Diffusion models to generate images from text (text-to-image), transform existing visuals (image-to-image), and restore damaged pictures (inpainting) on AMD GPUs using ONNX Runtime.'
+		},
 		{
 			title: 'AMD expands its AI and ML development tools with ROCm 6.0',
 			date: 'February 15, 2024',

@@ -15,7 +15,7 @@
 			linkarr: [
 				{ name: 'Event Page', link: 'https://developer.microsoft.com/en-us/reactor/events/21648/' },
 				{
-					name: 'Recording Playlist',
+					name: 'Event Videos',
 					link: 'https://www.youtube.com/playlist?list=PLqPV7GJuaUV8qw9Zj5zXvzUZdSxx_sn7U'
 				}
 			],
@@ -28,7 +28,7 @@
 	let videos = [
 		{
 			title: 'Workshop: LLMs Fine Tuning and Inferencing Using ONNXRuntime',
-			link: 'https://www.youtube.com/embed/lOp8WK0fa94?si=rHn8fxAii3Ksr8Ey'
+			link: 'https://www.youtube-nocookie.com/embed/lOp8WK0fa94?si=rHn8fxAii3Ksr8Ey'
 		}
 	];
 </script>
